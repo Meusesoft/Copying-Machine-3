@@ -1,0 +1,19 @@
+﻿<Window x:Class="CopyingMachineRegistration.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="Copying Machine Registration" Height="378" Width="633" Name="CopyingMachineRegistrationWindow">
+    <Grid Height="337">
+        <Label Height="28" HorizontalAlignment="Left" Margin="12,12,0,0" Name="label1" VerticalAlignment="Top" Width="120">Name</Label>
+        <TextBox Height="23" Margin="12,46,12,0" Name="txtName" VerticalAlignment="Top" />
+        <Label Height="28" HorizontalAlignment="Left" Margin="12,75,0,0" Name="label2" VerticalAlignment="Top" Width="120">Organisation</Label>
+        <TextBox Height="23" Margin="12,109,12,0" Name="txtOrganisation" VerticalAlignment="Top" />
+        <Label Height="28" HorizontalAlignment="Left" Margin="12,138,0,0" Name="label3" VerticalAlignment="Top" Width="120">E-mail address</Label>
+        <TextBox Margin="12,172,12,0" Name="txtEmailaddress" Height="23" VerticalAlignment="Top" />
+        <Button Height="23" HorizontalAlignment="Left" Margin="12,223,0,0" Name="btnGenerate" VerticalAlignment="Top" Width="75" Click="btnGenerate_Click">Generate</Button>
+        <Button Height="23" Margin="93,0,0,91" Name="btnClear" VerticalAlignment="Bottom" HorizontalAlignment="Left" Width="75" Click="btnClear_Click">Clear</Button>
+        <CheckBox Height="16" HorizontalAlignment="Left" Margin="12,201,0,0" Name="chkSendMail" VerticalAlignment="Top" Width="120" IsChecked="True">Send e-mail</CheckBox>
+        <Rectangle Height="2" Margin="12,0,12,75" Name="rectangle1" Stroke="Black" VerticalAlignment="Bottom" MinHeight="2" />
+        <Button Height="23" Margin="12,0,0,12" Name="ProcessImport" VerticalAlignment="Bottom" HorizontalAlignment="Left" Click="btnImport_Click" Width="75">Start</Button>
+        <Label Height="28" Margin="12,0,228,41" Name="label4" VerticalAlignment="Bottom">Process e-mails from import folder</Label>
+    </Grid>
+</Window>

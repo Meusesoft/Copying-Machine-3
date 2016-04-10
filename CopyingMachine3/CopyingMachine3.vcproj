@@ -1,0 +1,1913 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<VisualStudioProject
+	ProjectType="Visual C++"
+	Version="9,00"
+	Name="CopyingMachine3"
+	ProjectGUID="{2B7056C1-3939-4226-82A4-C2BDA3B818FE}"
+	RootNamespace="CopyingMachine3"
+	SccProjectName="&quot;$/Copying Machine/Copying Machine 3/CopyingMachine3&quot;, QTBAAAAA"
+	SccLocalPath=".."
+	SccProvider="MSSCCI:Microsoft Visual SourceSafe"
+	Keyword="Win32Proj"
+	TargetFrameworkVersion="131072"
+	>
+	<Platforms>
+		<Platform
+			Name="Win32"
+		/>
+		<Platform
+			Name="x64"
+		/>
+	</Platforms>
+	<ToolFiles>
+	</ToolFiles>
+	<Configurations>
+		<Configuration
+			Name="Debug|Win32"
+			OutputDirectory="$(SolutionDir)$(ConfigurationName)"
+			IntermediateDirectory="d:\projects\_Intermediate\$(TargetFileName)\$(ConfigurationName)"
+			ConfigurationType="1"
+			CharacterSet="1"
+			>
+			<Tool
+				Name="VCPreBuildEventTool"
+			/>
+			<Tool
+				Name="VCCustomBuildTool"
+			/>
+			<Tool
+				Name="VCXMLDataGeneratorTool"
+			/>
+			<Tool
+				Name="VCWebServiceProxyGeneratorTool"
+			/>
+			<Tool
+				Name="VCMIDLTool"
+			/>
+			<Tool
+				Name="VCCLCompilerTool"
+				Optimization="0"
+				AdditionalIncludeDirectories="D:\Projects\CopyingMachine3\CopyingMachine3\Scintilla\include;&quot;C:\Program Files\Microsoft SDKs\Windows\v6.0a\Include&quot;;D:\Projects\CopyingMachine3\CopyingMachine3\LibTesseract\classify;D:\Projects\CopyingMachine3\CopyingMachine3\LibTesseract\ccstruct;D:\Projects\CopyingMachine3\CopyingMachine3\LibTesseract\ccmain;D:\Projects\CopyingMachine3\CopyingMachine3\LibTesseract\ccutil;D:\Projects\CopyingMachine3\CopyingMachine3\LibTesseract;D:\Projects\CopyingMachine3\CopyingMachine3\LibRsa;&quot;D:\Projects\CopyingMachine3\CopyingMachine3\Resource files\CopyingMachine3_English&quot;;D:\Projects\CopyingMachine3\CopyingMachine3\LibTiff\libtiff;D:\Projects\CopyingMachine3\CopyingMachine3\ZLib;&quot;C:\Program Files\Microsoft SDKs\Windows\v6.0a\Lib&quot;;&quot;C:\Program Files\Microsoft SDKs\Windows\v6.0\Lib&quot;;&quot;C:\Program Files\Microsoft SDKs\Windows\v6.0\Include&quot;;&quot;D:\Projects\CopyingMachine3\CopyingMachine3\Dialog files&quot;;D:\Projects\CopyingMachine3\CopyingMachine3;&quot;D:\Projects\CopyingMachine3\CopyingMachine3\Logic files&quot;;&quot;D:\Projects\CopyingMachine3\CopyingMachine3\Resource files&quot;;&quot;D:\Projects\CopyingMachine3\CopyingMachine3\Interface files&quot;;&quot;D:\Projects\CopyingMachine3\CopyingMachine3\Application files&quot;;&quot;C:\Program Files\Microsoft Platform SDK\Include&quot;"
+				PreprocessorDefinitions="WIN32;_DEBUG;_WINDOWS"
+				MinimalRebuild="true"
+				BasicRuntimeChecks="3"
+				RuntimeLibrary="3"
+				UsePrecompiledHeader="2"
+				WarningLevel="3"
+				Detect64BitPortabilityProblems="false"
+				DebugInformationFormat="4"
+			/>
+			<Tool
+				Name="VCManagedResourceCompilerTool"
+			/>
+			<Tool
+				Name="VCResourceCompilerTool"
+			/>
+			<Tool
+				Name="VCPreLinkEventTool"
+			/>
+			<Tool
+				Name="VCLinkerTool"
+				AdditionalDependencies="comctl32.lib gdiplus.lib version.lib wiaguid.lib advapi32.lib tessdll.lib librsa.lib sti.lib msxml6.lib"
+				LinkIncremental="2"
+				AdditionalLibraryDirectories="&quot;C:\Program Files\Microsoft SDKs\Windows\v6.0\Lib&quot;;D:\Projects\CopyingMachine3\debug;&quot;C:\Program Files\Microsoft Platform SDK\Lib&quot;"
+				GenerateManifest="true"
+				AdditionalManifestDependencies=""
+				GenerateDebugInformation="true"
+				SubSystem="2"
+				RandomizedBaseAddress="1"
+				DataExecutionPrevention="0"
+				TargetMachine="1"
+			/>
+			<Tool
+				Name="VCALinkTool"
+			/>
+			<Tool
+				Name="VCManifestTool"
+			/>
+			<Tool
+				Name="VCXDCMakeTool"
+			/>
+			<Tool
+				Name="VCBscMakeTool"
+			/>
+			<Tool
+				Name="VCFxCopTool"
+			/>
+			<Tool
+				Name="VCAppVerifierTool"
+			/>
+			<Tool
+				Name="VCPostBuildEventTool"
+			/>
+		</Configuration>
+		<Configuration
+			Name="Debug|x64"
+			OutputDirectory="$(SolutionDir)$(PlatformName)\$(ConfigurationName)"
+			IntermediateDirectory="$(PlatformName)\$(ConfigurationName)"
+			ConfigurationType="1"
+			CharacterSet="1"
+			>
+			<Tool
+				Name="VCPreBuildEventTool"
+			/>
+			<Tool
+				Name="VCCustomBuildTool"
+			/>
+			<Tool
+				Name="VCXMLDataGeneratorTool"
+			/>
+			<Tool
+				Name="VCWebServiceProxyGeneratorTool"
+			/>
+			<Tool
+				Name="VCMIDLTool"
+				TargetEnvironment="3"
+			/>
+			<Tool
+				Name="VCCLCompilerTool"
+				Optimization="0"
+				AdditionalIncludeDirectories="D:\Projects\CopyingMachine3\CopyingMachine3\Scintilla\include;&quot;C:\Program Files\Microsoft SDKs\Windows\v6.0a\Include&quot;;D:\Projects\CopyingMachine3\CopyingMachine3\LibTesseract\classify;D:\Projects\CopyingMachine3\CopyingMachine3\LibTesseract\ccstruct;D:\Projects\CopyingMachine3\CopyingMachine3\LibTesseract\ccmain;D:\Projects\CopyingMachine3\CopyingMachine3\LibTesseract\ccutil;D:\Projects\CopyingMachine3\CopyingMachine3\LibTesseract;D:\Projects\CopyingMachine3\CopyingMachine3\LibRsa;&quot;D:\Projects\CopyingMachine3\CopyingMachine3\Resource files\CopyingMachine3_English&quot;;D:\Projects\CopyingMachine3\CopyingMachine3\LibTiff\libtiff;D:\Projects\CopyingMachine3\CopyingMachine3\ZLib;&quot;C:\Program Files\Microsoft SDKs\Windows\v6.0a\Lib&quot;;&quot;C:\Program Files\Microsoft SDKs\Windows\v6.0\Lib&quot;;&quot;C:\Program Files\Microsoft SDKs\Windows\v6.0\Include&quot;;&quot;D:\Projects\CopyingMachine3\CopyingMachine3\Dialog files&quot;;D:\Projects\CopyingMachine3\CopyingMachine3;&quot;D:\Projects\CopyingMachine3\CopyingMachine3\Logic files&quot;;&quot;D:\Projects\CopyingMachine3\CopyingMachine3\Resource files&quot;;&quot;D:\Projects\CopyingMachine3\CopyingMachine3\Interface files&quot;;&quot;D:\Projects\CopyingMachine3\CopyingMachine3\Application files&quot;;&quot;C:\Program Files\Microsoft Platform SDK\Include&quot;"
+				PreprocessorDefinitions="WIN32;_DEBUG;_WINDOWS"
+				MinimalRebuild="true"
+				BasicRuntimeChecks="3"
+				RuntimeLibrary="3"
+				UsePrecompiledHeader="2"
+				WarningLevel="3"
+				Detect64BitPortabilityProblems="false"
+				DebugInformationFormat="3"
+			/>
+			<Tool
+				Name="VCManagedResourceCompilerTool"
+			/>
+			<Tool
+				Name="VCResourceCompilerTool"
+			/>
+			<Tool
+				Name="VCPreLinkEventTool"
+			/>
+			<Tool
+				Name="VCLinkerTool"
+				AdditionalDependencies="comctl32.lib gdiplus.lib version.lib wiaguid.lib advapi32.lib tessdll.lib librsa.lib sti.lib"
+				LinkIncremental="2"
+				AdditionalLibraryDirectories="&quot;C:\Program Files\Microsoft SDKs\Windows\v6.0\Lib&quot;;D:\Projects\CopyingMachine3\debug;&quot;C:\Program Files\Microsoft Platform SDK\Lib&quot;"
+				GenerateManifest="true"
+				AdditionalManifestDependencies=""
+				GenerateDebugInformation="true"
+				SubSystem="2"
+				RandomizedBaseAddress="1"
+				DataExecutionPrevention="0"
+				TargetMachine="17"
+			/>
+			<Tool
+				Name="VCALinkTool"
+			/>
+			<Tool
+				Name="VCManifestTool"
+			/>
+			<Tool
+				Name="VCXDCMakeTool"
+			/>
+			<Tool
+				Name="VCBscMakeTool"
+			/>
+			<Tool
+				Name="VCFxCopTool"
+			/>
+			<Tool
+				Name="VCAppVerifierTool"
+			/>
+			<Tool
+				Name="VCPostBuildEventTool"
+			/>
+		</Configuration>
+		<Configuration
+			Name="Release|Win32"
+			OutputDirectory="$(SolutionDir)$(ConfigurationName)"
+			IntermediateDirectory="d:\projects\_Intermediate\$(TargetFileName)\$(ConfigurationName)"
+			ConfigurationType="1"
+			CharacterSet="1"
+			WholeProgramOptimization="1"
+			>
+			<Tool
+				Name="VCPreBuildEventTool"
+			/>
+			<Tool
+				Name="VCCustomBuildTool"
+			/>
+			<Tool
+				Name="VCXMLDataGeneratorTool"
+			/>
+			<Tool
+				Name="VCWebServiceProxyGeneratorTool"
+			/>
+			<Tool
+				Name="VCMIDLTool"
+			/>
+			<Tool
+				Name="VCCLCompilerTool"
+				AdditionalIncludeDirectories="D:\Projects\CopyingMachine3\CopyingMachine3\Scintilla\include;D:\Projects\CopyingMachine3\CopyingMachine3\LibTesseract\classify;D:\Projects\CopyingMachine3\CopyingMachine3\LibTesseract\ccstruct;D:\Projects\CopyingMachine3\CopyingMachine3\LibTesseract\ccmain;D:\Projects\CopyingMachine3\CopyingMachine3\LibTesseract\ccutil;D:\Projects\CopyingMachine3\CopyingMachine3\LibTesseract;D:\Projects\CopyingMachine3\CopyingMachine3\LibRsa;&quot;D:\Projects\CopyingMachine3\CopyingMachine3\Resource files\CopyingMachine3_English&quot;;D:\Projects\CopyingMachine3\CopyingMachine3\LibTiff\libtiff;D:\Projects\CopyingMachine3\CopyingMachine3\ZLib;&quot;C:\Program Files\Microsoft SDKs\Windows\v6.0\Lib&quot;;&quot;C:\Program Files\Microsoft SDKs\Windows\v6.0\Include&quot;;&quot;D:\Projects\CopyingMachine3\CopyingMachine3\Dialog files&quot;;D:\Projects\CopyingMachine3\CopyingMachine3;&quot;D:\Projects\CopyingMachine3\CopyingMachine3\Logic files&quot;;&quot;D:\Projects\CopyingMachine3\CopyingMachine3\Resource files&quot;;&quot;D:\Projects\CopyingMachine3\CopyingMachine3\Interface files&quot;;&quot;D:\Projects\CopyingMachine3\CopyingMachine3\Application files&quot;;&quot;C:\Program Files\Microsoft Platform SDK\Include&quot;"
+				PreprocessorDefinitions="WIN32;NDEBUG;_WINDOWS"
+				RuntimeLibrary="2"
+				UsePrecompiledHeader="2"
+				WarningLevel="3"
+				DebugInformationFormat="3"
+			/>
+			<Tool
+				Name="VCManagedResourceCompilerTool"
+			/>
+			<Tool
+				Name="VCResourceCompilerTool"
+			/>
+			<Tool
+				Name="VCPreLinkEventTool"
+			/>
+			<Tool
+				Name="VCLinkerTool"
+				AdditionalDependencies="comctl32.lib gdiplus.lib version.lib wiaguid.lib libtiff.lib zlib.lib librsa.lib advapi32.lib tessdll.lib sti.lib scilexer.lib"
+				LinkIncremental="1"
+				AdditionalLibraryDirectories="&quot;C:\Program Files\Microsoft SDKs\Windows\v6.0\Lib&quot;;D:\Projects\CopyingMachine3\release;&quot;C:\Program Files\Microsoft Platform SDK\Lib&quot;"
+				ManifestFile="$(SolutionDir)$(ConfigurationName)$(TargetFileName).manifest"
+				IgnoreAllDefaultLibraries="false"
+				IgnoreDefaultLibraryNames=""
+				GenerateDebugInformation="false"
+				SubSystem="2"
+				OptimizeReferences="2"
+				EnableCOMDATFolding="2"
+				RandomizedBaseAddress="1"
+				DataExecutionPrevention="0"
+				TargetMachine="1"
+			/>
+			<Tool
+				Name="VCALinkTool"
+			/>
+			<Tool
+				Name="VCManifestTool"
+			/>
+			<Tool
+				Name="VCXDCMakeTool"
+			/>
+			<Tool
+				Name="VCBscMakeTool"
+			/>
+			<Tool
+				Name="VCFxCopTool"
+			/>
+			<Tool
+				Name="VCAppVerifierTool"
+			/>
+			<Tool
+				Name="VCPostBuildEventTool"
+			/>
+		</Configuration>
+		<Configuration
+			Name="Release|x64"
+			OutputDirectory="$(SolutionDir)$(PlatformName)\$(ConfigurationName)"
+			IntermediateDirectory="$(PlatformName)\$(ConfigurationName)"
+			ConfigurationType="1"
+			CharacterSet="1"
+			WholeProgramOptimization="1"
+			>
+			<Tool
+				Name="VCPreBuildEventTool"
+			/>
+			<Tool
+				Name="VCCustomBuildTool"
+			/>
+			<Tool
+				Name="VCXMLDataGeneratorTool"
+			/>
+			<Tool
+				Name="VCWebServiceProxyGeneratorTool"
+			/>
+			<Tool
+				Name="VCMIDLTool"
+				TargetEnvironment="3"
+			/>
+			<Tool
+				Name="VCCLCompilerTool"
+				AdditionalIncludeDirectories="D:\Projects\CopyingMachine3\CopyingMachine3\Scintilla\include;D:\Projects\CopyingMachine3\CopyingMachine3\LibTesseract\classify;D:\Projects\CopyingMachine3\CopyingMachine3\LibTesseract\ccstruct;D:\Projects\CopyingMachine3\CopyingMachine3\LibTesseract\ccmain;D:\Projects\CopyingMachine3\CopyingMachine3\LibTesseract\ccutil;D:\Projects\CopyingMachine3\CopyingMachine3\LibTesseract;D:\Projects\CopyingMachine3\CopyingMachine3\LibRsa;&quot;D:\Projects\CopyingMachine3\CopyingMachine3\Resource files\CopyingMachine3_English&quot;;D:\Projects\CopyingMachine3\CopyingMachine3\LibTiff\libtiff;D:\Projects\CopyingMachine3\CopyingMachine3\ZLib;&quot;C:\Program Files\Microsoft SDKs\Windows\v6.0\Lib&quot;;&quot;C:\Program Files\Microsoft SDKs\Windows\v6.0\Include&quot;;&quot;D:\Projects\CopyingMachine3\CopyingMachine3\Dialog files&quot;;D:\Projects\CopyingMachine3\CopyingMachine3;&quot;D:\Projects\CopyingMachine3\CopyingMachine3\Logic files&quot;;&quot;D:\Projects\CopyingMachine3\CopyingMachine3\Resource files&quot;;&quot;D:\Projects\CopyingMachine3\CopyingMachine3\Interface files&quot;;&quot;D:\Projects\CopyingMachine3\CopyingMachine3\Application files&quot;;&quot;C:\Program Files\Microsoft Platform SDK\Include&quot;"
+				PreprocessorDefinitions="WIN32;NDEBUG;_WINDOWS"
+				RuntimeLibrary="2"
+				UsePrecompiledHeader="2"
+				WarningLevel="3"
+				DebugInformationFormat="3"
+			/>
+			<Tool
+				Name="VCManagedResourceCompilerTool"
+			/>
+			<Tool
+				Name="VCResourceCompilerTool"
+			/>
+			<Tool
+				Name="VCPreLinkEventTool"
+			/>
+			<Tool
+				Name="VCLinkerTool"
+				AdditionalDependencies="comctl32.lib gdiplus.lib version.lib wiaguid.lib libtiff.lib zlib.lib librsa.lib advapi32.lib tessdll.lib sti.lib scilexer.lib"
+				LinkIncremental="1"
+				AdditionalLibraryDirectories="D:\Projects\CopyingMachine3\x64\Release"
+				ManifestFile="$(SolutionDir)$(ConfigurationName)$(TargetFileName).manifest"
+				IgnoreAllDefaultLibraries="false"
+				IgnoreDefaultLibraryNames=""
+				GenerateDebugInformation="true"
+				SubSystem="2"
+				OptimizeReferences="2"
+				EnableCOMDATFolding="2"
+				RandomizedBaseAddress="1"
+				DataExecutionPrevention="0"
+				TargetMachine="17"
+			/>
+			<Tool
+				Name="VCALinkTool"
+			/>
+			<Tool
+				Name="VCManifestTool"
+			/>
+			<Tool
+				Name="VCXDCMakeTool"
+			/>
+			<Tool
+				Name="VCBscMakeTool"
+			/>
+			<Tool
+				Name="VCFxCopTool"
+			/>
+			<Tool
+				Name="VCAppVerifierTool"
+			/>
+			<Tool
+				Name="VCPostBuildEventTool"
+			/>
+		</Configuration>
+	</Configurations>
+	<References>
+	</References>
+	<Files>
+		<Filter
+			Name="Logic Files"
+			Filter="cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx"
+			UniqueIdentifier="{4FC737F1-C7A5-4376-A066-2A32D752A2FF}"
+			>
+			<File
+				RelativePath=".\Logic files\CopyingMachineCore.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\Logic files\CopyingMachineCore.h"
+				>
+			</File>
+			<File
+				RelativePath=".\Logic files\CoreNotifications.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\Logic files\CoreNotifications.h"
+				>
+			</File>
+			<File
+				RelativePath=".\Logic files\OCRCore.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\Logic files\OCRCore.h"
+				>
+			</File>
+			<File
+				RelativePath=".\Logic files\Registration.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\Logic files\Registration.h"
+				>
+			</File>
+			<Filter
+				Name="Document"
+				>
+				<File
+					RelativePath=".\Logic files\Bitmap.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Logic files\Bitmap.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Logic files\BitmapPCX.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Logic files\BitmapPCX.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Logic files\CopyDocument.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Logic files\CopyDocument.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Logic files\CopyDocumentPage.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Logic files\CopyDocumentPage.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Logic files\CopyDocuments.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Logic files\CopyDocuments.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Logic files\CopyPageUndoRedo.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Logic files\CopyPageUndoRedo.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Logic files\DocumentCollections.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Logic files\DocumentCollections.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Logic files\MapiInterface.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Logic files\MapiInterface.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Logic files\MathVector.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Logic files\MathVector.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Logic files\PDF.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Logic files\PDF.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Logic files\PDFObject.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Logic files\PDFObject.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Logic files\RecognizedText.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Logic files\RecognizedText.h"
+					>
+				</File>
+			</Filter>
+			<Filter
+				Name="Scan"
+				>
+				<File
+					RelativePath=".\Logic files\InterfaceBase.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Logic files\InterfaceBase.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Logic files\ScanCore.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Logic files\ScanCore.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Logic files\ScanDevice.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Logic files\ScanDevice.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Logic files\ScanInterfaceBase.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Logic files\ScanInterfaceBase.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Logic files\ScanLoadFile.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Logic files\ScanLoadFile.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Logic files\ScanSettings.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Logic files\ScanSettings.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Logic files\ScanStructures.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Logic files\ScanTwain.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Logic files\ScanTwain.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Logic files\ScanWia.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Logic files\ScanWia.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Logic files\ScanWiaDataCallback.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Logic files\ScanWiaDataCallback.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Logic files\TWAIN.H"
+					>
+				</File>
+			</Filter>
+			<Filter
+				Name="Printer"
+				>
+				<File
+					RelativePath=".\Logic files\PrintCore.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Logic files\PrintCore.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Logic files\PrintSettings.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Logic files\PrintSettings.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Logic files\PrintStructures.h"
+					>
+				</File>
+			</Filter>
+			<Filter
+				Name="Script"
+				>
+				<File
+					RelativePath=".\Logic files\Script.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Logic files\Script.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Logic files\ScriptCopyingMachine.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Logic files\ScriptCopyingMachine.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Logic files\ScriptExpression.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Logic files\ScriptExpression.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Logic files\ScriptLine.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Logic files\ScriptLine.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Logic files\ScriptObject.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Logic files\ScriptObject.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Logic files\ScriptParser.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Logic files\ScriptParser.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Logic files\ScriptProcessor.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Logic files\ScriptProcessor.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Logic files\ScriptProcessorKeywords.h"
+					>
+				</File>
+			</Filter>
+		</Filter>
+		<Filter
+			Name="Interface Files"
+			Filter="h;hpp;hxx;hm;inl;inc;xsd"
+			UniqueIdentifier="{93995380-89BD-4b04-88EB-625FBE52EBFB}"
+			>
+			<File
+				RelativePath=".\Interface files\CopyFileListview.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\Interface files\CopyFileListview.h"
+				>
+			</File>
+			<File
+				RelativePath=".\Interface files\CopyFileListviewContainer.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\Interface files\CopyFileListviewContainer.h"
+				>
+			</File>
+			<File
+				RelativePath=".\Interface files\DocumentCollectionList.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\Interface files\DocumentCollectionList.h"
+				>
+			</File>
+			<File
+				RelativePath=".\Interface files\DocumentList.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\Interface files\DocumentList.h"
+				>
+			</File>
+			<File
+				RelativePath=".\Interface files\FileList.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\Interface files\FileList.h"
+				>
+			</File>
+			<File
+				RelativePath=".\Interface files\FileListview.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\Interface files\FileListview.h"
+				>
+			</File>
+			<File
+				RelativePath=".\Interface files\MainFrame.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\Interface files\MainFrame.h"
+				>
+			</File>
+			<File
+				RelativePath=".\Interface files\PagePreview.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\Interface files\PagePreview.h"
+				>
+			</File>
+			<File
+				RelativePath=".\Interface files\PagePropertiesListview.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\Interface files\PagePropertiesListview.h"
+				>
+			</File>
+			<File
+				RelativePath=".\Interface files\PageThumbnails.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\Interface files\PageThumbnails.h"
+				>
+			</File>
+			<File
+				RelativePath=".\Interface files\PageViewer.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\Interface files\PageViewer.h"
+				>
+			</File>
+			<Filter
+				Name="EasyFrame"
+				>
+				<File
+					RelativePath=".\Interface files\EasyFrame.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Interface files\EasyFrame.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Interface files\EasyFramePreferences.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Interface files\EasyFramePreferences.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Interface files\EasyFramePreview.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Interface files\EasyFramePreview.h"
+					>
+				</File>
+			</Filter>
+			<Filter
+				Name="WindowBase"
+				>
+				<File
+					RelativePath=".\Interface files\Filler.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Interface files\Filler.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Interface files\Listview.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Interface files\Listview.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Interface files\MenuIcon.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Interface files\MenuIcon.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Interface files\Splitter.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Interface files\Splitter.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Interface files\WindowBase.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Interface files\WindowBase.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Interface files\WindowContainer.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Interface files\WindowContainer.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Interface files\WindowScrollbar.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Interface files\WindowScrollbar.h"
+					>
+				</File>
+			</Filter>
+			<Filter
+				Name="Pane"
+				>
+				<File
+					RelativePath=".\Interface files\Button.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Interface files\Button.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Interface files\Pane.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Interface files\Pane.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Interface files\PaneActions.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Interface files\PaneActions.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Interface files\PaneBase.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Interface files\PaneBase.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Interface files\PaneCopy.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Interface files\PaneCopy.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Interface files\PaneDocument.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Interface files\PaneDocument.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Interface files\PaneImage.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Interface files\PaneImage.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Interface files\PaneScroller.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Interface files\PaneScroller.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Interface files\SharedDeviceSelection.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Interface files\SharedDeviceSelection.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Interface files\SharedPreferencesSelection.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Interface files\SharedPreferencesSelection.h"
+					>
+				</File>
+			</Filter>
+			<Filter
+				Name="Toolbar"
+				>
+				<File
+					RelativePath=".\Interface files\RebarControl.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Interface files\RebarControl.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Interface files\Toolbar.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Interface files\Toolbar.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Interface files\ToolbarCopy.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Interface files\ToolbarCopy.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Interface files\ToolbarMenu.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Interface files\ToolbarMenu.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Interface files\ToolbarPreferences.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Interface files\ToolbarPreferences.h"
+					>
+				</File>
+			</Filter>
+		</Filter>
+		<Filter
+			Name="Resource Files"
+			Filter="rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav"
+			UniqueIdentifier="{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}"
+			>
+			<File
+				RelativePath=".\Resource files\CopyingMachine3.ico"
+				>
+			</File>
+			<File
+				RelativePath=".\Resource files\CopyingMachine3.rc"
+				>
+			</File>
+			<File
+				RelativePath=".\Resource files\cursor_dragdrop.cur"
+				>
+			</File>
+			<File
+				RelativePath=".\Resource files\flag_de.png"
+				>
+			</File>
+			<File
+				RelativePath=".\Resource files\flag_en.png"
+				>
+			</File>
+			<File
+				RelativePath=".\Resource files\flag_fr.png"
+				>
+			</File>
+			<File
+				RelativePath=".\Resource files\flag_it.png"
+				>
+			</File>
+			<File
+				RelativePath=".\Resource files\flag_nl.png"
+				>
+			</File>
+			<File
+				RelativePath=".\Resource files\grip_e.png"
+				>
+			</File>
+			<File
+				RelativePath=".\Resource files\grip_n.png"
+				>
+			</File>
+			<File
+				RelativePath=".\Resource files\grip_ne.png"
+				>
+			</File>
+			<File
+				RelativePath=".\Resource files\grip_nw.png"
+				>
+			</File>
+			<File
+				RelativePath=".\Resource files\grip_s.png"
+				>
+			</File>
+			<File
+				RelativePath=".\Resource files\grip_se.png"
+				>
+			</File>
+			<File
+				RelativePath=".\Resource files\grip_sw.png"
+				>
+			</File>
+			<File
+				RelativePath=".\Resource files\grip_w.png"
+				>
+			</File>
+			<File
+				RelativePath=".\Resource files\icoCopyingMachine3_16x16.ico"
+				>
+			</File>
+			<File
+				RelativePath=".\Resource files\icoCopyingMachine3_2.ico"
+				>
+			</File>
+			<File
+				RelativePath=".\Resource files\icoCopyingMachine3_32x32.ico"
+				>
+			</File>
+			<File
+				RelativePath=".\Resource files\icoCopyingMachine3_48x48.ico"
+				>
+			</File>
+			<File
+				RelativePath=".\Resource files\imageAlignCC.bmp"
+				>
+			</File>
+			<File
+				RelativePath=".\Resource files\imageAlignCE.bmp"
+				>
+			</File>
+			<File
+				RelativePath=".\Resource files\imageAlignCW.bmp"
+				>
+			</File>
+			<File
+				RelativePath=".\Resource files\imageAlignNC.bmp"
+				>
+			</File>
+			<File
+				RelativePath=".\Resource files\imageAlignNE.bmp"
+				>
+			</File>
+			<File
+				RelativePath=".\Resource files\imageAlignNW.bmp"
+				>
+			</File>
+			<File
+				RelativePath=".\Resource files\imageAlignSC.bmp"
+				>
+			</File>
+			<File
+				RelativePath=".\Resource files\imageAlignSE.bmp"
+				>
+			</File>
+			<File
+				RelativePath=".\Resource files\imageAlignSW.bmp"
+				>
+			</File>
+			<File
+				RelativePath=".\Resource files\imageCopiesOnPage.bmp"
+				>
+			</File>
+			<File
+				RelativePath=".\Resource files\imageGrippers.bmp"
+				>
+			</File>
+			<File
+				RelativePath=".\Resource files\imageHuge.bmp"
+				>
+			</File>
+			<File
+				RelativePath=".\Resource files\imageImagesOnPage.bmp"
+				>
+			</File>
+			<File
+				RelativePath=".\Resource files\imageLandscape.bmp"
+				>
+			</File>
+			<File
+				RelativePath=".\Resource files\imageNormal.bmp"
+				>
+			</File>
+			<File
+				RelativePath=".\Resource files\imagePage.bmp"
+				>
+			</File>
+			<File
+				RelativePath=".\Resource files\imagePortrait.bmp"
+				>
+			</File>
+			<File
+				RelativePath=".\Resource files\imageSmall.bmp"
+				>
+			</File>
+			<File
+				RelativePath=".\Resource files\imageTest.bmp"
+				>
+			</File>
+			<File
+				RelativePath=".\Resource files\rcdata2.bin"
+				>
+			</File>
+			<File
+				RelativePath=".\Resource files\Resource.h"
+				>
+			</File>
+			<File
+				RelativePath=".\Resource files\sRGB.icc"
+				>
+			</File>
+			<File
+				RelativePath=".\Resource files\tool_arrowdown.png"
+				>
+			</File>
+			<File
+				RelativePath=".\Resource files\tool_arrowup.png"
+				>
+			</File>
+			<File
+				RelativePath=".\Resource files\tool_book.png"
+				>
+			</File>
+			<File
+				RelativePath=".\Resource files\tool_bookadd.png"
+				>
+			</File>
+			<File
+				RelativePath=".\Resource files\tool_bookedit.png"
+				>
+			</File>
+			<File
+				RelativePath=".\Resource files\tool_bookopen.png"
+				>
+			</File>
+			<File
+				RelativePath=".\Resource files\tool_bookopenedit.png"
+				>
+			</File>
+			<File
+				RelativePath=".\Resource files\tool_bulletblue.png"
+				>
+			</File>
+			<File
+				RelativePath=".\Resource files\tool_colordropper.png"
+				>
+			</File>
+			<File
+				RelativePath=".\Resource files\tool_convertblackwhite.png"
+				>
+			</File>
+			<File
+				RelativePath=".\Resource files\tool_convertgrayscale.png"
+				>
+			</File>
+			<File
+				RelativePath=".\Resource files\tool_copy.png"
+				>
+			</File>
+			<File
+				RelativePath=".\Resource files\tool_copy24.png"
+				>
+			</File>
+			<File
+				RelativePath=".\Resource files\tool_copy32.png"
+				>
+			</File>
+			<File
+				RelativePath=".\Resource files\tool_copypage.png"
+				>
+			</File>
+			<File
+				RelativePath=".\Resource files\tool_crop.png"
+				>
+			</File>
+			<File
+				RelativePath=".\Resource files\tool_cut.png"
+				>
+			</File>
+			<File
+				RelativePath=".\Resource files\tool_delete.png"
+				>
+			</File>
+			<File
+				RelativePath=".\Resource files\tool_deselect.png"
+				>
+			</File>
+			<File
+				RelativePath=".\Resource files\tool_email.png"
+				>
+			</File>
+			<File
+				RelativePath=".\Resource files\tool_emailopen.png"
+				>
+			</File>
+			<File
+				RelativePath=".\Resource files\tool_file.png"
+				>
+			</File>
+			<File
+				RelativePath=".\Resource files\tool_fliphorizontal.png"
+				>
+			</File>
+			<File
+				RelativePath=".\Resource files\tool_flipvertical.png"
+				>
+			</File>
+			<File
+				RelativePath=".\Resource files\tool_folder.png"
+				>
+			</File>
+			<File
+				RelativePath=".\Resource files\tool_folderexplore.png"
+				>
+			</File>
+			<File
+				RelativePath=".\Resource files\tool_foldergo.png"
+				>
+			</File>
+			<File
+				RelativePath=".\Resource files\tool_help.png"
+				>
+			</File>
+			<File
+				RelativePath=".\Resource files\tool_information.png"
+				>
+			</File>
+			<File
+				RelativePath=".\Resource files\tool_new.png"
+				>
+			</File>
+			<File
+				RelativePath=".\Resource files\tool_ocr.png"
+				>
+			</File>
+			<File
+				RelativePath=".\Resource files\tool_open.png"
+				>
+			</File>
+			<File
+				RelativePath=".\Resource files\tool_page.png"
+				>
+			</File>
+			<File
+				RelativePath=".\Resource files\tool_pageadd.png"
+				>
+			</File>
+			<File
+				RelativePath=".\Resource files\tool_paint.png"
+				>
+			</File>
+			<File
+				RelativePath=".\Resource files\tool_panecopy.png"
+				>
+			</File>
+			<File
+				RelativePath=".\Resource files\tool_paneimage.png"
+				>
+			</File>
+			<File
+				RelativePath=".\Resource files\tool_paneinformation.png"
+				>
+			</File>
+			<File
+				RelativePath=".\Resource files\tool_paste.png"
+				>
+			</File>
+			<File
+				RelativePath=".\Resource files\tool_preview.png"
+				>
+			</File>
+			<File
+				RelativePath=".\Resource files\tool_print.png"
+				>
+			</File>
+			<File
+				RelativePath=".\Resource files\tool_property.png"
+				>
+			</File>
+			<File
+				RelativePath=".\Resource files\tool_redo.png"
+				>
+			</File>
+			<File
+				RelativePath=".\Resource files\tool_rotate180.png"
+				>
+			</File>
+			<File
+				RelativePath=".\Resource files\tool_rotateanticlockwise.png"
+				>
+			</File>
+			<File
+				RelativePath=".\Resource files\tool_rotateclockwise.png"
+				>
+			</File>
+			<File
+				RelativePath=".\Resource files\tool_save2.png"
+				>
+			</File>
+			<File
+				RelativePath=".\Resource files\tool_scanner.png"
+				>
+			</File>
+			<File
+				RelativePath=".\Resource files\tool_scannertwain.png"
+				>
+			</File>
+			<File
+				RelativePath=".\Resource files\tool_selection.png"
+				>
+			</File>
+			<File
+				RelativePath=".\Resource files\tool_split.png"
+				>
+			</File>
+			<File
+				RelativePath=".\Resource files\tool_switch.png"
+				>
+			</File>
+			<File
+				RelativePath=".\Resource files\tool_undo.png"
+				>
+			</File>
+			<File
+				RelativePath=".\Resource files\tool_wcclose.png"
+				>
+			</File>
+			<File
+				RelativePath=".\Resource files\tool_zoom.png"
+				>
+			</File>
+			<File
+				RelativePath=".\Resource files\tool_zoomin.png"
+				>
+			</File>
+			<File
+				RelativePath=".\Resource files\tool_zoomtoselection.png"
+				>
+			</File>
+			<File
+				RelativePath=".\Resource files\tool_zoomtowindow.png"
+				>
+			</File>
+		</Filter>
+		<Filter
+			Name="Application Files"
+			>
+			<File
+				RelativePath=".\Application files\CopyingMachine3.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\Application files\CopyingMachine3.h"
+				>
+			</File>
+			<File
+				RelativePath=".\Interface files\Registry.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\Interface files\Registry.h"
+				>
+			</File>
+			<File
+				RelativePath=".\stdafx.cpp"
+				>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+					<Tool
+						Name="VCCLCompilerTool"
+						UsePrecompiledHeader="1"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Debug|x64"
+					>
+					<Tool
+						Name="VCCLCompilerTool"
+						UsePrecompiledHeader="1"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32"
+					>
+					<Tool
+						Name="VCCLCompilerTool"
+						UsePrecompiledHeader="1"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|x64"
+					>
+					<Tool
+						Name="VCCLCompilerTool"
+						UsePrecompiledHeader="1"
+					/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath=".\stdafx.h"
+				>
+			</File>
+			<File
+				RelativePath=".\Application files\Thread.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\Application files\Thread.h"
+				>
+			</File>
+			<File
+				RelativePath=".\Application files\Trace.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\Application files\Trace.h"
+				>
+			</File>
+			<File
+				RelativePath=".\Application files\XMLDocument.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\Application files\XMLDocument.h"
+				>
+				<FileConfiguration
+					Name="Release|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+					/>
+				</FileConfiguration>
+			</File>
+		</Filter>
+		<Filter
+			Name="Dialog Files"
+			>
+			<File
+				RelativePath=".\Dialog files\Dialogs.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\Dialog files\Dialogs.h"
+				>
+			</File>
+			<File
+				RelativePath=".\Dialog files\DialogTemplate.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\Dialog files\DialogTemplate.h"
+				>
+			</File>
+			<File
+				RelativePath=".\Dialog files\DlgAbout.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\Dialog files\DlgAbout.h"
+				>
+			</File>
+			<File
+				RelativePath=".\Dialog files\DlgAutoSaveDescription.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\Dialog files\DlgAutoSaveDescription.h"
+				>
+			</File>
+			<File
+				RelativePath=".\Dialog files\DlgColor.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\Dialog files\DlgColor.h"
+				>
+			</File>
+			<File
+				RelativePath=".\Dialog files\DlgMacroEditor.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\Dialog files\DlgMacroEditor.h"
+				>
+			</File>
+			<File
+				RelativePath=".\Dialog files\DlgOpenSave.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\Dialog files\DlgOpenSave.h"
+				>
+			</File>
+			<File
+				RelativePath=".\Dialog files\DlgPlaceKey.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\Dialog files\DlgPlaceKey.h"
+				>
+			</File>
+			<File
+				RelativePath=".\Dialog files\DlgPreferences.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\Dialog files\DlgPreferences.h"
+				>
+			</File>
+			<File
+				RelativePath=".\Dialog files\DlgPrint.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\Dialog files\DlgPrint.h"
+				>
+			</File>
+			<File
+				RelativePath=".\Dialog files\DlgProgressAcquire.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\Dialog files\DlgProgressAcquire.h"
+				>
+			</File>
+			<File
+				RelativePath=".\Dialog files\DlgProgressPrint.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\Dialog files\DlgProgressPrint.h"
+				>
+			</File>
+			<File
+				RelativePath=".\Dialog files\DlgRecognizeText.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\Dialog files\DlgRecognizeText.h"
+				>
+			</File>
+			<File
+				RelativePath=".\Dialog files\DlgReminder.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\Dialog files\DlgReminder.h"
+				>
+			</File>
+			<File
+				RelativePath=".\Dialog files\DlgSaveChanges.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\Dialog files\DlgSaveChanges.h"
+				>
+			</File>
+			<File
+				RelativePath=".\Dialog files\DlgSelectSource.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\Dialog files\DlgSelectSource.h"
+				>
+			</File>
+			<File
+				RelativePath=".\Dialog files\DlgUnknownEvent.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\Dialog files\DlgUnknownEvent.h"
+				>
+			</File>
+			<Filter
+				Name="PreferencePages"
+				>
+				<File
+					RelativePath=".\Dialog files\DlgPreferencesAutosave.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Dialog files\DlgPreferencesAutosave.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Dialog files\DlgPreferencesGeneral.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Dialog files\DlgPreferencesGeneral.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Dialog files\DlgPreferencesPrinterCopiesAlignment.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Dialog files\DlgPreferencesPrinterCopiesAlignment.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Dialog files\DlgPreferencesPrinterDevice.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Dialog files\DlgPreferencesPrinterDevice.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Dialog files\DlgPreferencesPrinterImageSize.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Dialog files\DlgPreferencesPrinterImageSize.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Dialog files\DlgPreferencesScannerAdvanced.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Dialog files\DlgPreferencesScannerAdvanced.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Dialog files\DlgPreferencesScannerDevice.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Dialog files\DlgPreferencesScannerDevice.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Dialog files\DlgPreferencesScannerImage.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Dialog files\DlgPreferencesScannerImage.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Dialog files\DlgPreferencesScannerPage.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Dialog files\DlgPreferencesScannerPage.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Dialog files\DlgPreferencesTrace.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Dialog files\DlgPreferencesTrace.h"
+					>
+				</File>
+			</Filter>
+		</Filter>
+		<Filter
+			Name="OCR Files"
+			>
+			<File
+				RelativePath=".\OCR files\DlgTOcrDebug.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\OCR files\DlgTOcrDebug.h"
+				>
+			</File>
+			<File
+				RelativePath=".\OCR files\TDataLayer.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\OCR files\TDataLayer.h"
+				>
+				<FileConfiguration
+					Name="Release|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|x64"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+					/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath=".\OCR files\TError.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\OCR files\TError.h"
+				>
+			</File>
+			<File
+				RelativePath=".\OCR files\TNeuralNetwork.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\OCR files\TNeuralNetwork.h"
+				>
+			</File>
+			<File
+				RelativePath=".\OCR files\TOcr.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\OCR files\TOcr.h"
+				>
+			</File>
+			<File
+				RelativePath=".\OCR files\TOcrAnalyseRectangles.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\OCR files\TOcrAnalyseRectangles.h"
+				>
+			</File>
+			<File
+				RelativePath=".\OCR files\TOcrArea.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\OCR files\TOcrArea.h"
+				>
+			</File>
+			<File
+				RelativePath=".\OCR files\TOcrCharacterShapes.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\OCR files\TOcrCharacterShapes.h"
+				>
+			</File>
+			<File
+				RelativePath=".\OCR files\TOcrCollection.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\OCR files\TOcrCollection.h"
+				>
+			</File>
+			<File
+				RelativePath=".\OCR files\TOcrDistancePoints.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\OCR files\TOcrDistancePoints.h"
+				>
+			</File>
+			<File
+				RelativePath=".\OCR files\TOcrFindEdge.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\OCR files\TOcrFindEdge.h"
+				>
+			</File>
+			<File
+				RelativePath=".\OCR files\TOcrFindRectangle.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\OCR files\TOcrFindRectangle.h"
+				>
+			</File>
+			<File
+				RelativePath=".\OCR files\TOcrFindSentences.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\OCR files\TOcrFindSentences.h"
+				>
+			</File>
+			<File
+				RelativePath=".\OCR files\TOcrRecogniseCharacter.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\OCR files\TOcrRecogniseCharacter.h"
+				>
+			</File>
+			<File
+				RelativePath=".\OCR files\TOcrRectangle.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\OCR files\TOcrRectangle.h"
+				>
+			</File>
+			<File
+				RelativePath=".\OCR files\TOcrResources.h"
+				>
+			</File>
+			<File
+				RelativePath=".\OCR files\TOcrResources.rc"
+				>
+			</File>
+			<File
+				RelativePath=".\OCR files\TOcrSentences.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\OCR files\TOcrSentences.h"
+				>
+			</File>
+			<File
+				RelativePath=".\OCR files\TOcrSmoothEdge.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\OCR files\TOcrSmoothEdge.h"
+				>
+			</File>
+			<File
+				RelativePath=".\OCR files\TOcrThread.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\OCR files\TOcrThread.h"
+				>
+			</File>
+			<Filter
+				Name="TinyXML"
+				>
+				<File
+					RelativePath=".\OCR files\TinyXML\tinystr.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\OCR files\TinyXML\tinystr.h"
+					>
+				</File>
+				<File
+					RelativePath=".\OCR files\TinyXML\tinyxml.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\OCR files\TinyXML\tinyxml.h"
+					>
+				</File>
+				<File
+					RelativePath=".\OCR files\TinyXML\tinyxmlerror.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\OCR files\TinyXML\tinyxmlparser.cpp"
+					>
+				</File>
+			</Filter>
+		</Filter>
+		<File
+			RelativePath=".\ClassDiagram1.cd"
+			>
+		</File>
+		<File
+			RelativePath=".\ClassDiagram_CopyingMachine.cd"
+			>
+		</File>
+		<File
+			RelativePath="..\release\copyingmachine3.manifest"
+			>
+		</File>
+		<File
+			RelativePath=".\ReadMe.txt"
+			>
+		</File>
+		<File
+			RelativePath="C:\Users\Rainier &amp; Danielle\Desktop\sRGB_v4_ICC_preference.icc"
+			>
+		</File>
+	</Files>
+	<Globals>
+		<Global
+			Name="RESOURCE_FILE"
+			Value="Resource files\CopyingMachine3.rc"
+		/>
+	</Globals>
+</VisualStudioProject>

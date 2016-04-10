@@ -1,0 +1,1139 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Logic Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Logic Files\Document">
+      <UniqueIdentifier>{24afccea-3c8e-43bc-84eb-0efc63ff9e15}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Logic Files\Scan">
+      <UniqueIdentifier>{1959ce39-80f9-4ed0-854c-677875b4ad2b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Logic Files\Printer">
+      <UniqueIdentifier>{403c7906-168b-4974-9034-6efad1898982}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Logic Files\Script">
+      <UniqueIdentifier>{3ef5c27b-e0a5-45c6-8cea-a042cee44eaf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Interface Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Interface Files\EasyFrame">
+      <UniqueIdentifier>{de2e22a4-5866-4e69-80eb-bc831201864a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Interface Files\WindowBase">
+      <UniqueIdentifier>{34ac4d37-2906-4463-aebd-75e16303f827}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Interface Files\Pane">
+      <UniqueIdentifier>{c9b6e5f7-6b37-457d-adf3-f7ab8ae9dcac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Interface Files\Toolbar">
+      <UniqueIdentifier>{b182c5bb-4489-43fa-a7a6-b5b4ba2ac829}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="Application Files">
+      <UniqueIdentifier>{b4c71a5e-6afb-45da-a6a5-c805d6e9ea45}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Dialog Files">
+      <UniqueIdentifier>{562601a6-24e1-4dd5-a1af-c55cc104649b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Dialog Files\PreferencePages">
+      <UniqueIdentifier>{372d9485-bd5a-4b64-95a8-46885b06aa4b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="OCR Files">
+      <UniqueIdentifier>{40617e6e-2126-4c2f-b52b-758afd7d6957}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="OCR Files\TinyXML">
+      <UniqueIdentifier>{d7a855de-db03-4d5b-8ae9-fd3875009f0d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Logic files\CopyingMachineCore.cpp">
+      <Filter>Logic Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Logic files\CoreNotifications.cpp">
+      <Filter>Logic Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Logic files\OCRCore.cpp">
+      <Filter>Logic Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Logic files\Registration.cpp">
+      <Filter>Logic Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Logic files\Bitmap.cpp">
+      <Filter>Logic Files\Document</Filter>
+    </ClCompile>
+    <ClCompile Include="Logic files\BitmapPCX.cpp">
+      <Filter>Logic Files\Document</Filter>
+    </ClCompile>
+    <ClCompile Include="Logic files\CopyDocument.cpp">
+      <Filter>Logic Files\Document</Filter>
+    </ClCompile>
+    <ClCompile Include="Logic files\CopyDocumentPage.cpp">
+      <Filter>Logic Files\Document</Filter>
+    </ClCompile>
+    <ClCompile Include="Logic files\CopyDocuments.cpp">
+      <Filter>Logic Files\Document</Filter>
+    </ClCompile>
+    <ClCompile Include="Logic files\CopyPageUndoRedo.cpp">
+      <Filter>Logic Files\Document</Filter>
+    </ClCompile>
+    <ClCompile Include="Logic files\DocumentCollections.cpp">
+      <Filter>Logic Files\Document</Filter>
+    </ClCompile>
+    <ClCompile Include="Logic files\MapiInterface.cpp">
+      <Filter>Logic Files\Document</Filter>
+    </ClCompile>
+    <ClCompile Include="Logic files\MathVector.cpp">
+      <Filter>Logic Files\Document</Filter>
+    </ClCompile>
+    <ClCompile Include="Logic files\PDF.cpp">
+      <Filter>Logic Files\Document</Filter>
+    </ClCompile>
+    <ClCompile Include="Logic files\PDFObject.cpp">
+      <Filter>Logic Files\Document</Filter>
+    </ClCompile>
+    <ClCompile Include="Logic files\RecognizedText.cpp">
+      <Filter>Logic Files\Document</Filter>
+    </ClCompile>
+    <ClCompile Include="Logic files\InterfaceBase.cpp">
+      <Filter>Logic Files\Scan</Filter>
+    </ClCompile>
+    <ClCompile Include="Logic files\ScanCore.cpp">
+      <Filter>Logic Files\Scan</Filter>
+    </ClCompile>
+    <ClCompile Include="Logic files\ScanDevice.cpp">
+      <Filter>Logic Files\Scan</Filter>
+    </ClCompile>
+    <ClCompile Include="Logic files\ScanInterfaceBase.cpp">
+      <Filter>Logic Files\Scan</Filter>
+    </ClCompile>
+    <ClCompile Include="Logic files\ScanLoadFile.cpp">
+      <Filter>Logic Files\Scan</Filter>
+    </ClCompile>
+    <ClCompile Include="Logic files\ScanSettings.cpp">
+      <Filter>Logic Files\Scan</Filter>
+    </ClCompile>
+    <ClCompile Include="Logic files\ScanTwain.cpp">
+      <Filter>Logic Files\Scan</Filter>
+    </ClCompile>
+    <ClCompile Include="Logic files\ScanWia.cpp">
+      <Filter>Logic Files\Scan</Filter>
+    </ClCompile>
+    <ClCompile Include="Logic files\ScanWiaDataCallback.cpp">
+      <Filter>Logic Files\Scan</Filter>
+    </ClCompile>
+    <ClCompile Include="Logic files\PrintCore.cpp">
+      <Filter>Logic Files\Printer</Filter>
+    </ClCompile>
+    <ClCompile Include="Logic files\PrintSettings.cpp">
+      <Filter>Logic Files\Printer</Filter>
+    </ClCompile>
+    <ClCompile Include="Logic files\Script.cpp">
+      <Filter>Logic Files\Script</Filter>
+    </ClCompile>
+    <ClCompile Include="Logic files\ScriptCopyingMachine.cpp">
+      <Filter>Logic Files\Script</Filter>
+    </ClCompile>
+    <ClCompile Include="Logic files\ScriptExpression.cpp">
+      <Filter>Logic Files\Script</Filter>
+    </ClCompile>
+    <ClCompile Include="Logic files\ScriptLine.cpp">
+      <Filter>Logic Files\Script</Filter>
+    </ClCompile>
+    <ClCompile Include="Logic files\ScriptObject.cpp">
+      <Filter>Logic Files\Script</Filter>
+    </ClCompile>
+    <ClCompile Include="Logic files\ScriptParser.cpp">
+      <Filter>Logic Files\Script</Filter>
+    </ClCompile>
+    <ClCompile Include="Logic files\ScriptProcessor.cpp">
+      <Filter>Logic Files\Script</Filter>
+    </ClCompile>
+    <ClCompile Include="Interface files\CopyFileListview.cpp">
+      <Filter>Interface Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Interface files\CopyFileListviewContainer.cpp">
+      <Filter>Interface Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Interface files\DocumentCollectionList.cpp">
+      <Filter>Interface Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Interface files\DocumentList.cpp">
+      <Filter>Interface Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Interface files\FileList.cpp">
+      <Filter>Interface Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Interface files\FileListview.cpp">
+      <Filter>Interface Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Interface files\MainFrame.cpp">
+      <Filter>Interface Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Interface files\PagePreview.cpp">
+      <Filter>Interface Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Interface files\PagePropertiesListview.cpp">
+      <Filter>Interface Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Interface files\PageThumbnails.cpp">
+      <Filter>Interface Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Interface files\PageViewer.cpp">
+      <Filter>Interface Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Interface files\EasyFrame.cpp">
+      <Filter>Interface Files\EasyFrame</Filter>
+    </ClCompile>
+    <ClCompile Include="Interface files\EasyFramePreferences.cpp">
+      <Filter>Interface Files\EasyFrame</Filter>
+    </ClCompile>
+    <ClCompile Include="Interface files\EasyFramePreview.cpp">
+      <Filter>Interface Files\EasyFrame</Filter>
+    </ClCompile>
+    <ClCompile Include="Interface files\Filler.cpp">
+      <Filter>Interface Files\WindowBase</Filter>
+    </ClCompile>
+    <ClCompile Include="Interface files\Listview.cpp">
+      <Filter>Interface Files\WindowBase</Filter>
+    </ClCompile>
+    <ClCompile Include="Interface files\MenuIcon.cpp">
+      <Filter>Interface Files\WindowBase</Filter>
+    </ClCompile>
+    <ClCompile Include="Interface files\Splitter.cpp">
+      <Filter>Interface Files\WindowBase</Filter>
+    </ClCompile>
+    <ClCompile Include="Interface files\WindowBase.cpp">
+      <Filter>Interface Files\WindowBase</Filter>
+    </ClCompile>
+    <ClCompile Include="Interface files\WindowContainer.cpp">
+      <Filter>Interface Files\WindowBase</Filter>
+    </ClCompile>
+    <ClCompile Include="Interface files\WindowScrollbar.cpp">
+      <Filter>Interface Files\WindowBase</Filter>
+    </ClCompile>
+    <ClCompile Include="Interface files\Button.cpp">
+      <Filter>Interface Files\Pane</Filter>
+    </ClCompile>
+    <ClCompile Include="Interface files\Pane.cpp">
+      <Filter>Interface Files\Pane</Filter>
+    </ClCompile>
+    <ClCompile Include="Interface files\PaneActions.cpp">
+      <Filter>Interface Files\Pane</Filter>
+    </ClCompile>
+    <ClCompile Include="Interface files\PaneBase.cpp">
+      <Filter>Interface Files\Pane</Filter>
+    </ClCompile>
+    <ClCompile Include="Interface files\PaneCopy.cpp">
+      <Filter>Interface Files\Pane</Filter>
+    </ClCompile>
+    <ClCompile Include="Interface files\PaneDocument.cpp">
+      <Filter>Interface Files\Pane</Filter>
+    </ClCompile>
+    <ClCompile Include="Interface files\PaneImage.cpp">
+      <Filter>Interface Files\Pane</Filter>
+    </ClCompile>
+    <ClCompile Include="Interface files\PaneScroller.cpp">
+      <Filter>Interface Files\Pane</Filter>
+    </ClCompile>
+    <ClCompile Include="Interface files\SharedDeviceSelection.cpp">
+      <Filter>Interface Files\Pane</Filter>
+    </ClCompile>
+    <ClCompile Include="Interface files\SharedPreferencesSelection.cpp">
+      <Filter>Interface Files\Pane</Filter>
+    </ClCompile>
+    <ClCompile Include="Interface files\RebarControl.cpp">
+      <Filter>Interface Files\Toolbar</Filter>
+    </ClCompile>
+    <ClCompile Include="Interface files\Toolbar.cpp">
+      <Filter>Interface Files\Toolbar</Filter>
+    </ClCompile>
+    <ClCompile Include="Interface files\ToolbarCopy.cpp">
+      <Filter>Interface Files\Toolbar</Filter>
+    </ClCompile>
+    <ClCompile Include="Interface files\ToolbarMenu.cpp">
+      <Filter>Interface Files\Toolbar</Filter>
+    </ClCompile>
+    <ClCompile Include="Interface files\ToolbarPreferences.cpp">
+      <Filter>Interface Files\Toolbar</Filter>
+    </ClCompile>
+    <ClCompile Include="Application files\CopyingMachine3.cpp">
+      <Filter>Application Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Interface files\Registry.cpp">
+      <Filter>Application Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Application Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Application files\Thread.cpp">
+      <Filter>Application Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Application files\Trace.cpp">
+      <Filter>Application Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Application files\XMLDocument.cpp">
+      <Filter>Application Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Dialog files\Dialogs.cpp">
+      <Filter>Dialog Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Dialog files\DialogTemplate.cpp">
+      <Filter>Dialog Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Dialog files\DlgAbout.cpp">
+      <Filter>Dialog Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Dialog files\DlgAutoSaveDescription.cpp">
+      <Filter>Dialog Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Dialog files\DlgColor.cpp">
+      <Filter>Dialog Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Dialog files\DlgMacroEditor.cpp">
+      <Filter>Dialog Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Dialog files\DlgOpenSave.cpp">
+      <Filter>Dialog Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Dialog files\DlgPlaceKey.cpp">
+      <Filter>Dialog Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Dialog files\DlgPreferences.cpp">
+      <Filter>Dialog Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Dialog files\DlgPrint.cpp">
+      <Filter>Dialog Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Dialog files\DlgProgressAcquire.cpp">
+      <Filter>Dialog Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Dialog files\DlgProgressPrint.cpp">
+      <Filter>Dialog Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Dialog files\DlgRecognizeText.cpp">
+      <Filter>Dialog Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Dialog files\DlgReminder.cpp">
+      <Filter>Dialog Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Dialog files\DlgSaveChanges.cpp">
+      <Filter>Dialog Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Dialog files\DlgSelectSource.cpp">
+      <Filter>Dialog Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Dialog files\DlgUnknownEvent.cpp">
+      <Filter>Dialog Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Dialog files\DlgPreferencesAutosave.cpp">
+      <Filter>Dialog Files\PreferencePages</Filter>
+    </ClCompile>
+    <ClCompile Include="Dialog files\DlgPreferencesGeneral.cpp">
+      <Filter>Dialog Files\PreferencePages</Filter>
+    </ClCompile>
+    <ClCompile Include="Dialog files\DlgPreferencesPrinterCopiesAlignment.cpp">
+      <Filter>Dialog Files\PreferencePages</Filter>
+    </ClCompile>
+    <ClCompile Include="Dialog files\DlgPreferencesPrinterDevice.cpp">
+      <Filter>Dialog Files\PreferencePages</Filter>
+    </ClCompile>
+    <ClCompile Include="Dialog files\DlgPreferencesPrinterImageSize.cpp">
+      <Filter>Dialog Files\PreferencePages</Filter>
+    </ClCompile>
+    <ClCompile Include="Dialog files\DlgPreferencesScannerAdvanced.cpp">
+      <Filter>Dialog Files\PreferencePages</Filter>
+    </ClCompile>
+    <ClCompile Include="Dialog files\DlgPreferencesScannerDevice.cpp">
+      <Filter>Dialog Files\PreferencePages</Filter>
+    </ClCompile>
+    <ClCompile Include="Dialog files\DlgPreferencesScannerImage.cpp">
+      <Filter>Dialog Files\PreferencePages</Filter>
+    </ClCompile>
+    <ClCompile Include="Dialog files\DlgPreferencesScannerPage.cpp">
+      <Filter>Dialog Files\PreferencePages</Filter>
+    </ClCompile>
+    <ClCompile Include="Dialog files\DlgPreferencesTrace.cpp">
+      <Filter>Dialog Files\PreferencePages</Filter>
+    </ClCompile>
+    <ClCompile Include="OCR files\DlgTOcrDebug.cpp">
+      <Filter>OCR Files</Filter>
+    </ClCompile>
+    <ClCompile Include="OCR files\TDataLayer.cpp">
+      <Filter>OCR Files</Filter>
+    </ClCompile>
+    <ClCompile Include="OCR files\TError.cpp">
+      <Filter>OCR Files</Filter>
+    </ClCompile>
+    <ClCompile Include="OCR files\TNeuralNetwork.cpp">
+      <Filter>OCR Files</Filter>
+    </ClCompile>
+    <ClCompile Include="OCR files\TOcr.cpp">
+      <Filter>OCR Files</Filter>
+    </ClCompile>
+    <ClCompile Include="OCR files\TOcrAnalyseRectangles.cpp">
+      <Filter>OCR Files</Filter>
+    </ClCompile>
+    <ClCompile Include="OCR files\TOcrArea.cpp">
+      <Filter>OCR Files</Filter>
+    </ClCompile>
+    <ClCompile Include="OCR files\TOcrCharacterShapes.cpp">
+      <Filter>OCR Files</Filter>
+    </ClCompile>
+    <ClCompile Include="OCR files\TOcrCollection.cpp">
+      <Filter>OCR Files</Filter>
+    </ClCompile>
+    <ClCompile Include="OCR files\TOcrDistancePoints.cpp">
+      <Filter>OCR Files</Filter>
+    </ClCompile>
+    <ClCompile Include="OCR files\TOcrFindEdge.cpp">
+      <Filter>OCR Files</Filter>
+    </ClCompile>
+    <ClCompile Include="OCR files\TOcrFindRectangle.cpp">
+      <Filter>OCR Files</Filter>
+    </ClCompile>
+    <ClCompile Include="OCR files\TOcrFindSentences.cpp">
+      <Filter>OCR Files</Filter>
+    </ClCompile>
+    <ClCompile Include="OCR files\TOcrRecogniseCharacter.cpp">
+      <Filter>OCR Files</Filter>
+    </ClCompile>
+    <ClCompile Include="OCR files\TOcrRectangle.cpp">
+      <Filter>OCR Files</Filter>
+    </ClCompile>
+    <ClCompile Include="OCR files\TOcrSentences.cpp">
+      <Filter>OCR Files</Filter>
+    </ClCompile>
+    <ClCompile Include="OCR files\TOcrSmoothEdge.cpp">
+      <Filter>OCR Files</Filter>
+    </ClCompile>
+    <ClCompile Include="OCR files\TOcrThread.cpp">
+      <Filter>OCR Files</Filter>
+    </ClCompile>
+    <ClCompile Include="OCR files\TinyXML\tinystr.cpp">
+      <Filter>OCR Files\TinyXML</Filter>
+    </ClCompile>
+    <ClCompile Include="OCR files\TinyXML\tinyxml.cpp">
+      <Filter>OCR Files\TinyXML</Filter>
+    </ClCompile>
+    <ClCompile Include="OCR files\TinyXML\tinyxmlerror.cpp">
+      <Filter>OCR Files\TinyXML</Filter>
+    </ClCompile>
+    <ClCompile Include="OCR files\TinyXML\tinyxmlparser.cpp">
+      <Filter>OCR Files\TinyXML</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Logic files\CopyingMachineCore.h">
+      <Filter>Logic Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Logic files\CoreNotifications.h">
+      <Filter>Logic Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Logic files\OCRCore.h">
+      <Filter>Logic Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Logic files\Registration.h">
+      <Filter>Logic Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Logic files\Bitmap.h">
+      <Filter>Logic Files\Document</Filter>
+    </ClInclude>
+    <ClInclude Include="Logic files\BitmapPCX.h">
+      <Filter>Logic Files\Document</Filter>
+    </ClInclude>
+    <ClInclude Include="Logic files\CopyDocument.h">
+      <Filter>Logic Files\Document</Filter>
+    </ClInclude>
+    <ClInclude Include="Logic files\CopyDocumentPage.h">
+      <Filter>Logic Files\Document</Filter>
+    </ClInclude>
+    <ClInclude Include="Logic files\CopyDocuments.h">
+      <Filter>Logic Files\Document</Filter>
+    </ClInclude>
+    <ClInclude Include="Logic files\CopyPageUndoRedo.h">
+      <Filter>Logic Files\Document</Filter>
+    </ClInclude>
+    <ClInclude Include="Logic files\DocumentCollections.h">
+      <Filter>Logic Files\Document</Filter>
+    </ClInclude>
+    <ClInclude Include="Logic files\MapiInterface.h">
+      <Filter>Logic Files\Document</Filter>
+    </ClInclude>
+    <ClInclude Include="Logic files\MathVector.h">
+      <Filter>Logic Files\Document</Filter>
+    </ClInclude>
+    <ClInclude Include="Logic files\PDF.h">
+      <Filter>Logic Files\Document</Filter>
+    </ClInclude>
+    <ClInclude Include="Logic files\PDFObject.h">
+      <Filter>Logic Files\Document</Filter>
+    </ClInclude>
+    <ClInclude Include="Logic files\RecognizedText.h">
+      <Filter>Logic Files\Document</Filter>
+    </ClInclude>
+    <ClInclude Include="Logic files\InterfaceBase.h">
+      <Filter>Logic Files\Scan</Filter>
+    </ClInclude>
+    <ClInclude Include="Logic files\ScanCore.h">
+      <Filter>Logic Files\Scan</Filter>
+    </ClInclude>
+    <ClInclude Include="Logic files\ScanDevice.h">
+      <Filter>Logic Files\Scan</Filter>
+    </ClInclude>
+    <ClInclude Include="Logic files\ScanInterfaceBase.h">
+      <Filter>Logic Files\Scan</Filter>
+    </ClInclude>
+    <ClInclude Include="Logic files\ScanLoadFile.h">
+      <Filter>Logic Files\Scan</Filter>
+    </ClInclude>
+    <ClInclude Include="Logic files\ScanSettings.h">
+      <Filter>Logic Files\Scan</Filter>
+    </ClInclude>
+    <ClInclude Include="Logic files\ScanStructures.h">
+      <Filter>Logic Files\Scan</Filter>
+    </ClInclude>
+    <ClInclude Include="Logic files\ScanTwain.h">
+      <Filter>Logic Files\Scan</Filter>
+    </ClInclude>
+    <ClInclude Include="Logic files\ScanWia.h">
+      <Filter>Logic Files\Scan</Filter>
+    </ClInclude>
+    <ClInclude Include="Logic files\ScanWiaDataCallback.h">
+      <Filter>Logic Files\Scan</Filter>
+    </ClInclude>
+    <ClInclude Include="Logic files\TWAIN.H">
+      <Filter>Logic Files\Scan</Filter>
+    </ClInclude>
+    <ClInclude Include="Logic files\PrintCore.h">
+      <Filter>Logic Files\Printer</Filter>
+    </ClInclude>
+    <ClInclude Include="Logic files\PrintSettings.h">
+      <Filter>Logic Files\Printer</Filter>
+    </ClInclude>
+    <ClInclude Include="Logic files\PrintStructures.h">
+      <Filter>Logic Files\Printer</Filter>
+    </ClInclude>
+    <ClInclude Include="Logic files\Script.h">
+      <Filter>Logic Files\Script</Filter>
+    </ClInclude>
+    <ClInclude Include="Logic files\ScriptCopyingMachine.h">
+      <Filter>Logic Files\Script</Filter>
+    </ClInclude>
+    <ClInclude Include="Logic files\ScriptExpression.h">
+      <Filter>Logic Files\Script</Filter>
+    </ClInclude>
+    <ClInclude Include="Logic files\ScriptLine.h">
+      <Filter>Logic Files\Script</Filter>
+    </ClInclude>
+    <ClInclude Include="Logic files\ScriptObject.h">
+      <Filter>Logic Files\Script</Filter>
+    </ClInclude>
+    <ClInclude Include="Logic files\ScriptParser.h">
+      <Filter>Logic Files\Script</Filter>
+    </ClInclude>
+    <ClInclude Include="Logic files\ScriptProcessor.h">
+      <Filter>Logic Files\Script</Filter>
+    </ClInclude>
+    <ClInclude Include="Logic files\ScriptProcessorKeywords.h">
+      <Filter>Logic Files\Script</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface files\CopyFileListview.h">
+      <Filter>Interface Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface files\CopyFileListviewContainer.h">
+      <Filter>Interface Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface files\DocumentCollectionList.h">
+      <Filter>Interface Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface files\DocumentList.h">
+      <Filter>Interface Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface files\FileList.h">
+      <Filter>Interface Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface files\FileListview.h">
+      <Filter>Interface Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface files\MainFrame.h">
+      <Filter>Interface Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface files\PagePreview.h">
+      <Filter>Interface Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface files\PagePropertiesListview.h">
+      <Filter>Interface Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface files\PageThumbnails.h">
+      <Filter>Interface Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface files\PageViewer.h">
+      <Filter>Interface Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface files\EasyFrame.h">
+      <Filter>Interface Files\EasyFrame</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface files\EasyFramePreferences.h">
+      <Filter>Interface Files\EasyFrame</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface files\EasyFramePreview.h">
+      <Filter>Interface Files\EasyFrame</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface files\Filler.h">
+      <Filter>Interface Files\WindowBase</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface files\Listview.h">
+      <Filter>Interface Files\WindowBase</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface files\MenuIcon.h">
+      <Filter>Interface Files\WindowBase</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface files\Splitter.h">
+      <Filter>Interface Files\WindowBase</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface files\WindowBase.h">
+      <Filter>Interface Files\WindowBase</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface files\WindowContainer.h">
+      <Filter>Interface Files\WindowBase</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface files\WindowScrollbar.h">
+      <Filter>Interface Files\WindowBase</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface files\Button.h">
+      <Filter>Interface Files\Pane</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface files\Pane.h">
+      <Filter>Interface Files\Pane</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface files\PaneActions.h">
+      <Filter>Interface Files\Pane</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface files\PaneBase.h">
+      <Filter>Interface Files\Pane</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface files\PaneCopy.h">
+      <Filter>Interface Files\Pane</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface files\PaneDocument.h">
+      <Filter>Interface Files\Pane</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface files\PaneImage.h">
+      <Filter>Interface Files\Pane</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface files\PaneScroller.h">
+      <Filter>Interface Files\Pane</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface files\SharedDeviceSelection.h">
+      <Filter>Interface Files\Pane</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface files\SharedPreferencesSelection.h">
+      <Filter>Interface Files\Pane</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface files\RebarControl.h">
+      <Filter>Interface Files\Toolbar</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface files\Toolbar.h">
+      <Filter>Interface Files\Toolbar</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface files\ToolbarCopy.h">
+      <Filter>Interface Files\Toolbar</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface files\ToolbarMenu.h">
+      <Filter>Interface Files\Toolbar</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface files\ToolbarPreferences.h">
+      <Filter>Interface Files\Toolbar</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource files\Resource.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Application files\CopyingMachine3.h">
+      <Filter>Application Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface files\Registry.h">
+      <Filter>Application Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Application Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Application files\Thread.h">
+      <Filter>Application Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Application files\Trace.h">
+      <Filter>Application Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dialog files\Dialogs.h">
+      <Filter>Dialog Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dialog files\DialogTemplate.h">
+      <Filter>Dialog Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dialog files\DlgAbout.h">
+      <Filter>Dialog Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dialog files\DlgAutoSaveDescription.h">
+      <Filter>Dialog Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dialog files\DlgColor.h">
+      <Filter>Dialog Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dialog files\DlgMacroEditor.h">
+      <Filter>Dialog Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dialog files\DlgOpenSave.h">
+      <Filter>Dialog Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dialog files\DlgPlaceKey.h">
+      <Filter>Dialog Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dialog files\DlgPreferences.h">
+      <Filter>Dialog Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dialog files\DlgPrint.h">
+      <Filter>Dialog Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dialog files\DlgProgressAcquire.h">
+      <Filter>Dialog Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dialog files\DlgProgressPrint.h">
+      <Filter>Dialog Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dialog files\DlgRecognizeText.h">
+      <Filter>Dialog Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dialog files\DlgReminder.h">
+      <Filter>Dialog Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dialog files\DlgSaveChanges.h">
+      <Filter>Dialog Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dialog files\DlgSelectSource.h">
+      <Filter>Dialog Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dialog files\DlgUnknownEvent.h">
+      <Filter>Dialog Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dialog files\DlgPreferencesAutosave.h">
+      <Filter>Dialog Files\PreferencePages</Filter>
+    </ClInclude>
+    <ClInclude Include="Dialog files\DlgPreferencesGeneral.h">
+      <Filter>Dialog Files\PreferencePages</Filter>
+    </ClInclude>
+    <ClInclude Include="Dialog files\DlgPreferencesPrinterCopiesAlignment.h">
+      <Filter>Dialog Files\PreferencePages</Filter>
+    </ClInclude>
+    <ClInclude Include="Dialog files\DlgPreferencesPrinterDevice.h">
+      <Filter>Dialog Files\PreferencePages</Filter>
+    </ClInclude>
+    <ClInclude Include="Dialog files\DlgPreferencesPrinterImageSize.h">
+      <Filter>Dialog Files\PreferencePages</Filter>
+    </ClInclude>
+    <ClInclude Include="Dialog files\DlgPreferencesScannerAdvanced.h">
+      <Filter>Dialog Files\PreferencePages</Filter>
+    </ClInclude>
+    <ClInclude Include="Dialog files\DlgPreferencesScannerDevice.h">
+      <Filter>Dialog Files\PreferencePages</Filter>
+    </ClInclude>
+    <ClInclude Include="Dialog files\DlgPreferencesScannerImage.h">
+      <Filter>Dialog Files\PreferencePages</Filter>
+    </ClInclude>
+    <ClInclude Include="Dialog files\DlgPreferencesScannerPage.h">
+      <Filter>Dialog Files\PreferencePages</Filter>
+    </ClInclude>
+    <ClInclude Include="Dialog files\DlgPreferencesTrace.h">
+      <Filter>Dialog Files\PreferencePages</Filter>
+    </ClInclude>
+    <ClInclude Include="OCR files\DlgTOcrDebug.h">
+      <Filter>OCR Files</Filter>
+    </ClInclude>
+    <ClInclude Include="OCR files\TError.h">
+      <Filter>OCR Files</Filter>
+    </ClInclude>
+    <ClInclude Include="OCR files\TNeuralNetwork.h">
+      <Filter>OCR Files</Filter>
+    </ClInclude>
+    <ClInclude Include="OCR files\TOcr.h">
+      <Filter>OCR Files</Filter>
+    </ClInclude>
+    <ClInclude Include="OCR files\TOcrAnalyseRectangles.h">
+      <Filter>OCR Files</Filter>
+    </ClInclude>
+    <ClInclude Include="OCR files\TOcrArea.h">
+      <Filter>OCR Files</Filter>
+    </ClInclude>
+    <ClInclude Include="OCR files\TOcrCharacterShapes.h">
+      <Filter>OCR Files</Filter>
+    </ClInclude>
+    <ClInclude Include="OCR files\TOcrCollection.h">
+      <Filter>OCR Files</Filter>
+    </ClInclude>
+    <ClInclude Include="OCR files\TOcrDistancePoints.h">
+      <Filter>OCR Files</Filter>
+    </ClInclude>
+    <ClInclude Include="OCR files\TOcrFindEdge.h">
+      <Filter>OCR Files</Filter>
+    </ClInclude>
+    <ClInclude Include="OCR files\TOcrFindRectangle.h">
+      <Filter>OCR Files</Filter>
+    </ClInclude>
+    <ClInclude Include="OCR files\TOcrFindSentences.h">
+      <Filter>OCR Files</Filter>
+    </ClInclude>
+    <ClInclude Include="OCR files\TOcrRecogniseCharacter.h">
+      <Filter>OCR Files</Filter>
+    </ClInclude>
+    <ClInclude Include="OCR files\TOcrRectangle.h">
+      <Filter>OCR Files</Filter>
+    </ClInclude>
+    <ClInclude Include="OCR files\TOcrResources.h">
+      <Filter>OCR Files</Filter>
+    </ClInclude>
+    <ClInclude Include="OCR files\TOcrSentences.h">
+      <Filter>OCR Files</Filter>
+    </ClInclude>
+    <ClInclude Include="OCR files\TOcrSmoothEdge.h">
+      <Filter>OCR Files</Filter>
+    </ClInclude>
+    <ClInclude Include="OCR files\TOcrThread.h">
+      <Filter>OCR Files</Filter>
+    </ClInclude>
+    <ClInclude Include="OCR files\TinyXML\tinystr.h">
+      <Filter>OCR Files\TinyXML</Filter>
+    </ClInclude>
+    <ClInclude Include="OCR files\TinyXML\tinyxml.h">
+      <Filter>OCR Files\TinyXML</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Resource files\CopyingMachine3.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resource files\flag_de.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resource files\flag_en.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resource files\flag_fr.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resource files\flag_it.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resource files\flag_nl.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resource files\grip_e.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resource files\grip_n.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resource files\grip_ne.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resource files\grip_nw.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resource files\grip_s.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resource files\grip_se.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resource files\grip_sw.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resource files\grip_w.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resource files\icoCopyingMachine3_16x16.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resource files\icoCopyingMachine3_2.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resource files\icoCopyingMachine3_32x32.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resource files\icoCopyingMachine3_48x48.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resource files\imageAlignCC.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resource files\imageAlignCE.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resource files\imageAlignCW.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resource files\imageAlignNC.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resource files\imageAlignNE.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resource files\imageAlignNW.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resource files\imageAlignSC.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resource files\imageAlignSE.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resource files\imageAlignSW.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resource files\imageCopiesOnPage.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resource files\imageGrippers.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resource files\imageHuge.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resource files\imageImagesOnPage.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resource files\imageLandscape.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resource files\imageNormal.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resource files\imagePage.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resource files\imagePortrait.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resource files\imageSmall.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resource files\imageTest.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resource files\tool_arrowdown.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resource files\tool_arrowup.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resource files\tool_book.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resource files\tool_bookadd.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resource files\tool_bookedit.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resource files\tool_bookopen.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resource files\tool_bookopenedit.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resource files\tool_bulletblue.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resource files\tool_colordropper.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resource files\tool_convertblackwhite.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resource files\tool_convertgrayscale.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resource files\tool_copy.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resource files\tool_copy24.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resource files\tool_copy32.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resource files\tool_copypage.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resource files\tool_crop.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resource files\tool_cut.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resource files\tool_delete.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resource files\tool_deselect.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resource files\tool_email.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resource files\tool_emailopen.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resource files\tool_file.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resource files\tool_fliphorizontal.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resource files\tool_flipvertical.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resource files\tool_folder.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resource files\tool_folderexplore.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resource files\tool_foldergo.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resource files\tool_help.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resource files\tool_information.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resource files\tool_new.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resource files\tool_ocr.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resource files\tool_open.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resource files\tool_page.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resource files\tool_pageadd.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resource files\tool_paint.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resource files\tool_panecopy.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resource files\tool_paneimage.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resource files\tool_paneinformation.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resource files\tool_paste.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resource files\tool_preview.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resource files\tool_print.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resource files\tool_property.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resource files\tool_redo.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resource files\tool_rotate180.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resource files\tool_rotateanticlockwise.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resource files\tool_rotateclockwise.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resource files\tool_save2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resource files\tool_scanner.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resource files\tool_scannertwain.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resource files\tool_selection.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resource files\tool_split.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resource files\tool_switch.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resource files\tool_undo.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resource files\tool_wcclose.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resource files\tool_zoom.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resource files\tool_zoomin.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resource files\tool_zoomtoselection.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resource files\tool_zoomtowindow.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Resource files\CopyingMachine3.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+    <ResourceCompile Include="OCR files\TOcrResources.rc">
+      <Filter>OCR Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resource files\cursor_dragdrop.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resource files\rcdata2.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resource files\sRGB.icc">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="ClassDiagram_CopyingMachine.cd" />
+    <None Include="C:\Users\Rainier &amp; Danielle\Desktop\sRGB_v4_ICC_preference.icc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="Application files\XMLDocument.h">
+      <Filter>Application Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="OCR files\TDataLayer.h">
+      <Filter>OCR Files</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Manifest Include="copyingmachine3.manifest" />
+  </ItemGroup>
+</Project>

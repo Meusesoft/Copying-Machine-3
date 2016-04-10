@@ -1,0 +1,586 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{2B7056C1-3939-4226-82A4-C2BDA3B818FE}</ProjectGuid>
+    <RootNamespace>CopyingMachine3</RootNamespace>
+    <SccProjectName>"$/Copying Machine/Copying Machine 3/CopyingMachine3", QTBAAAAA</SccProjectName>
+    <SccLocalPath>..</SccLocalPath>
+    <SccProvider>MSSCCI:Microsoft Visual SourceSafe</SccProvider>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>14.0.25123.0</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)$(ProjectName)\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)\Intermediate files\$(ProjectName)\$(Configuration)\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+    <GenerateManifest>true</GenerateManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(Platform)\$(Configuration)\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+    <GenerateManifest>true</GenerateManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>d:\projects\_Intermediate\$(TargetFileName)\$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(Platform)\$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>.\Scintilla\include;.\LibTesseract\classify;.\LibTesseract\ccstruct;.\LibTesseract\ccmain;.\LibTesseract\ccutil;.\LibTesseract;.\LibRsa;.\Resource files\CopyingMachine3_English;.\LibTiff\libtiff;.\ZLib;.\Dialog files;.;.\Logic files;.\Resource files;.\Interface files;.\Application files;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>comctl32.lib;gdiplus.lib;version.lib;wiaguid.lib;advapi32.lib;tessdll.lib;librsa.lib;sti.lib;msxml6.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\Program Files\Microsoft SDKs\Windows\v6.0\Lib;D:\Projects\CopyingMachine3\debug;C:\Program Files\Microsoft Platform SDK\Lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>D:\Projects\CopyingMachine3\CopyingMachine3\Scintilla\include;D:\Projects\CopyingMachine3\CopyingMachine3\LibTesseract\classify;D:\Projects\CopyingMachine3\CopyingMachine3\LibTesseract\ccstruct;D:\Projects\CopyingMachine3\CopyingMachine3\LibTesseract\ccmain;D:\Projects\CopyingMachine3\CopyingMachine3\LibTesseract\ccutil;D:\Projects\CopyingMachine3\CopyingMachine3\LibTesseract;D:\Projects\CopyingMachine3\CopyingMachine3\LibRsa;D:\Projects\CopyingMachine3\CopyingMachine3\Resource files\CopyingMachine3_English;D:\Projects\CopyingMachine3\CopyingMachine3\LibTiff\libtiff;D:\Projects\CopyingMachine3\CopyingMachine3\ZLib;D:\Projects\CopyingMachine3\CopyingMachine3\Dialog files;D:\Projects\CopyingMachine3\CopyingMachine3;D:\Projects\CopyingMachine3\CopyingMachine3\Logic files;D:\Projects\CopyingMachine3\CopyingMachine3\Resource files;D:\Projects\CopyingMachine3\CopyingMachine3\Interface files;D:\Projects\CopyingMachine3\CopyingMachine3\Application files;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>comctl32.lib;gdiplus.lib;version.lib;wiaguid.lib;advapi32.lib;tessdll.lib;librsa.lib;sti.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\Program Files\Microsoft SDKs\Windows\v6.0\Lib;D:\Projects\CopyingMachine3\debug;C:\Program Files\Microsoft Platform SDK\Lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <TargetMachine>MachineX64</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Projects\CopyingMachine3\CopyingMachine3\Scintilla\include;D:\Projects\CopyingMachine3\CopyingMachine3\LibTesseract\classify;D:\Projects\CopyingMachine3\CopyingMachine3\LibTesseract\ccstruct;D:\Projects\CopyingMachine3\CopyingMachine3\LibTesseract\ccmain;D:\Projects\CopyingMachine3\CopyingMachine3\LibTesseract\ccutil;D:\Projects\CopyingMachine3\CopyingMachine3\LibTesseract;D:\Projects\CopyingMachine3\CopyingMachine3\LibRsa;D:\Projects\CopyingMachine3\CopyingMachine3\Resource files\CopyingMachine3_English;D:\Projects\CopyingMachine3\CopyingMachine3\LibTiff\libtiff;D:\Projects\CopyingMachine3\CopyingMachine3\ZLib;C:\Program Files\Microsoft SDKs\Windows\v6.0\Lib;C:\Program Files\Microsoft SDKs\Windows\v6.0\Include;D:\Projects\CopyingMachine3\CopyingMachine3\Dialog files;D:\Projects\CopyingMachine3\CopyingMachine3;D:\Projects\CopyingMachine3\CopyingMachine3\Logic files;D:\Projects\CopyingMachine3\CopyingMachine3\Resource files;D:\Projects\CopyingMachine3\CopyingMachine3\Interface files;D:\Projects\CopyingMachine3\CopyingMachine3\Application files;C:\Program Files\Microsoft Platform SDK\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>comctl32.lib;gdiplus.lib;version.lib;wiaguid.lib;libtiff.lib;zlib.lib;librsa.lib;advapi32.lib;tessdll.lib;sti.lib;scilexer.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\Program Files\Microsoft SDKs\Windows\v6.0\Lib;D:\Projects\CopyingMachine3\release;C:\Program Files\Microsoft Platform SDK\Lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <ManifestFile>$(SolutionDir)$(Configuration)$(TargetFileName).manifest</ManifestFile>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Projects\CopyingMachine3\CopyingMachine3\Scintilla\include;D:\Projects\CopyingMachine3\CopyingMachine3\LibTesseract\classify;D:\Projects\CopyingMachine3\CopyingMachine3\LibTesseract\ccstruct;D:\Projects\CopyingMachine3\CopyingMachine3\LibTesseract\ccmain;D:\Projects\CopyingMachine3\CopyingMachine3\LibTesseract\ccutil;D:\Projects\CopyingMachine3\CopyingMachine3\LibTesseract;D:\Projects\CopyingMachine3\CopyingMachine3\LibRsa;D:\Projects\CopyingMachine3\CopyingMachine3\Resource files\CopyingMachine3_English;D:\Projects\CopyingMachine3\CopyingMachine3\LibTiff\libtiff;D:\Projects\CopyingMachine3\CopyingMachine3\ZLib;C:\Program Files\Microsoft SDKs\Windows\v6.0\Lib;C:\Program Files\Microsoft SDKs\Windows\v6.0\Include;D:\Projects\CopyingMachine3\CopyingMachine3\Dialog files;D:\Projects\CopyingMachine3\CopyingMachine3;D:\Projects\CopyingMachine3\CopyingMachine3\Logic files;D:\Projects\CopyingMachine3\CopyingMachine3\Resource files;D:\Projects\CopyingMachine3\CopyingMachine3\Interface files;D:\Projects\CopyingMachine3\CopyingMachine3\Application files;C:\Program Files\Microsoft Platform SDK\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>comctl32.lib;gdiplus.lib;version.lib;wiaguid.lib;libtiff.lib;zlib.lib;librsa.lib;advapi32.lib;tessdll.lib;sti.lib;scilexer.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>D:\Projects\CopyingMachine3\x64\Release;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <ManifestFile>$(SolutionDir)$(Configuration)$(TargetFileName).manifest</ManifestFile>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <TargetMachine>MachineX64</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Application files\CopyingMachine3.cpp" />
+    <ClCompile Include="Application files\Thread.cpp" />
+    <ClCompile Include="Application files\Trace.cpp" />
+    <ClCompile Include="Application files\XMLDocument.cpp" />
+    <ClCompile Include="Dialog files\Dialogs.cpp" />
+    <ClCompile Include="Dialog files\DialogTemplate.cpp" />
+    <ClCompile Include="Dialog files\DlgAbout.cpp" />
+    <ClCompile Include="Dialog files\DlgAutoSaveDescription.cpp" />
+    <ClCompile Include="Dialog files\DlgColor.cpp" />
+    <ClCompile Include="Dialog files\DlgMacroEditor.cpp" />
+    <ClCompile Include="Dialog files\DlgOpenSave.cpp" />
+    <ClCompile Include="Dialog files\DlgPlaceKey.cpp" />
+    <ClCompile Include="Dialog files\DlgPreferences.cpp" />
+    <ClCompile Include="Dialog files\DlgPreferencesAutosave.cpp" />
+    <ClCompile Include="Dialog files\DlgPreferencesGeneral.cpp" />
+    <ClCompile Include="Dialog files\DlgPreferencesPrinterCopiesAlignment.cpp" />
+    <ClCompile Include="Dialog files\DlgPreferencesPrinterDevice.cpp" />
+    <ClCompile Include="Dialog files\DlgPreferencesPrinterImageSize.cpp" />
+    <ClCompile Include="Dialog files\DlgPreferencesScannerAdvanced.cpp" />
+    <ClCompile Include="Dialog files\DlgPreferencesScannerDevice.cpp" />
+    <ClCompile Include="Dialog files\DlgPreferencesScannerImage.cpp" />
+    <ClCompile Include="Dialog files\DlgPreferencesScannerPage.cpp" />
+    <ClCompile Include="Dialog files\DlgPreferencesTrace.cpp" />
+    <ClCompile Include="Dialog files\DlgPrint.cpp" />
+    <ClCompile Include="Dialog files\DlgProgressAcquire.cpp" />
+    <ClCompile Include="Dialog files\DlgProgressPrint.cpp" />
+    <ClCompile Include="Dialog files\DlgRecognizeText.cpp" />
+    <ClCompile Include="Dialog files\DlgReminder.cpp" />
+    <ClCompile Include="Dialog files\DlgSaveChanges.cpp" />
+    <ClCompile Include="Dialog files\DlgSelectSource.cpp" />
+    <ClCompile Include="Dialog files\DlgUnknownEvent.cpp" />
+    <ClCompile Include="Interface files\Button.cpp" />
+    <ClCompile Include="Interface files\CopyFileListview.cpp" />
+    <ClCompile Include="Interface files\CopyFileListviewContainer.cpp" />
+    <ClCompile Include="Interface files\DocumentCollectionList.cpp" />
+    <ClCompile Include="Interface files\DocumentList.cpp" />
+    <ClCompile Include="Interface files\EasyFrame.cpp" />
+    <ClCompile Include="Interface files\EasyFramePreferences.cpp" />
+    <ClCompile Include="Interface files\EasyFramePreview.cpp" />
+    <ClCompile Include="Interface files\FileList.cpp" />
+    <ClCompile Include="Interface files\FileListview.cpp" />
+    <ClCompile Include="Interface files\Filler.cpp" />
+    <ClCompile Include="Interface files\Listview.cpp" />
+    <ClCompile Include="Interface files\MainFrame.cpp" />
+    <ClCompile Include="Interface files\MenuIcon.cpp" />
+    <ClCompile Include="Interface files\PagePreview.cpp" />
+    <ClCompile Include="Interface files\PagePropertiesListview.cpp" />
+    <ClCompile Include="Interface files\PageThumbnails.cpp" />
+    <ClCompile Include="Interface files\PageViewer.cpp" />
+    <ClCompile Include="Interface files\Pane.cpp" />
+    <ClCompile Include="Interface files\PaneActions.cpp" />
+    <ClCompile Include="Interface files\PaneBase.cpp" />
+    <ClCompile Include="Interface files\PaneCopy.cpp" />
+    <ClCompile Include="Interface files\PaneDocument.cpp" />
+    <ClCompile Include="Interface files\PaneImage.cpp" />
+    <ClCompile Include="Interface files\PaneScroller.cpp" />
+    <ClCompile Include="Interface files\RebarControl.cpp" />
+    <ClCompile Include="Interface files\Registry.cpp" />
+    <ClCompile Include="Interface files\SharedDeviceSelection.cpp" />
+    <ClCompile Include="Interface files\SharedPreferencesSelection.cpp" />
+    <ClCompile Include="Interface files\Splitter.cpp" />
+    <ClCompile Include="Interface files\Toolbar.cpp" />
+    <ClCompile Include="Interface files\ToolbarCopy.cpp" />
+    <ClCompile Include="Interface files\ToolbarMenu.cpp" />
+    <ClCompile Include="Interface files\ToolbarPreferences.cpp" />
+    <ClCompile Include="Interface files\WindowBase.cpp" />
+    <ClCompile Include="Interface files\WindowContainer.cpp" />
+    <ClCompile Include="Interface files\WindowScrollbar.cpp" />
+    <ClCompile Include="Logic files\Bitmap.cpp" />
+    <ClCompile Include="Logic files\BitmapPCX.cpp" />
+    <ClCompile Include="Logic files\CopyDocument.cpp" />
+    <ClCompile Include="Logic files\CopyDocumentPage.cpp" />
+    <ClCompile Include="Logic files\CopyDocuments.cpp" />
+    <ClCompile Include="Logic files\CopyingMachineCore.cpp" />
+    <ClCompile Include="Logic files\CopyPageUndoRedo.cpp" />
+    <ClCompile Include="Logic files\CoreNotifications.cpp" />
+    <ClCompile Include="Logic files\DocumentCollections.cpp" />
+    <ClCompile Include="Logic files\InterfaceBase.cpp" />
+    <ClCompile Include="Logic files\MapiInterface.cpp" />
+    <ClCompile Include="Logic files\MathVector.cpp" />
+    <ClCompile Include="Logic files\OCRCore.cpp" />
+    <ClCompile Include="Logic files\PDF.cpp" />
+    <ClCompile Include="Logic files\PDFObject.cpp" />
+    <ClCompile Include="Logic files\PrintCore.cpp" />
+    <ClCompile Include="Logic files\PrintSettings.cpp" />
+    <ClCompile Include="Logic files\RecognizedText.cpp" />
+    <ClCompile Include="Logic files\Registration.cpp" />
+    <ClCompile Include="Logic files\ScanCore.cpp" />
+    <ClCompile Include="Logic files\ScanDevice.cpp" />
+    <ClCompile Include="Logic files\ScanInterfaceBase.cpp" />
+    <ClCompile Include="Logic files\ScanLoadFile.cpp" />
+    <ClCompile Include="Logic files\ScanSettings.cpp" />
+    <ClCompile Include="Logic files\ScanTwain.cpp" />
+    <ClCompile Include="Logic files\ScanWia.cpp" />
+    <ClCompile Include="Logic files\ScanWiaDataCallback.cpp" />
+    <ClCompile Include="Logic files\Script.cpp" />
+    <ClCompile Include="Logic files\ScriptCopyingMachine.cpp" />
+    <ClCompile Include="Logic files\ScriptExpression.cpp" />
+    <ClCompile Include="Logic files\ScriptLine.cpp" />
+    <ClCompile Include="Logic files\ScriptObject.cpp" />
+    <ClCompile Include="Logic files\ScriptParser.cpp" />
+    <ClCompile Include="Logic files\ScriptProcessor.cpp" />
+    <ClCompile Include="OCR files\DlgTOcrDebug.cpp" />
+    <ClCompile Include="OCR files\TDataLayer.cpp" />
+    <ClCompile Include="OCR files\TError.cpp" />
+    <ClCompile Include="OCR files\TinyXML\tinystr.cpp" />
+    <ClCompile Include="OCR files\TinyXML\tinyxml.cpp" />
+    <ClCompile Include="OCR files\TinyXML\tinyxmlerror.cpp" />
+    <ClCompile Include="OCR files\TinyXML\tinyxmlparser.cpp" />
+    <ClCompile Include="OCR files\TNeuralNetwork.cpp" />
+    <ClCompile Include="OCR files\TOcr.cpp" />
+    <ClCompile Include="OCR files\TOcrAnalyseRectangles.cpp" />
+    <ClCompile Include="OCR files\TOcrArea.cpp" />
+    <ClCompile Include="OCR files\TOcrCharacterShapes.cpp" />
+    <ClCompile Include="OCR files\TOcrCollection.cpp" />
+    <ClCompile Include="OCR files\TOcrDistancePoints.cpp" />
+    <ClCompile Include="OCR files\TOcrFindEdge.cpp" />
+    <ClCompile Include="OCR files\TOcrFindRectangle.cpp" />
+    <ClCompile Include="OCR files\TOcrFindSentences.cpp" />
+    <ClCompile Include="OCR files\TOcrRecogniseCharacter.cpp" />
+    <ClCompile Include="OCR files\TOcrRectangle.cpp" />
+    <ClCompile Include="OCR files\TOcrSentences.cpp" />
+    <ClCompile Include="OCR files\TOcrSmoothEdge.cpp" />
+    <ClCompile Include="OCR files\TOcrThread.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Application files\CopyingMachine3.h" />
+    <ClInclude Include="Application files\Thread.h" />
+    <ClInclude Include="Application files\Trace.h" />
+    <CustomBuild Include="Application files\XMLDocument.h" />
+    <ClInclude Include="Dialog files\Dialogs.h" />
+    <ClInclude Include="Dialog files\DialogTemplate.h" />
+    <ClInclude Include="Dialog files\DlgAbout.h" />
+    <ClInclude Include="Dialog files\DlgAutoSaveDescription.h" />
+    <ClInclude Include="Dialog files\DlgColor.h" />
+    <ClInclude Include="Dialog files\DlgMacroEditor.h" />
+    <ClInclude Include="Dialog files\DlgOpenSave.h" />
+    <ClInclude Include="Dialog files\DlgPlaceKey.h" />
+    <ClInclude Include="Dialog files\DlgPreferences.h" />
+    <ClInclude Include="Dialog files\DlgPreferencesAutosave.h" />
+    <ClInclude Include="Dialog files\DlgPreferencesGeneral.h" />
+    <ClInclude Include="Dialog files\DlgPreferencesPrinterCopiesAlignment.h" />
+    <ClInclude Include="Dialog files\DlgPreferencesPrinterDevice.h" />
+    <ClInclude Include="Dialog files\DlgPreferencesPrinterImageSize.h" />
+    <ClInclude Include="Dialog files\DlgPreferencesScannerAdvanced.h" />
+    <ClInclude Include="Dialog files\DlgPreferencesScannerDevice.h" />
+    <ClInclude Include="Dialog files\DlgPreferencesScannerImage.h" />
+    <ClInclude Include="Dialog files\DlgPreferencesScannerPage.h" />
+    <ClInclude Include="Dialog files\DlgPreferencesTrace.h" />
+    <ClInclude Include="Dialog files\DlgPrint.h" />
+    <ClInclude Include="Dialog files\DlgProgressAcquire.h" />
+    <ClInclude Include="Dialog files\DlgProgressPrint.h" />
+    <ClInclude Include="Dialog files\DlgRecognizeText.h" />
+    <ClInclude Include="Dialog files\DlgReminder.h" />
+    <ClInclude Include="Dialog files\DlgSaveChanges.h" />
+    <ClInclude Include="Dialog files\DlgSelectSource.h" />
+    <ClInclude Include="Dialog files\DlgUnknownEvent.h" />
+    <ClInclude Include="Interface files\Button.h" />
+    <ClInclude Include="Interface files\CopyFileListview.h" />
+    <ClInclude Include="Interface files\CopyFileListviewContainer.h" />
+    <ClInclude Include="Interface files\DocumentCollectionList.h" />
+    <ClInclude Include="Interface files\DocumentList.h" />
+    <ClInclude Include="Interface files\EasyFrame.h" />
+    <ClInclude Include="Interface files\EasyFramePreferences.h" />
+    <ClInclude Include="Interface files\EasyFramePreview.h" />
+    <ClInclude Include="Interface files\FileList.h" />
+    <ClInclude Include="Interface files\FileListview.h" />
+    <ClInclude Include="Interface files\Filler.h" />
+    <ClInclude Include="Interface files\Listview.h" />
+    <ClInclude Include="Interface files\MainFrame.h" />
+    <ClInclude Include="Interface files\MenuIcon.h" />
+    <ClInclude Include="Interface files\PagePreview.h" />
+    <ClInclude Include="Interface files\PagePropertiesListview.h" />
+    <ClInclude Include="Interface files\PageThumbnails.h" />
+    <ClInclude Include="Interface files\PageViewer.h" />
+    <ClInclude Include="Interface files\Pane.h" />
+    <ClInclude Include="Interface files\PaneActions.h" />
+    <ClInclude Include="Interface files\PaneBase.h" />
+    <ClInclude Include="Interface files\PaneCopy.h" />
+    <ClInclude Include="Interface files\PaneDocument.h" />
+    <ClInclude Include="Interface files\PaneImage.h" />
+    <ClInclude Include="Interface files\PaneScroller.h" />
+    <ClInclude Include="Interface files\RebarControl.h" />
+    <ClInclude Include="Interface files\Registry.h" />
+    <ClInclude Include="Interface files\SharedDeviceSelection.h" />
+    <ClInclude Include="Interface files\SharedPreferencesSelection.h" />
+    <ClInclude Include="Interface files\Splitter.h" />
+    <ClInclude Include="Interface files\Toolbar.h" />
+    <ClInclude Include="Interface files\ToolbarCopy.h" />
+    <ClInclude Include="Interface files\ToolbarMenu.h" />
+    <ClInclude Include="Interface files\ToolbarPreferences.h" />
+    <ClInclude Include="Interface files\WindowBase.h" />
+    <ClInclude Include="Interface files\WindowContainer.h" />
+    <ClInclude Include="Interface files\WindowScrollbar.h" />
+    <ClInclude Include="Logic files\Bitmap.h" />
+    <ClInclude Include="Logic files\BitmapPCX.h" />
+    <ClInclude Include="Logic files\CopyDocument.h" />
+    <ClInclude Include="Logic files\CopyDocumentPage.h" />
+    <ClInclude Include="Logic files\CopyDocuments.h" />
+    <ClInclude Include="Logic files\CopyingMachineCore.h" />
+    <ClInclude Include="Logic files\CopyPageUndoRedo.h" />
+    <ClInclude Include="Logic files\CoreNotifications.h" />
+    <ClInclude Include="Logic files\DocumentCollections.h" />
+    <ClInclude Include="Logic files\InterfaceBase.h" />
+    <ClInclude Include="Logic files\MapiInterface.h" />
+    <ClInclude Include="Logic files\MathVector.h" />
+    <ClInclude Include="Logic files\OCRCore.h" />
+    <ClInclude Include="Logic files\PDF.h" />
+    <ClInclude Include="Logic files\PDFObject.h" />
+    <ClInclude Include="Logic files\PrintCore.h" />
+    <ClInclude Include="Logic files\PrintSettings.h" />
+    <ClInclude Include="Logic files\PrintStructures.h" />
+    <ClInclude Include="Logic files\RecognizedText.h" />
+    <ClInclude Include="Logic files\Registration.h" />
+    <ClInclude Include="Logic files\ScanCore.h" />
+    <ClInclude Include="Logic files\ScanDevice.h" />
+    <ClInclude Include="Logic files\ScanInterfaceBase.h" />
+    <ClInclude Include="Logic files\ScanLoadFile.h" />
+    <ClInclude Include="Logic files\ScanSettings.h" />
+    <ClInclude Include="Logic files\ScanStructures.h" />
+    <ClInclude Include="Logic files\ScanTwain.h" />
+    <ClInclude Include="Logic files\ScanWia.h" />
+    <ClInclude Include="Logic files\ScanWiaDataCallback.h" />
+    <ClInclude Include="Logic files\Script.h" />
+    <ClInclude Include="Logic files\ScriptCopyingMachine.h" />
+    <ClInclude Include="Logic files\ScriptExpression.h" />
+    <ClInclude Include="Logic files\ScriptLine.h" />
+    <ClInclude Include="Logic files\ScriptObject.h" />
+    <ClInclude Include="Logic files\ScriptParser.h" />
+    <ClInclude Include="Logic files\ScriptProcessor.h" />
+    <ClInclude Include="Logic files\ScriptProcessorKeywords.h" />
+    <ClInclude Include="Logic files\TWAIN.H" />
+    <ClInclude Include="OCR files\DlgTOcrDebug.h" />
+    <CustomBuild Include="OCR files\TDataLayer.h" />
+    <ClInclude Include="OCR files\TError.h" />
+    <ClInclude Include="OCR files\TinyXML\tinystr.h" />
+    <ClInclude Include="OCR files\TinyXML\tinyxml.h" />
+    <ClInclude Include="OCR files\TNeuralNetwork.h" />
+    <ClInclude Include="OCR files\TOcr.h" />
+    <ClInclude Include="OCR files\TOcrAnalyseRectangles.h" />
+    <ClInclude Include="OCR files\TOcrArea.h" />
+    <ClInclude Include="OCR files\TOcrCharacterShapes.h" />
+    <ClInclude Include="OCR files\TOcrCollection.h" />
+    <ClInclude Include="OCR files\TOcrDistancePoints.h" />
+    <ClInclude Include="OCR files\TOcrFindEdge.h" />
+    <ClInclude Include="OCR files\TOcrFindRectangle.h" />
+    <ClInclude Include="OCR files\TOcrFindSentences.h" />
+    <ClInclude Include="OCR files\TOcrRecogniseCharacter.h" />
+    <ClInclude Include="OCR files\TOcrRectangle.h" />
+    <ClInclude Include="OCR files\TOcrResources.h" />
+    <ClInclude Include="OCR files\TOcrSentences.h" />
+    <ClInclude Include="OCR files\TOcrSmoothEdge.h" />
+    <ClInclude Include="OCR files\TOcrThread.h" />
+    <ClInclude Include="Resource files\Resource.h" />
+    <ClInclude Include="stdafx.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Resource files\CopyingMachine3.ico" />
+    <Image Include="Resource files\flag_de.png" />
+    <Image Include="Resource files\flag_en.png" />
+    <Image Include="Resource files\flag_fr.png" />
+    <Image Include="Resource files\flag_it.png" />
+    <Image Include="Resource files\flag_nl.png" />
+    <Image Include="Resource files\grip_e.png" />
+    <Image Include="Resource files\grip_n.png" />
+    <Image Include="Resource files\grip_ne.png" />
+    <Image Include="Resource files\grip_nw.png" />
+    <Image Include="Resource files\grip_s.png" />
+    <Image Include="Resource files\grip_se.png" />
+    <Image Include="Resource files\grip_sw.png" />
+    <Image Include="Resource files\grip_w.png" />
+    <Image Include="Resource files\icoCopyingMachine3_16x16.ico" />
+    <Image Include="Resource files\icoCopyingMachine3_2.ico" />
+    <Image Include="Resource files\icoCopyingMachine3_32x32.ico" />
+    <Image Include="Resource files\icoCopyingMachine3_48x48.ico" />
+    <Image Include="Resource files\imageAlignCC.bmp" />
+    <Image Include="Resource files\imageAlignCE.bmp" />
+    <Image Include="Resource files\imageAlignCW.bmp" />
+    <Image Include="Resource files\imageAlignNC.bmp" />
+    <Image Include="Resource files\imageAlignNE.bmp" />
+    <Image Include="Resource files\imageAlignNW.bmp" />
+    <Image Include="Resource files\imageAlignSC.bmp" />
+    <Image Include="Resource files\imageAlignSE.bmp" />
+    <Image Include="Resource files\imageAlignSW.bmp" />
+    <Image Include="Resource files\imageCopiesOnPage.bmp" />
+    <Image Include="Resource files\imageGrippers.bmp" />
+    <Image Include="Resource files\imageHuge.bmp" />
+    <Image Include="Resource files\imageImagesOnPage.bmp" />
+    <Image Include="Resource files\imageLandscape.bmp" />
+    <Image Include="Resource files\imageNormal.bmp" />
+    <Image Include="Resource files\imagePage.bmp" />
+    <Image Include="Resource files\imagePortrait.bmp" />
+    <Image Include="Resource files\imageSmall.bmp" />
+    <Image Include="Resource files\imageTest.bmp" />
+    <Image Include="Resource files\tool_arrowdown.png" />
+    <Image Include="Resource files\tool_arrowup.png" />
+    <Image Include="Resource files\tool_book.png" />
+    <Image Include="Resource files\tool_bookadd.png" />
+    <Image Include="Resource files\tool_bookedit.png" />
+    <Image Include="Resource files\tool_bookopen.png" />
+    <Image Include="Resource files\tool_bookopenedit.png" />
+    <Image Include="Resource files\tool_bulletblue.png" />
+    <Image Include="Resource files\tool_colordropper.png" />
+    <Image Include="Resource files\tool_convertblackwhite.png" />
+    <Image Include="Resource files\tool_convertgrayscale.png" />
+    <Image Include="Resource files\tool_copy.png" />
+    <Image Include="Resource files\tool_copy24.png" />
+    <Image Include="Resource files\tool_copy32.png" />
+    <Image Include="Resource files\tool_copypage.png" />
+    <Image Include="Resource files\tool_crop.png" />
+    <Image Include="Resource files\tool_cut.png" />
+    <Image Include="Resource files\tool_delete.png" />
+    <Image Include="Resource files\tool_deselect.png" />
+    <Image Include="Resource files\tool_email.png" />
+    <Image Include="Resource files\tool_emailopen.png" />
+    <Image Include="Resource files\tool_file.png" />
+    <Image Include="Resource files\tool_fliphorizontal.png" />
+    <Image Include="Resource files\tool_flipvertical.png" />
+    <Image Include="Resource files\tool_folder.png" />
+    <Image Include="Resource files\tool_folderexplore.png" />
+    <Image Include="Resource files\tool_foldergo.png" />
+    <Image Include="Resource files\tool_help.png" />
+    <Image Include="Resource files\tool_information.png" />
+    <Image Include="Resource files\tool_new.png" />
+    <Image Include="Resource files\tool_ocr.png" />
+    <Image Include="Resource files\tool_open.png" />
+    <Image Include="Resource files\tool_page.png" />
+    <Image Include="Resource files\tool_pageadd.png" />
+    <Image Include="Resource files\tool_paint.png" />
+    <Image Include="Resource files\tool_panecopy.png" />
+    <Image Include="Resource files\tool_paneimage.png" />
+    <Image Include="Resource files\tool_paneinformation.png" />
+    <Image Include="Resource files\tool_paste.png" />
+    <Image Include="Resource files\tool_preview.png" />
+    <Image Include="Resource files\tool_print.png" />
+    <Image Include="Resource files\tool_property.png" />
+    <Image Include="Resource files\tool_redo.png" />
+    <Image Include="Resource files\tool_rotate180.png" />
+    <Image Include="Resource files\tool_rotateanticlockwise.png" />
+    <Image Include="Resource files\tool_rotateclockwise.png" />
+    <Image Include="Resource files\tool_save2.png" />
+    <Image Include="Resource files\tool_scanner.png" />
+    <Image Include="Resource files\tool_scannertwain.png" />
+    <Image Include="Resource files\tool_selection.png" />
+    <Image Include="Resource files\tool_split.png" />
+    <Image Include="Resource files\tool_switch.png" />
+    <Image Include="Resource files\tool_undo.png" />
+    <Image Include="Resource files\tool_wcclose.png" />
+    <Image Include="Resource files\tool_zoom.png" />
+    <Image Include="Resource files\tool_zoomin.png" />
+    <Image Include="Resource files\tool_zoomtoselection.png" />
+    <Image Include="Resource files\tool_zoomtowindow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="OCR files\TOcrResources.rc" />
+    <ResourceCompile Include="Resource files\CopyingMachine3.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\Rainier &amp; Danielle\Desktop\sRGB_v4_ICC_preference.icc" />
+    <None Include="ClassDiagram1.cd" />
+    <None Include="ClassDiagram_CopyingMachine.cd" />
+    <None Include="Resource files\cursor_dragdrop.cur" />
+    <None Include="Resource files\rcdata2.bin" />
+    <None Include="Resource files\sRGB.icc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Manifest Include="copyingmachine3.manifest" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="LibTiff\libtiff\LibTiff.vcxproj">
+      <Project>{7d3fc62b-74c1-47ea-b2f3-d3a01c419a91}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="ZLib\ZLib\ZLib.vcxproj">
+      <Project>{27e1e63b-b761-4928-a79f-e8761eb50e2e}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="Resource files\CopyingMachine3.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
