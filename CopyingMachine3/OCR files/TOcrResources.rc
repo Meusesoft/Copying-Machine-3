@@ -1,0 +1,115 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "TOcrResources.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Dutch (Netherlands) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_NLD)
+#ifdef _WIN32
+LANGUAGE LANG_DUTCH, SUBLANG_DUTCH
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "TOcrResources.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_OCRDEBUG DIALOGEX 0, 0, 631, 391
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,520,370,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,574,370,50,14
+    CONTROL         "",IDC_PICTURE,"Static",SS_OWNERDRAW,7,20,308,364
+    SCROLLBAR       IDC_SCROLLBAR1,7,373,308,11
+    SCROLLBAR       IDC_SCROLLBAR2,305,20,10,353,SBS_VERT
+    LTEXT           "Intermediate Image",IDC_STATIC,7,7,64,8
+    LTEXT           "OCR trace information",IDC_STATIC,319,108,72,8
+    LTEXT           "OCR Result",IDC_STATIC,319,248,38,8
+    GROUPBOX        "Settings",IDC_STATIC,321,7,303,97
+    CONTROL         "Save XML",IDC_CHECK_SAVEXML,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,330,24,47,10
+    CONTROL         "Save image",IDC_CHECK_SAVEIMAGE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,330,36,53,10
+    CONTROL         "Save results",IDC_CHECK_SAVERESULTS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,330,48,55,10
+    CONTROL         "Save split images",IDC_CHECK_SAVESPLIT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,330,60,71,10
+    PUSHBUTTON      "Start",IDC_START,330,79,50,14
+    COMBOBOX        IDC_COMBOOCRTYPE,456,30,144,30,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "OCR Type",IDC_STATIC,456,18,34,8
+    COMBOBOX        IDC_LANGUAGE,456,60,144,30,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Language",IDC_STATIC,456,48,32,8
+    EDITTEXT        IDC_OCRTRACE,324,120,300,120,ES_MULTILINE | ES_AUTOHSCROLL | WS_VSCROLL
+    EDITTEXT        IDC_OCRTEXT,324,258,300,102,ES_MULTILINE | ES_AUTOHSCROLL | WS_VSCROLL
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_OCRDEBUG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 624
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 384
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // Dutch (Netherlands) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

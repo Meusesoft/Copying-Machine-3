@@ -1,0 +1,96 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/2002/REC-xhtml1-20020801/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Copying Machine 3 - Interfaces</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Language" content="en-us" />
+    <link rel="stylesheet" type="text/css" href="images/default.css" media="screen" />
+</head>
+<body>
+    <div id="wrapper">
+        <div id="top_nav">
+            <ul>
+                <li><a href="http://www.meusesoft.com">Home</a></li>
+                <li><a href="http://about.meusesoft.com">About</a></li>
+                <li><a href="http://copyingmachine.meusesoft.com">Copying Machine</a></li>
+                <li><a href="http://31forwindows.meusesoft.com">31 for Windows</a></li>
+                <li><a href="http://janitor.meusesoft.com">Janitor</a></li>
+            </ul>
+        </div>
+        <div id="header">
+            <div id="logo">
+                Copying Machine<span class="color"> 3.0</span>
+            </div>
+        </div>
+        <div id="breadcrumb">
+            <a href="http://www.meusesoft.com">Home</a> > <a href="http://copyingmachine.meusesoft.com">
+                Copying Machine</a> > <a href="index.html">Help</a> > <a>Interfaces</a>
+        </div>
+        <div id="content">
+            <div id="r_col">
+                <h1>
+                    Interfaces</h1>
+                <p>
+                    Copying Machine supports two types of scanning interfaces; TWAIN and WIA.</p>
+                <h2>
+                    TWAIN</h2>
+                <p>
+                    You might have heard of the word TWAIN before and know that it has something to
+                    do with your scanning. Fortunately you do not have to know anything more about it,
+                    but when you do know more about it you might understand some problems you could
+                    encounter using your scanner.</p>
+                <p>
+                    TWAIN is a worldwide standard that helps software developers to make their software
+                    to communicate with scanners. It provides in a generic interface between their software
+                    and any TWAIN-compliant scanner. So instead of making a driver for any scanner in
+                    the world software developers only have to implement one interface; the one between
+                    their software and the TWAIN driver.
+                </p>
+                <p>
+                    This sounds very good, but there are some glitches. First of all, TWAIN can support
+                    a lot of capabilities, but your scanner might not support all of them. The consequence
+                    is that Copying Machine might not get the most out of your scanner because it uses
+                    only a few of the TWAIN capabilities. It can also happen that Copying Machine supports
+                    a capability that your scanner does not support.
+                </p>
+                <p>
+                    The last problem is that during the development of previous versions of Copying
+                    Machine I have noticed that not all scanner drivers are written in compliance with
+                    the TWAIN standard. They all scan, but some of them ignore settings they claim to
+                    support, or the returned values for settings are wrong.
+                </p>
+                <h2>
+                    WIA</h2>
+                <p>
+                    Windows XP and Vista support another scanning interface, called Windows Image Acquisition
+                    (WIA in short). WIA has a couple of advantages over the previous standard for scanning
+                    TWAIN.</p>
+                <p>
+                    The first advantage is that WIA has more required functions. That means that scanner
+                    drivers have to support more actions in contrast to TWAIN scanner drivers, and as
+                    a result an application has more control over the scanner.</p>
+                <p>
+                    Secondly, the API calls of WIA are cleaner. You, as user, will notice nothing about
+                    this but as a developer this speeds things up quite considerably. And the result
+                    returned are easier to interpret. With TWAIN I  noticed that sometimes different
+                    return formats of the same function return different results. As you can imagine
+                    this can lead to some undesired behaviour in your application.</p>
+                <p>
+                    For these reasons I recommend using a WIA scanner driver. When you select a scanning device in Copying Machine you will see that
+                    the interface of all devices are mentioned; WIA, TWAIN or File.</p>
+            </div>
+            <div id="l_col">
+            </div>
+        </div>
+        <div id="footer">
+            <div id="footer_xhtml">
+                <a href="http://validator.w3.org/check?uri=referer">
+                    <img src="http://www.w3.org/Icons/valid-xhtml10-blue" alt="Valid XHTML 1.0 Strict"
+                        height="31" width="88" /></a> <a href="http://jigsaw.w3.org/css-validator/">
+                            <img src="http://jigsaw.w3.org/css-validator/images/vcss-blue" alt="Valide CSS!"
+                                height="31" width="88" /></a>
+            </div>
+            &copy; 2009 Meusesoft</div>
+    </div>
+</body>
+</html>

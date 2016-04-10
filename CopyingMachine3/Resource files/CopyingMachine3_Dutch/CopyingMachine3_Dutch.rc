@@ -1,0 +1,591 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "..\CopyingMachine3_English\language."
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "..\resource.h"
+#include "afxres.h"
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Dutch (Netherlands) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_NLD)
+#ifdef _WIN32
+LANGUAGE LANG_DUTCH, SUBLANG_DUTCH
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "..\\CopyingMachine3_English\\language.\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""..\\resource.h""\r\n"
+    "#include ""afxres.h""\r\r\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,82
+ PRODUCTVERSION 3,0,0,82
+ FILEFLAGSMASK 0x17L
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "001304b0"
+        BEGIN
+            VALUE "CompanyName", "Meusesoft"
+            VALUE "FileDescription", "Copying Machine Dutch Language Module "
+            VALUE "FileVersion", "1, 0, 0, 82"
+            VALUE "InternalName", "cm_dutch"
+            VALUE "LegalCopyright", "Copyright (C) 1997 - 2015"
+            VALUE "OriginalFilename", "cm_dutch.dll"
+            VALUE "ProductName", "Copying Machine Dutch Language Module "
+            VALUE "ProductVersion", "3, 0, 0, 82"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x13, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDC_COPYINGMACHINE3 MENU 
+BEGIN
+    POPUP "&Bestand"
+    BEGIN
+        MENUITEM "&Nieuw...\tCtrl-N",           ID_FILE_NEW
+        MENUITEM "&Openen...\tCtrl-O",          ID_FILE_OPEN
+        MENUITEM "Op&slaan\tCtrl-S",            ID_FILE_SAVE
+        MENUITEM "Opslaan als...",              ID_FILE_SAVEAS
+        MENUITEM "&Sluit document",             ID_FILE_CLOSE
+        MENUITEM SEPARATOR
+        MENUITEM "&Afdrukken\tCtrl-P",          ID_FILE_PRINT
+        MENUITEM "Afd&rukvoorbeeld",            ID_FILE_PRINT_PREVIEW
+        MENUITEM SEPARATOR
+        MENUITEM "&Voorkeuren...",              ID_FILE_PREFERENCES
+        MENUITEM SEPARATOR
+        MENUITEM "&Inscannen...",               ID_SCAN_ACQUIRE
+        MENUITEM "&Kies bron...",               ID_SCAN_SELECTSOURCE
+        MENUITEM SEPARATOR
+        MENUITEM "A&fsluiten\tAlt-F4",          IDM_EXIT
+    END
+    POPUP "&Bewerken"
+    BEGIN
+        MENUITEM "K&nippen\tCtrl-X",            ID_EDIT_CUT
+        MENUITEM "&Kopiëren\tCtrl-C",           ID_EDIT_COPY
+        MENUITEM "&Plak als nieuw document",    ID_EDIT_PASTE
+        MENUITEM "P&lak als nieuwe pagina\tCtrl-V", ID_EDIT_PASTEASNEWPAGE
+        MENUITEM SEPARATOR
+        MENUITEM "Selecteer &alles\tCtrl-A",    ID_EDIT_SELECTALL
+        MENUITEM "&Verwijder selectie\tShift-Ctrl-A", ID_EDIT_CLEARSELECTION
+        MENUITEM "I&nverteer selectie",         ID_EDIT_SWAPSELECTION
+        MENUITEM "Selecteer content",           ID_EDIT_SELECTCONTENT
+    END
+    POPUP "&Beeld"
+    BEGIN
+        POPUP "Vergroting"
+        BEGIN
+            MENUITEM "Maak passend",                ID_ZOOM_ZOOMTOFIT
+            MENUITEM "Maak passend aan selectie",   ID_ZOOM_ZOOMTOSELECTION
+            MENUITEM SEPARATOR
+            MENUITEM "10%",                         ID_ZOOM_10
+            MENUITEM "20%",                         ID_ZOOM_20
+            MENUITEM "33%",                         ID_ZOOM_33
+            MENUITEM "50%",                         ID_ZOOM_50
+            MENUITEM "75%",                         ID_ZOOM_75
+            MENUITEM "100%",                        ID_ZOOM_100
+            MENUITEM "125%",                        ID_ZOOM_125
+            MENUITEM "150%",                        ID_ZOOM_150
+            MENUITEM "200%",                        ID_ZOOM_200
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "&Tekstherkenningslaag",       ID_VIEW_RECOGNITIONLAYER
+        MENUITEM SEPARATOR
+        MENUITEM "Balk &kopiëren",              ID_VIEW_PANECOPY
+        MENUITEM "Balk &pagina",                ID_VIEW_PANEIMAGE
+        MENUITEM "Balk &informatie",            ID_VIEW_PANEPAGE
+        MENUITEM SEPARATOR
+        MENUITEM "Eenvoudige modus...",         IDC_SWITCH
+    END
+    POPUP "&Scannen"
+    BEGIN
+        MENUITEM "&Inscannen...",               ID_SCAN_ACQUIRE
+        MENUITEM "&Kies bron...",               ID_SCAN_SELECTSOURCE
+    END
+    POPUP "&Document"
+    BEGIN
+        MENUITEM "&Kopiëren",                   IDC_DOCOPY
+        MENUITEM "&Nieuw...\tCtrl-N",           ID_FILE_NEW
+        MENUITEM "&Afdrukken",                  ID_FILE_PRINT_DIRECT
+        MENUITEM "&Sluit document",             ID_FILE_CLOSE
+        MENUITEM SEPARATOR
+        POPUP "&Inscannen pagina's"
+        BEGIN
+            MENUITEM "&Inscannen nieuwe pagina's...", ID_DOCUMENT_ACQUIRENEWPAGE
+            MENUITEM SEPARATOR
+            MENUITEM "Inscannen &oneven pagina's...", ID_DOCUMENT_ACQUIREODDPAGES
+            MENUITEM "Inscannen &even pagina's...", ID_DOCUMENT_ACQUIREEVENPAGES
+        END
+        MENUITEM "&Verwijder pagina",           ID_DOCUMENT_DELETEPAGE
+        MENUITEM "&Splits document",            ID_DOCUMENT_SPLITDOCUMENT
+        MENUITEM SEPARATOR
+        MENUITEM "K&nip pagina",                ID_DOCUMENT_CUTPAGE
+        MENUITEM "K&opieer pagina",             ID_DOCUMENT_COPYPAGE
+        MENUITEM "&Plak als nieuwe pagina\tCtrl-V", ID_EDIT_PASTEASNEWPAGE
+    END
+    POPUP "&Pagina"
+    BEGIN
+        POPUP "Converteer &naar"
+        BEGIN
+            MENUITEM "&Grijswaarden",               ID_CONVERTTO_GRAYSCALE
+            MENUITEM "&Zwart en wit",               ID_CONVERTTO_BLACKWHITE
+        END
+        POPUP "&Roteer en spiegel"
+        BEGIN
+            MENUITEM "Roteer &90°\tCtrl-R",         ID_ROTATE_90
+            MENUITEM "Roteer 1&80°",                ID_ROTATE_180
+            MENUITEM "Roteer 2&70°\tShift-Ctrl-R",  ID_ROTATE_270
+            MENUITEM SEPARATOR
+            MENUITEM "Spiegel &Horizontaal",        ID_ROTATEANDFLIP_FLIPHORIZONTALLY
+            MENUITEM "Spiegel &Verticaal",          ID_ROTATEANDFLIP_FLIPVERTICALLY
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "&Bijsnijden",                 ID_IMAGE_CROP
+        MENUITEM "V&ul selectie",               ID_IMAGE_FILLSELECTION
+        MENUITEM SEPARATOR
+        MENUITEM "&Herken tekst...",            ID_IMAGE_RECOGNIZETEXT
+        MENUITEM "K&opieer tekst naar klembord", ID_EDIT_COPYTEXTTOCLIPBOARD
+        MENUITEM "V&erwijder herkende tekst",   ID_PAGE_DELETETEXTBLOCKS
+        MENUITEM SEPARATOR
+        MENUITEM "Vind &kleur",                 ID_IMAGE_COLORPICKER
+        MENUITEM "O&pvulkleur...",              ID_IMAGE_CHOOSECOLOR
+        MENUITEM SEPARATOR
+        MENUITEM "&Maak ongedaan\tCtrl-Z",      ID_IMAGE_UNDO
+        MENUITEM "&Doe opnieuw\tCtrl-Y",        ID_IMAGE_REDO
+    END
+    POPUP "&Taal"
+    BEGIN
+        MENUITEM "&Engels",                     ID_LANGUAGE_ENGLISH
+        MENUITEM "&Nederlands",                 ID_LANGUAGE_DUTCH
+        MENUITEM "&Duits",                      ID_LANGUAGE_GERMAN
+    END
+    POPUP "&Macro"
+    BEGIN
+        MENUITEM "&Bewerken en uitvoeren...\tCtrl-M", ID_MACRO_EDITANDEXECUTE
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "Inhoud...\tF1",               ID_HELP_CONTENTS
+        MENUITEM SEPARATOR
+        MENUITEM "&Over ...",                   IDM_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_ACQUIREDONE         "Pagina is succesvol ingescand. In totaal zijn er %d pagina's ingescand."
+    IDS_CONTINUE            "Doorgaan"
+    IDS_ACQUIREANOTHERPAGE  "Wilt u nog een pagina inscannen?...(%d)"
+    IDS_PLACENEXTPAGEMESSAGE 
+                            "Plaats de volgende pagina en druk op 'Doorgaan'."
+    IDS_PLACENEXTPAGECAPTION "Plaats de volgende pagina..."
+    IDS_NULL                " "
+    IDS_ACQUIREUNSUCCESSFUL "Het inscannen van de laatste pagina was niet succesvol, reden: %s"
+    IDS_UNKNOWN             "Onbekend"
+    IDS_ERRORFILENOTFOUND   "Een fout heeft zich voorgedaan bij het openen van bestand '%s'."
+    IDS_ERRORPROCESSINGFILE "Een fout heeft zich voorgedaan bij het verwerken van bestand '%s'."
+    IDS_ERRORINVALIDFORMAT  "Het bestand '%s' heeft een niet ondersteund bestandsformaat."
+    IDS_ERRORHEADING        "Foutmelding Copying Machine"
+    IDS_CAPTION             "Copying Machine"
+    IDS_ERROROUTOFMEMORY    "Onvoldoende geheugen beschikbaar. Sluit een aantal geopende documenten of herstart Copying Machine."
+    IDS_ERRORUNKNOWN        "Een onbekende fout heeft zich voorgedaan. Sla uw openstaande documenten op en herstart Copying Machine."
+    IDS_FILEDLGOPENDOCUMENT "Document openen"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_FILEDLGSAVEDOCUMENT "Document opslaan"
+    IDS_ERRORCOULDNOTCREATE "Een fout heeft zich voorgedaan bij het aanmaken van bestand '%s'."
+    IDS_ERRORACCESSDENIED   "Toegang geweigerd op '%s'."
+    IDS_OK                  "Ok"
+    IDS_CANCEL              "Annuleren"
+    IDS_APPLY               "Toepassen"
+    IDS_YES                 "Ja"
+    IDS_NO                  "Nee"
+    IDS_CLOSE               "Sluiten"
+    IDS_PREFERENCES         "Voorkeuren"
+    IDS_GENERAL             "Algemeen"
+    IDS_PRINTER             "Printer"
+    IDS_DEVICES             "Apparaten"
+    IDS_ALIGNMENT           "Uitlijning"
+    IDS_SCANNER             "Scanner"
+    IDS_IMAGESIZE           "Afdrukgrootte"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_COPIESALIGNMENT     "Kopieën & Uitlijning"
+    IDS_PAGES               "Pagina's"
+    IDS_BRIGHTNESSCONTRAST  "Helderheid & Contrast"
+    IDS_COLORRESOLUTION     "Kleur & Resolutie"
+    IDS_ADVANCED            "Geavanceerd"
+    IDS_TRACING             "Tracing"
+    IDS_TRACEDESCRIPTION    "Het activeren van de trace optie zorgt ervoor dat Copying Machine een XML bestand aanmaakt met debug-informatie. Het activeren van deze optie is alleen nuttig voor het zoeken naar fouten in Copying Machine door de ontwikkelaar. Activeer het daarom alleen op zijn verzoek.\n\nNa het aanvinken van het onderstaande keuzevak dan moet Copying Machine opnieuw opgestart worden om het tracen te starten."
+    IDS_TRACEACTIONS        "Trace Copying Machine acties"
+    IDS_TRACE               "Trace"
+    IDS_SHOWINTERFACE       "Toon altijd de interface"
+    IDS_SHOWERRORS          "Toon foutmeldingen"
+    IDS_TESTCAPABILITY      "Test optie"
+    IDS_USECAPABILITY       "Gebruik optie"
+    IDS_RESOLUTION          "Resolutie"
+    IDS_BRIGHTNESS          "Helderheid"
+    IDS_CONTRAST            "Contrast"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_ORIENTATION         "Orientatie"
+    IDS_COLORDEPTH          "Kleurdiepte"
+    IDS_PAGESIZE            "Paginagrootte"
+    IDS_MISCELLANEOUS       "Algemeen"
+    IDS_ASSOCIATE           "Associeer"
+    IDS_FILETYPES           "Bestandstypen"
+    IDS_EVENTS              "Gebeurtenissen"
+    IDS_TIFFCOMPRESSIONDEFAULT 
+                            "Gebruik TIFF met compressie als standaard type"
+    IDS_JPEGCOMPRESSION     "JPEG compressie"
+    IDS_TIFFCOMPRESSION     "TIFF compressie"
+    IDS_AFTERACQUISITION    "Na inscannen van afbeelding"
+    IDS_ASKTOSCANNEXTPAGE   "Vraag om volgende pagina"
+    IDS_INVERTBWIMAGE       "Inverteer een zwart/wit afbeelding"
+    253                     "Aanname"
+    IDS_GIVEWARNING         "Geef waarschuwing"
+    IDS_INVALIDRESOLUTIONDETECTED "Ongeldige resolutie gedetecteerd"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_SCANNEREVENTS       "Scanner gebeurtenissen"
+    IDS_DIMENSION           "Afmetingen"
+    IDS_IMAGE               "Afbeelding"
+    IDS_TYPE                "Type"
+    IDS_ACTIONCANCELLED     "Actie is geannuleerd."
+    IDS_ERROROCCURRED       "Een fout heeft zich voorgedaan."
+    IDS_COPIES              "Kopieën"
+    IDS_ALLPREFERENCES      "Alle voorkeuren..."
+    IDS_FILE                "Bestand"
+    IDS_EMAIL               "E-mail"
+    IDS_TOP                 "Boven"
+    IDS_CENTER              "Centreren"
+    IDS_BOTTOM              "Onder"
+    IDS_LEFT                "Links"
+    IDS_RIGHT               "Rechts"
+    IDS_VERTICAL            "Verticaal"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_COLOR               "Kleur"
+    IDS_GRAY                "Grijswaarden"
+    IDS_BLACKWHITE          "Zwart/Wit"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_BALANCE             "Balans"
+    IDS_PORTRAIT            "Staand"
+    IDS_LANDSCAPE           "Liggend"
+    IDS_DEFAULT             "Standaard"
+    IDS_A4                  "A4"
+    IDS_A5                  "A5"
+    IDS_LETTER              "Letter"
+    IDS_LEGAL               "Legal"
+    IDS_PAGE                "Pagina"
+    IDS_SELECTSOURCE        "Selecteer in de onderstaande lijst uw gewenste invoerapparaat.\n\nBij elk apparaat staat de gebruikte interface genoemd; bestand, TWAIN of WIA. Kies bij voorkeur een apparaat met een WIA-interface omdat Copying Machine meer controle zal hebben op de kwaliteit van de ingescande afbeelding."
+    IDS_NEWDOCUMENTTITLE    "Document %d"
+    IDS_PROGRESS            "Voortgang"
+    IDS_ACQUIRINGIMAGES     "Afbeeldingen inscannen..."
+    IDS_ACQUIRINGFROM       "Afbeeldingen inscannen van '%s'."
+    IDS_CANCELLINGTASK      "Taak annuleren..."
+    IDS_ACQUIREMOREPAGES    "Een volgende pagina inscannen?"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_HORIZONTAL          "Horizontaal"
+    IDS_MULTIPLECOPIESONPAGE "Vul pagina met zoveel mogelijk kopieën"
+    IDS_MULTIPLEIMAGESONPAGE "4 pagina's op 1 afgedrukte pagina"
+    IDS_NUMBEROFCOPIES      "Aantal kopieën"
+    IDS_MAGNIFICATION       "Vergroting"
+    IDS_MAGNIFYIMAGEBY      "Vergroot afbeelding met:"
+    IDS_IMAGESMALLERTHANPAGE "Afbeelding kleiner dan pagina"
+    IDS_IMAGELARGERTHANPAGE "Afbeelding groter dan pagina"
+    IDS_STRETCHTOFIT        "Vergroot tot passend"
+    IDS_CLIP                "Afkappen"
+    IDS_SHRINKTOFIT         "Verklein tot passend"
+    IDS_COPY                "Kopiëren"
+    IDS_EXIT                "Beëindigen"
+    IDS_SWITCH              "Naar geavanceerde modus..."
+    IDS_ACQUIREFROM         "Inscannen van"
+    IDS_COPYTO              "Kopiëren naar"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_PRINTERROR          "Het document is niet (compleet) gekopieerd. Een fout heeft zich voorgedaan tijdens het afdrukken."
+    IDS_PRINTERRORMESSAGE   "Het document is niet (compleet) gekopieerd.\n\n%s (%d)"
+    IDS_PRINTSTATUSSTRING   "Afdrukken pagina %d / %d op '%s'."
+    IDS_SCANSTATUSSTRING    "Inscannen pagina %d van '%s'."
+    IDS_SELECTOUTPUTDEVICE  "Selecteer in onderstaande lijst het uitvoerapparaat dat u als standaard wilt gebruiken.\n\nBij elk apparaat is het type aangegeven. Dit is printer, bestand of e-mail."
+    IDS_ACCEPT              "Accepteren"
+    IDS_DECLINE             "Afwijzen"
+    IDS_PREVIEW             "Voorbeeld"
+    IDS_VIEW                "Beeld"
+    IDS_COPYINGDOCUMENT     "Document kopiëren..."
+    IDS_LANGUAGE            "Taal"
+    IDS_LOCALLANGUAGE       "Lokale taal instelling"
+    IDS_REGISTEREDNAME      "Naam: %s"
+    IDS_REGISTEREDORG       "Organisatie: %s"
+    IDS_REGISTEREDTO        "Geregistreerd door"
+    IDS_UNREGISTERED        "Niet geregistreerd"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_REGISTERNOW         "Registreer nu..."
+    IDS_PLACEKEY            "Plaats sleutel..."
+    IDS_ABOUT               "Over"
+    IDS_INFORMATION         "Informatie"
+    IDS_CMVERSION           "Copying Machine %d.%d"
+    IDS_CMCOPYRIGHT         "%s"
+    IDS_ABOUTCM             "Over Copying Machine"
+    IDS_PLACEKEYCAPTION     "Plaats sleutel"
+    IDS_PLACEKEYFROMTEXT    "Type of plak uw registratie code in het onderstaande veld."
+    IDS_PLACEKEYFROMFILE    "Of laat het ontvangen bestand in:"
+    IDS_KEYNOTVALID         "Deze registratie code is niet valide!"
+    IDS_THANKYOU            "Bedankt voor het registreren van Copying Machine!"
+    IDS_LOAD                "Laden"
+    IDS_REGISTERINFO        "Dit is een test versie van Copying Machine. In deze versie zijn alle functionaliteiten geactiveerd. U zult echter regelmatig deze herinnering te zien krijgen. Als u Copying Machine wilt gebruiken zonder deze herinneringen dan dient u zich te registreren. Druk op de knop 'Registreer nu...' voor meer informatie.\n\nEen registratie code kost $15."
+    IDS_HASH                "fghuhguyguerhuherghwghwhguwtghptwrghpwrthg"
+    IDS_ACQUIRE             "Inscannen"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_PRINT               "Print"
+    IDS_CROPIMAGE           "Bijsnijden"
+    IDS_ROTATE90            "Roteer 90°"
+    IDS_ROTATE180           "Roteer 180°"
+    IDS_ROTATE270           "Roteer 270°"
+    IDS_FLIPHORIZONTAL      "Spiegel horizontaal"
+    IDS_FLIPVERTICAL        "Spiegel verticaal"
+    IDS_FILLSELECTION       "Vul selectie"
+    IDS_SWAPSELECTION       "Inverteer selectie"
+    IDS_SELECTALL           "Selecteer alles"
+    IDS_CLEARSELECTION      "Verwijder selectie"
+    IDS_DOCUMENT            "Document"
+    IDS_SIZEINMEMORY        "\\rGeheugen:"
+    IDS_NUMBEROFPAGES       "\\rAantal pagina's:"
+    IDS_SIZEINPIXELS        "\\rOmvang in pixels:"
+    IDS_SAVE                "Opslaan"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_SAVEAS              "Opslaan als"
+    IDS_OPEN                "Open"
+    IDS_PASTENEWPAGE        "Plakken als nieuwe pagina"
+    IDS_ACQUIRENEWPAGE      "Scan nieuwe pagina"
+    IDS_DELETEPAGE          "Verwijder pagina"
+    IDS_CUTPAGE             "Knip pagina"
+    IDS_COPYPAGE            "Kopieer pagina"
+    IDS_CONVERTGRAYSCALE    "Naar grijswaarden"
+    IDS_CONVERTBLACKWHITE   "Naar zwart en wit"
+    IDS_RECOGNIZETEXT       "Herken tekst"
+    IDS_START               "Start"
+    IDS_COPYTOCLIPBOARD     "Kopieer naar klembord"
+    IDS_RESULT              "Resultaat"
+    IDS_RECOGNITIONLAYER    "Tekstherkenningslaag"
+    IDS_OCRPOWEREDBY        "Powered by Tesseract OCR engine"
+    IDS_SETTINGS            "Instellingen"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_COPYTEXTTOCLIPBOARD "Kopieer tekst naar klembord"
+    IDS_DELETETEXTBLOCK     "Verwijder tekst"
+    IDS_ROTATEANDFLIP       "Roteer en spiegel"
+    IDS_TOOLS               "Instrumenten"
+    IDS_ACTIONS             "Acties"
+    IDS_SELECTION           "Selectie"
+    IDS_DOCUMENTS           "Documenten"
+    IDS_PANETITLE           "Balk: %s"
+    IDS_SAVECHANGES         "Wilt u de wijzigen opslaan die u heeft gemaakt aan %s?"
+    IDS_CUT                 "Knippen"
+    IDS_TOADVANCED          "Naar geavanceerde modus"
+    IDS_PASTEASNEWDOCUMENT  "Plak als nieuw document"
+    IDS_NEWDOCUMENT         "Nieuw document"
+    IDS_ZOOMTOSELECTION     "Maak vergroting passend aan selectie"
+    IDS_ZOOMTOFIT           "Maak vergroting passend aan pagina"
+    IDS_CURRENTLANGUAGEDESC "Nederlands"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_HELP                "Help"
+    IDS_CONTENTS            "Contents"
+    IDS_SPLITONTHISPAGE     "Splits vanaf deze pagina"
+    IDS_AUTOSAVE            "Autosave"
+    IDS_AUTOMATICALLYSAVE   "Sla een ingescand document automatisch op"
+    IDS_DOCUMENTTYPE        "Documentenverzameling"
+    IDS_NAME                "Naam"
+    IDS_FORMATFILENAME      "Formaat bestandsnaam"
+    IDS_DEFAULTFOLDER       "Standaard map"
+    IDS_DELETE              "Verwijder"
+    IDS_BROWSE              "Bladeren..."
+    IDS_BROWSEHELPDEFAULT   "Selecteer de map waar gescande documenten automatisch in moeten worden opgeslagen."
+    IDS_NEWDOCUMENTTYPE     "<Nieuwe documentenverzameling>"
+    IDS_NEW                 "Nieuw"
+    IDS_AUTOSAVEDOCUMENT    "Document automatisch opslaan"
+    IDS_CHARACTERSNOTALLOWED 
+                            "De volgende tekens zijn niet toegestaan: / \\ "" * : < > ? |"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_ERROR               "Foutmelding"
+    IDS_WARNING             "Waarschuwing"
+    IDS_ENTERDESCRIPTION    "Geef een omschrijving voor dit nieuwe document"
+    IDS_NEWDOCUMENTNAME     "De gegenereerde naam voor dit document"
+    IDS_TAGMONTH            "Maand\t%month%"
+    IDS_TAGDAY              "Dag\t%day%"
+    IDS_TAGNAME             "Naam\t%name%"
+    IDS_TAGCOUNTER          "Teller\t%counter%"
+    IDS_TAGTYPE             "Verzameling\t%collection%"
+    IDS_TAGHOUR             "Uur\t%hour%"
+    IDS_TAGMINUTES          "Minuten\t%minutes%"
+    IDS_TAGSECONDS          "Seconden\t%seconds%"
+    IDS_TAGS                "Labels"
+    IDS_TAGYEAR             "Jaar\t%year%"
+    IDS_FILETYPETIFF        "TIFF ongecomprimeerd (*.tiff)"
+    IDS_FILETYPETIFFCOMPRESSED "TIFF gecomprimeerd (*.tiff)"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_FILETYPEPDF         "Adobe PDF (*.pdf)"
+    IDS_FILETYPEBMP         "Windows Bitmap (*.bmp)"
+    IDS_FILETYPEPNG         "Portable Network Graphics (*.png)"
+    IDS_FILETYPEJPG         "JPEG (*.jpg)"
+    IDS_FILETYPEPCX         "PC Paintbrush Exchange (*.pcx)"
+    IDS_PREFERREDFILETYPE   "Voorkeur bestandstype"
+    IDS_DOCUMENTCOLLECTIONS "Documentenverzamelingen"
+    IDS_REFRESH             "Vernieuwen"
+    IDS_HIDE                "Verbergen"
+    IDS_SHOW                "Tonen"
+    IDS_FOLDERUP            "Ga naar bovenliggende map"
+    IDS_EXPLORE             "Verkennen"
+    IDS_COLLECTIONS         "Collecties"
+    IDS_PROPERTY            "Eigenschap"
+    IDS_VALUE               "Waarde"
+    IDS_EQUIPMAKE           "Fabrikant"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_EQUIPMODEL          "Model"
+    IDS_MODIFIED            "Gewijzigd"
+    IDS_SIZE                "Omvang"
+    IDS_DESCRIPTION         "Omschrijving"
+    IDS_TITLE               "Titel"
+    IDS_WIDTH               "Breedte"
+    IDS_HEIGHT              "Hoogte"
+    IDS_COMPRESSION         "Compressie"
+    IDS_DATE                "Datum"
+    IDS_SHUTTERSPEED        "Sluitersnelheid"
+    IDS_EXPOSURETIME        "Belichtingstijd"
+    IDS_FNUMBER             "F nummer"
+    IDS_APERTURE            "Lensopening"
+    IDS_FOCALLENGTH         "Focuslengte"
+    IDS_DATETAKEN           "Datum opname"
+    IDS_DATEMODIFIED        "Datum aangepast"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_DATEDIGITIZED       "Datum gedigitaliseerd"
+    IDS_FLASH               "Flits"
+    IDS_EXPOSUREPROGRAM     "Belichtingsprogramma"
+    IDS_LIGHTSOURCE         "Lichtbron"
+    IDS_METERINGMODE        "Meetmodus"
+    IDS_SENSINGMETHOD       "Sensor"
+    IDS_REGISTER            "Registreer"
+    IDS_EXPORT              "Export"
+    IDS_SCRIPTEDITOR        "Script editor"
+    IDS_SCRIPTS             "Scripts"
+    IDS_EXECUTE             "Uitvoeren"
+    IDS_UNREGISTER          "Deregistreer"
+    IDS_UNKNOWNEVENT        "Onbekende gebeurtenis"
+    IDS_UNKNONWEVENTDESC    "Een extern apparaat heeft Copying Machine laten opstarten door middel van een gebeurtenis. De bijbehorende actie is echter onbekend voor Copying Machine.\n\nWelke actie moet Copying Machine uitvoeren?"
+    IDS_REMEMBEREVENT       "Deze actie altijd bij deze gebeurtenis uitvoeren."
+    IDS_NOTHING             "Niets"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_NOTOALL             "Alles nee"
+    IDS_YESTOALL            "Alles ja"
+    IDS_USEFEEDER           "Automatische documentinvoer"
+END
+
+#endif    // Dutch (Netherlands) resources
+/////////////////////////////////////////////////////////////////////////////
+
+

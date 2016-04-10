@@ -1,0 +1,613 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "language."
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "..\resource.h"
+#include "afxres.h"
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// German (Germany) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_DEU)
+#ifdef _WIN32
+LANGUAGE LANG_GERMAN, SUBLANG_GERMAN
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_ACQUIREDONE         "Erwerben Seite erfolgreich. In insgesamt %d Seiten erworben."
+    IDS_CONTINUE            "Fortsetzen"
+    IDS_ACQUIREANOTHERPAGE  "Wollen Sie zu einer anderen Seite zu erwerben?...(%d)"
+    IDS_PLACENEXTPAGEMESSAGE 
+                            "Legen Sie die nächste Seite auf den Scanner und drücken Sie 'Fortsetzen', um sie einzuziehen."
+    IDS_PLACENEXTPAGECAPTION "Legen Sie die nächste Seite auf den Scanner..."
+    IDS_NULL                " "
+    IDS_ACQUIREUNSUCCESSFUL "Acquiring last page was unsuccessful, reason: %s"
+    IDS_UNKNOWN             "Unbekannt"
+    IDS_ERRORFILENOTFOUND   "Fehler beim Öffnen der Datei '%s'."
+    IDS_ERRORPROCESSINGFILE "Ein Fehler beim Verarbeiten-Datei '%s'."
+    IDS_ERRORINVALIDFORMAT  "Die Datei '%s' hat ein nicht unterstütztes Dateiformat."
+    IDS_ERRORHEADING        "Fehler Copying Machine"
+    IDS_CAPTION             "Copying Machine"
+    IDS_ERROROUTOFMEMORY    "Es ist nicht genug Arbeitsspeicher frei."
+    IDS_ERRORUNKNOWN        "Ein unbekannter Fehler ist aufgetreten. Speichern Sie Ihre Dokumente und starten Copying Machine."
+    IDS_FILEDLGOPENDOCUMENT "Dokument öffnen"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_FILEDLGSAVEDOCUMENT "Dokument speichern"
+    IDS_ERRORCOULDNOTCREATE "Fehler beim Erstellen der Datei '%s'."
+    IDS_ERRORACCESSDENIED   "Access denied auf Datei '%s'."
+    IDS_OK                  "Ok"
+    IDS_CANCEL              "Abbrechen"
+    IDS_APPLY               "Anwenden"
+    IDS_YES                 "Ja"
+    IDS_NO                  "Nein"
+    IDS_CLOSE               "Close"
+    IDS_PREFERENCES         "Einstellungen"
+    IDS_GENERAL             "Allgemein"
+    IDS_PRINTER             "Drucker"
+    IDS_DEVICES             "Devices"
+    IDS_ALIGNMENT           "Ausrichtung"
+    IDS_SCANNER             "Scanner"
+    IDS_IMAGESIZE           "Bildgröße"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_COPIESALIGNMENT     "Kopien und Ausrichtung"
+    IDS_PAGES               "Seiten"
+    IDS_BRIGHTNESSCONTRAST  "Helligkeit und Kontrast"
+    IDS_COLORRESOLUTION     "Farbe und Auflösung"
+    IDS_ADVANCED            "Fortgeschritten"
+    IDS_TRACING             "Tracing"
+    IDS_TRACEDESCRIPTION    "Enabling tracing will make Copying Machine generate an xml file containing debug information. Enabling tracing is only useful for debugging Copying Machineby by its developer .\n\nAfter checking the checkbox below, restart Copying Machine to start tracing."
+    IDS_TRACEACTIONS        "Trace Copying Machine actions"
+    IDS_TRACE               "Trace"
+    IDS_SHOWINTERFACE       "Zeige Scanner-Dialog"
+    IDS_SHOWERRORS          "Fehlermeldungen anzeigen"
+    IDS_TESTCAPABILITY      "Test Fähigkeit"
+    IDS_USECAPABILITY       "Verwenden Fähigkeit"
+    IDS_RESOLUTION          "Auflösung"
+    IDS_BRIGHTNESS          "Helligkeit"
+    IDS_CONTRAST            "Kontrast"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_ORIENTATION         "Ausrichtung"
+    IDS_COLORDEPTH          "Color depth"
+    IDS_PAGESIZE            "Farbtiefe"
+    IDS_MISCELLANEOUS       "Sonstiges"
+    IDS_ASSOCIATE           "Assoziieren"
+    IDS_FILETYPES           "Dateityp"
+    IDS_EVENTS              "Ereignissen"
+    IDS_TIFFCOMPRESSIONDEFAULT "Use compressed TIFF as default type"
+    IDS_JPEGCOMPRESSION     "JPEG Kompression"
+    IDS_TIFFCOMPRESSION     "TIFF Kompression"
+    IDS_AFTERACQUISITION    "Nach der Bildaufnahme"
+    IDS_ASKTOSCANNEXTPAGE   "Fragen Sie zur nächsten Seite scannen"
+    IDS_INVERTBWIMAGE       "Invert ein Schwarz / Weiß Bild"
+    253                     "Assume"
+    IDS_GIVEWARNING         "Give warning"
+    IDS_INVALIDRESOLUTIONDETECTED "Ungültige Auflösung erkannt"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_SCANNEREVENTS       "Scanner-Ereignisse"
+    IDS_DIMENSION           "Größe"
+    IDS_IMAGE               "Bild"
+    IDS_TYPE                "Type"
+    IDS_ACTIONCANCELLED     "Aktion abgebrochen."
+    IDS_ERROROCCURRED       "Ein Fehler ist aufgetreten."
+    IDS_COPIES              "Kopien"
+    IDS_ALLPREFERENCES      "Alle Einstellungen..."
+    IDS_FILE                "Datei"
+    IDS_EMAIL               "E-mail"
+    IDS_TOP                 "Oben"
+    IDS_CENTER              "Zentriert"
+    IDS_BOTTOM              "Unter"
+    IDS_LEFT                "Links"
+    IDS_RIGHT               "Rechts"
+    IDS_VERTICAL            "Vertikal"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_COLOR               "Farbe"
+    IDS_GRAY                "Grau"
+    IDS_BLACKWHITE          "Schwarz/Weiß"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_BALANCE             "Balance"
+    IDS_PORTRAIT            "Porträt"
+    IDS_LANDSCAPE           "Landschaft"
+    IDS_DEFAULT             "Default"
+    IDS_A4                  "A4"
+    IDS_A5                  "A5"
+    IDS_LETTER              "Letter"
+    IDS_LEGAL               "Legal"
+    IDS_PAGE                "Seite"
+    IDS_SELECTSOURCE        "Wählen Sie den Standard-Scanner für Copying Machine. Für die besten Resultate, wählen Sie einen der WIA-Scanner aus."
+    IDS_NEWDOCUMENTTITLE    "Dokument %d"
+    IDS_PROGRESS            "Fortschritt"
+    IDS_ACQUIRINGIMAGES     "Einziehen Seiten..."
+    IDS_ACQUIRINGFROM       "Einziehen Seiten vom '%s'."
+    IDS_CANCELLINGTASK      "Abbrechen..."
+    IDS_ACQUIREMOREPAGES    "Erwerben Sie eine andere Seite?"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_HORIZONTAL          "Horizontal"
+    IDS_MULTIPLECOPIESONPAGE "Fill-Seite mit so viel Exemplare wie möglich"
+    IDS_MULTIPLEIMAGESONPAGE "4 Seiten auf 1 gedruckten Seite"
+    IDS_NUMBEROFCOPIES      "Auflage"
+    IDS_MAGNIFICATION       "Vergrößerung"
+    IDS_MAGNIFYIMAGEBY      "Bild vergrößern durch:"
+    IDS_IMAGESMALLERTHANPAGE "Bild kleiner als Seite"
+    IDS_IMAGELARGERTHANPAGE "Bild größer als Seite"
+    IDS_STRETCHTOFIT        "Passend vergrößern"
+    IDS_CLIP                "Abschneiden"
+    IDS_SHRINKTOFIT         "Passend verkleinern"
+    IDS_COPY                "Kopieren"
+    IDS_EXIT                "Beenden"
+    IDS_SWITCH              "Wechseln Sie zu fortgeschrittenen..."
+    IDS_ACQUIREFROM         "Erwerben von"
+    IDS_COPYTO              "Kopieren zum"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_PRINTERROR          "Das Dokument ist nicht (vollständig) kopiert. Fehler beim Drucken."
+    IDS_PRINTERRORMESSAGE   "Das Dokument ist nicht (vollständig) kopiert.\n\n%s (%d)"
+    IDS_PRINTSTATUSSTRING   "Drucken Seite %d / %d auf '%s'."
+    IDS_SCANSTATUSSTRING    "Erwerb von Seite %d von '%s'."
+    IDS_SELECTOUTPUTDEVICE  "Wählen Sie in der unten stehenden Liste das gewünschte Gerät als Standard-Ausgabegerät zu verwenden. \n\nFür jeden Eintrag in der Liste ist auch seine Art erwähnt wird. Dies geschieht entweder Drucker, Datei oder E-Mail."
+    IDS_ACCEPT              "Akzeptieren"
+    IDS_DECLINE             "Rückgang"
+    IDS_PREVIEW             "Vorschau"
+    IDS_VIEW                "Ansicht"
+    IDS_COPYINGDOCUMENT     "Copying Document..."
+    IDS_LANGUAGE            "Sprache"
+    IDS_LOCALLANGUAGE       "Lokale regionale Einstellung"
+    IDS_REGISTEREDNAME      "Name: %s"
+    IDS_REGISTEREDORG       "Organisation: %s"
+    IDS_REGISTEREDTO        "Registered zu"
+    IDS_UNREGISTERED        "Unregistered"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_REGISTERNOW         "Jetzt registrieren..."
+    IDS_PLACEKEY            "Platz Schlüssel..."
+    IDS_ABOUT               "Uber"
+    IDS_INFORMATION         "Information"
+    IDS_CMVERSION           "Copying Machine %d.%d"
+    IDS_CMCOPYRIGHT         "%s"
+    IDS_ABOUTCM             "Uber Copying Machine"
+    IDS_PLACEKEYCAPTION     "Schlüssel stecken"
+    IDS_PLACEKEYFROMTEXT    "Geben oder fügen Sie den empfangenen Freischaltcode in das folgende Feld:"
+    IDS_PLACEKEYFROMFILE    "Oder laden Sie es von der empfangenen Datei:"
+    IDS_KEYNOTVALID         "Die Registrierung von Ihnen eingegebene ist nicht gültig!"
+    IDS_THANKYOU            "Danke für die Registrierung Copying Machine!"
+    IDS_LOAD                "Laden"
+    IDS_REGISTERINFO        "Dies ist eine Testversion von Kopiergerät. In dieser Testversion alle Funktionen aktiviert sind, aber Sie werden häufig daran erinnert werden, dass Sie zu registrieren. Wenn Sie Kopiergerät ohne diese Erinnerung Dialog verwenden wollen, dann sollten Sie zu registrieren. Klicken Sie auf ""Jetzt registrieren ..."" für weitere Informationen.\n\nA Registrierungsschlüssel kostet 15 $."
+    IDS_HASH                "fghuhguyguerhuherghwghwhguwtghptwrghpwrthg"
+    IDS_ACQUIRE             "Erwerben"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_PRINT               "Drucken"
+    IDS_CROPIMAGE           "Bild zuschneiden"
+    IDS_ROTATE90            "Drehen um 90°"
+    IDS_ROTATE180           "Drehen um 180°"
+    IDS_ROTATE270           "Drehen um 270°"
+    IDS_FLIPHORIZONTAL      "Horizontal spiegeln"
+    IDS_FLIPVERTICAL        "Vertikal spiegeln"
+    IDS_FILLSELECTION       "Füllen Auswahl"
+    IDS_SWAPSELECTION       "Börse Auswahl"
+    IDS_SELECTALL           "Alles selektieren"
+    IDS_CLEARSELECTION      "Alles deselektieren"
+    IDS_DOCUMENT            "Dokument"
+    IDS_SIZEINMEMORY        "\\rGröße im Speicher:"
+    IDS_NUMBEROFPAGES       "\\rSeitenzahl:"
+    IDS_SIZEINPIXELS        "\\rGröße in Pixeln:"
+    IDS_SAVE                "Speichern"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_SAVEAS              "Speichern unter"
+    IDS_OPEN                "Öffnen"
+    IDS_PASTENEWPAGE        "Einfügen als neue Seite"
+    IDS_ACQUIRENEWPAGE      "Gewinnen Sie neue Seite"
+    IDS_DELETEPAGE          "Seite löschen"
+    IDS_CUTPAGE             "Ausschneiden Siete"
+    IDS_COPYPAGE            "Seite kopieren"
+    IDS_CONVERTGRAYSCALE    "Konvertieren in Graustufen"
+    IDS_CONVERTBLACKWHITE   "Konvertieren in Schwarzweiß"
+    IDS_RECOGNIZETEXT       "Texterkennung"
+    IDS_START               "Start"
+    IDS_COPYTOCLIPBOARD     "Kopieren"
+    IDS_RESULT              "Ergebnisse"
+    IDS_RECOGNITIONLAYER    "Recognition Schicht"
+    IDS_OCRPOWEREDBY        "Powered by Tesseract OCR engine"
+    IDS_SETTINGS            "Einstellungen"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_COPYTEXTTOCLIPBOARD "Text kopieren"
+    IDS_DELETETEXTBLOCK     "Text löschen"
+    IDS_ROTATEANDFLIP       "Drehen und Spiegeln"
+    IDS_TOOLS               "Werkzeuge"
+    IDS_ACTIONS             "Aktionen"
+    IDS_SELECTION           "Selection"
+    IDS_DOCUMENTS           "Dokumenten"
+    IDS_PANETITLE           "Pane: %s"
+    IDS_SAVECHANGES         "Wollen Sie die vorgenommenen Änderungen zu %s speichern?"
+    IDS_CUT                 "Ausschneiden"
+    IDS_TOADVANCED          "To advanced mode"
+    IDS_PASTEASNEWDOCUMENT  "Einfügen als neues Dokument"
+    IDS_NEWDOCUMENT         "New document"
+    IDS_ZOOMTOSELECTION     "Zoom zur Auswahl"
+    IDS_ZOOMTOFIT           "Zoom auf Fenstergröße anpassen"
+    IDS_CURRENTLANGUAGEDESC "Deutsch"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_HELP                "Hilfe"
+    IDS_CONTENTS            "Inhalt"
+    IDS_SPLITONTHISPAGE     "Split auf dieser Seite"
+    IDS_AUTOSAVE            "Auto-Speichern"
+    IDS_AUTOMATICALLYSAVE   "Automatisches Speichern einer erworbenen Dokument mit einer Reihe"
+    IDS_DOCUMENTTYPE        "DokumentSammlung"
+    IDS_NAME                "Name"
+    IDS_FORMATFILENAME      "Format Dateiname"
+    IDS_DEFAULTFOLDER       "Standardordner"
+    IDS_DELETE              "Löschen"
+    IDS_BROWSE              "Blättern..."
+    IDS_BROWSEHELPDEFAULT   "Die erworbenen Dokument wird automatisch in den Ordner, den Sie wählen gespeichert werden."
+    IDS_NEWDOCUMENTTYPE     "<Neues Dokument hinzufügen Sammlung>"
+    IDS_NEW                 "Neu"
+    IDS_AUTOSAVEDOCUMENT    "Automatisches Speichern Dokument"
+    IDS_CHARACTERSNOTALLOWED 
+                            "Die folgenden Zeichen sind nicht erlaubt: / \\ "" * : < > ? |"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_ERROR               "Fehler"
+    IDS_WARNING             "Warnung"
+    IDS_ENTERDESCRIPTION    "Bitte geben Sie eine Beschreibung für das Dokument"
+    IDS_NEWDOCUMENTNAME     "Die generierten Namen für dieses Dokument"
+    IDS_TAGMONTH            "Monat\t%month%"
+    IDS_TAGDAY              "Tag\t%day%"
+    IDS_TAGNAME             "Name\t%name%"
+    IDS_TAGCOUNTER          "Zähler\t%counter%"
+    IDS_TAGTYPE             "Sammlung\t%collection%"
+    IDS_TAGHOUR             "Stunde\t%hour%"
+    IDS_TAGMINUTES          "Minuten\t%minutes%"
+    IDS_TAGSECONDS          "Sekundens\t%seconds%"
+    IDS_TAGS                "Tags"
+    IDS_TAGYEAR             "Jahre\t%year%"
+    IDS_FILETYPETIFF        "TIFF uncompressed (*.tiff)"
+    IDS_FILETYPETIFFCOMPRESSED "TIFF compressed (*.tiff)"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_FILETYPEPDF         "Adobe PDF (*.pdf)"
+    IDS_FILETYPEBMP         "Windows Bitmap (*.bmp)"
+    IDS_FILETYPEPNG         "Portable Network Graphics (*.png)"
+    IDS_FILETYPEJPG         "JPEG (*.jpg)"
+    IDS_FILETYPEPCX         "PC Paintbrush Exchange (*.pcx)"
+    IDS_PREFERREDFILETYPE   "Bevorzugte filetype"
+    IDS_DOCUMENTCOLLECTIONS "Document Sammlungen"
+    IDS_REFRESH             "Refresh"
+    IDS_HIDE                "Verbergen"
+    IDS_SHOW                "Zeigen"
+    IDS_FOLDERUP            "Zum übergeordneten Ordner"
+    IDS_EXPLORE             "Erkunden"
+    IDS_COLLECTIONS         "Sammlungen"
+    IDS_PROPERTY            "Eigenschaft"
+    IDS_VALUE               "Wert"
+    IDS_EQUIPMAKE           "Manufacturer"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_EQUIPMODEL          "Model"
+    IDS_MODIFIED            "Modified"
+    IDS_SIZE                "Size"
+    IDS_DESCRIPTION         "Description"
+    IDS_TITLE               "Title"
+    IDS_WIDTH               "Width"
+    IDS_HEIGHT              "Height"
+    IDS_COMPRESSION         "Compression"
+    IDS_DATE                "Date"
+    IDS_SHUTTERSPEED        "Shutter speed"
+    IDS_EXPOSURETIME        "Exposure time"
+    IDS_FNUMBER             "F number"
+    IDS_APERTURE            "Aperture"
+    IDS_FOCALLENGTH         "Focal length"
+    IDS_DATETAKEN           "Date taken"
+    IDS_DATEMODIFIED        "Date modified"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_DATEDIGITIZED       "Date digitized"
+    IDS_FLASH               "Flash"
+    IDS_EXPOSUREPROGRAM     "Exposure program"
+    IDS_LIGHTSOURCE         "Light source"
+    IDS_METERINGMODE        "Metering mode"
+    IDS_SENSINGMETHOD       "Sensing method"
+    IDS_REGISTER            "Register"
+    IDS_EXPORT              "Export"
+    IDS_SCRIPTEDITOR        "Script editor"
+    IDS_SCRIPTS             "Scripts"
+    IDS_EXECUTE             "Ausführen"
+    IDS_UNREGISTER          "Unregister"
+    IDS_UNKNOWNEVENT        "Unbekanntes Ereignis"
+    IDS_UNKNONWEVENTDESC    "Copying Machine wurde durch ein Ereignis aus einem externen Gerät gestartet wurde. Doch dieses Ereignis unbekannt Kopiergerät ist.\n\nWelches der folgenden Aktionen sollten Copying Machine zu tun?"
+    IDS_REMEMBEREVENT       "Immer diese Aktion für dieses Ereignis"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_NOTOALL             "Nein, alle"
+    IDS_YESTOALL            "Ja, alle"
+    IDS_USEFEEDER           "Automatischer Dokumenteneinzug"
+END
+
+#endif    // German (Germany) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Dutch (Netherlands) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_NLD)
+#ifdef _WIN32
+LANGUAGE LANG_DUTCH, SUBLANG_DUTCH
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDC_COPYINGMACHINE3 MENU 
+BEGIN
+    POPUP "&Datei"
+    BEGIN
+        MENUITEM "&Neu...\tCtrl-N",             ID_FILE_NEW
+        MENUITEM "&Öffnen...\tCtrl+O",          ID_FILE_OPEN
+        MENUITEM "&Speichern\tCtrl+S",          ID_FILE_SAVE
+        MENUITEM "Speichern &unter...",         ID_FILE_SAVEAS
+        MENUITEM "Sch&ließen",                  ID_FILE_CLOSE
+        MENUITEM SEPARATOR
+        MENUITEM "&Drucken...\tCtrl-P",         ID_FILE_PRINT
+        MENUITEM "Druck&vorschau",              ID_FILE_PRINT_PREVIEW
+        MENUITEM SEPARATOR
+        MENUITEM "E&instellungen",              ID_FILE_PREFERENCES
+        MENUITEM SEPARATOR
+        MENUITEM "&Einziehen...",               ID_SCAN_ACQUIRE
+        MENUITEM "&Quelle selektieren...",      ID_SCAN_SELECTSOURCE
+        MENUITEM SEPARATOR
+        MENUITEM "&Beenden\tAlt+F4",            IDM_EXIT
+    END
+    POPUP "&Bearbeiten"
+    BEGIN
+        MENUITEM "A&usscheiden\tCtrl-X",        ID_EDIT_CUT
+        MENUITEM "&Kopieren\tCtrl-C",           ID_EDIT_COPY
+        MENUITEM "&Einfügen als neues Dokument", ID_EDIT_PASTE
+        MENUITEM "Einfügen als neue &Seite",    ID_EDIT_PASTEASNEWPAGE
+        MENUITEM SEPARATOR
+        MENUITEM "&Alles auswählen\tCtrl-A",    ID_EDIT_SELECTALL
+        MENUITEM "&Deaktivieren\tShift-Ctrl-A", ID_EDIT_CLEARSELECTION
+        MENUITEM "&Invertieren die Auswahl",    ID_EDIT_SWAPSELECTION
+        MENUITEM "&Wählen Inhalt",              ID_EDIT_SELECTCONTENT
+    END
+    POPUP "&Ansicht"
+    BEGIN
+        POPUP "Zoom"
+        BEGIN
+            MENUITEM "An Fenster anpassen",         ID_ZOOM_ZOOMTOFIT
+            MENUITEM "An Auswahl anpassen",         ID_ZOOM_ZOOMTOSELECTION
+            MENUITEM SEPARATOR
+            MENUITEM "10%",                         ID_ZOOM_10
+            MENUITEM "20%",                         ID_ZOOM_20
+            MENUITEM "33%",                         ID_ZOOM_33
+            MENUITEM "50%",                         ID_ZOOM_50
+            MENUITEM "75%",                         ID_ZOOM_75
+            MENUITEM "100%",                        ID_ZOOM_100
+            MENUITEM "125%",                        ID_ZOOM_125
+            MENUITEM "150%",                        ID_ZOOM_150
+            MENUITEM "200%",                        ID_ZOOM_200
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "&Anerkennung Schicht",        ID_VIEW_RECOGNITIONLAYER
+        MENUITEM SEPARATOR
+        MENUITEM "&Kopie Fenster",              ID_VIEW_PANECOPY
+        MENUITEM "&Seite Fenster",              ID_VIEW_PANEIMAGE
+        MENUITEM "&Information Fenster",        ID_VIEW_PANEPAGE
+        MENUITEM SEPARATOR
+        MENUITEM "Umstellung auf Easy-Modus...", IDC_SWITCH
+    END
+    POPUP "&Einziehen"
+    BEGIN
+        MENUITEM "&Einziehen...",               ID_SCAN_ACQUIRE
+        MENUITEM "&Quelle auswählen...",        ID_SCAN_SELECTSOURCE
+    END
+    POPUP "&Dokument"
+    BEGIN
+        MENUITEM "&Kopieren",                   IDC_DOCOPY
+        MENUITEM "&Neu...\tCtrl-N",             ID_FILE_NEW
+        MENUITEM "D&rucken",                    ID_FILE_PRINT_DIRECT
+        MENUITEM "&Dokument schließen",         ID_FILE_CLOSE
+        MENUITEM SEPARATOR
+        POPUP "&Einziehen Seiten"
+        BEGIN
+            MENUITEM "&Gewinnen Sie neue Seiten...", ID_DOCUMENT_ACQUIRENEWPAGE
+            MENUITEM SEPARATOR
+            MENUITEM "Erwerben Sie &ungeraden Seiten...", ID_DOCUMENT_ACQUIREODDPAGES
+            MENUITEM "Acquire &even pages...",      ID_DOCUMENT_ACQUIREEVENPAGES
+        END
+        MENUITEM "&Seite löschen",              ID_DOCUMENT_DELETEPAGE
+        MENUITEM "S&plit Dokument",             ID_DOCUMENT_SPLITDOCUMENT
+        MENUITEM SEPARATOR
+        MENUITEM "&Ausschneiden Siete",         ID_DOCUMENT_CUTPAGE
+        MENUITEM "K&opieren Seite",             ID_DOCUMENT_COPYPAGE
+        MENUITEM "Ein&fügen als neue Seite\tCtrl-V", ID_EDIT_PASTEASNEWPAGE
+    END
+    POPUP "&Seite"
+    BEGIN
+        POPUP "&Farbtiefe vermindern"
+        BEGIN
+            MENUITEM "&Graustufen",                 ID_CONVERTTO_GRAYSCALE
+            MENUITEM "&Schwarz/Weiß",               ID_CONVERTTO_BLACKWHITE
+        END
+        POPUP "&Drehen und spiegeln"
+        BEGIN
+            MENUITEM "Drehen um 90°\tCtrl-R",       ID_ROTATE_90
+            MENUITEM "Drehen um 180°",              ID_ROTATE_180
+            MENUITEM "Drehen um 270°\tShift-Ctrl-R", ID_ROTATE_270
+            MENUITEM SEPARATOR
+            MENUITEM "&Horizontal spiegeln",        ID_ROTATEANDFLIP_FLIPHORIZONTALLY
+            MENUITEM "&Vertikal spiegeln",          ID_ROTATEANDFLIP_FLIPVERTICALLY
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "Auswahl &zuschneiden",        ID_IMAGE_CROP
+        MENUITEM "Fü&llen Auswahl",             ID_IMAGE_FILLSELECTION
+        MENUITEM SEPARATOR
+        MENUITEM "&Text erkennen",              ID_IMAGE_RECOGNIZETEXT
+        MENUITEM "&Kopieren Text",              ID_EDIT_COPYTEXTTOCLIPBOARD
+        MENUITEM "Löschen den &erkannten Text", ID_PAGE_DELETETEXTBLOCKS
+        MENUITEM SEPARATOR
+        MENUITEM "&Farbauswahl",                ID_IMAGE_COLORPICKER
+        MENUITEM "Wählen die F&arbe",           ID_IMAGE_CHOOSECOLOR
+        MENUITEM SEPARATOR
+        MENUITEM "&Rückgängig\tCtrl-Z",         ID_IMAGE_UNDO
+        MENUITEM "&Wederherstellen\tCtrl-Y",    ID_IMAGE_REDO
+    END
+    POPUP "S&prache"
+    BEGIN
+        MENUITEM "&English",                    ID_LANGUAGE_ENGLISH
+        MENUITEM "&Holländisch",                ID_LANGUAGE_DUTCH
+        MENUITEM "&Deutsch",                    ID_LANGUAGE_GERMAN
+    END
+    POPUP "&Makro"
+    BEGIN
+        MENUITEM "&Bearbeiten und ausführen...\tCtrl-M", ID_MACRO_EDITANDEXECUTE
+    END
+    POPUP "&Hilfe"
+    BEGIN
+        MENUITEM "&Hilfsthemen...\tF1",         ID_HELP_CONTENTS
+        MENUITEM SEPARATOR
+        MENUITEM "&Über...",                    IDM_ABOUT
+    END
+END
+
+#endif    // Dutch (Netherlands) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.K.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENG)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_UK
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "language.\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""..\\resource.h""\r\n"
+    "#include ""afxres.h""\r\r\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,82
+ PRODUCTVERSION 3,0,0,82
+ FILEFLAGSMASK 0x17L
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040704b0"
+        BEGIN
+            VALUE "CompanyName", "Meusesoft"
+            VALUE "FileDescription", "Copying Machine German Language Module "
+            VALUE "FileVersion", "1, 0, 0, 82"
+            VALUE "InternalName", "cm_german"
+            VALUE "LegalCopyright", "Copyright (C) 1997 - 2015"
+            VALUE "OriginalFilename", "cm_german.dll"
+            VALUE "ProductName", "Copying Machine German Language Module "
+            VALUE "ProductVersion", "3, 0, 0, 82"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x407, 1200
+    END
+END
+
+#endif    // English (U.K.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
