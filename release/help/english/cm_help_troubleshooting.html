@@ -1,0 +1,122 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/2002/REC-xhtml1-20020801/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Copying Machine 3 - Troubleshooting</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Language" content="en-us" />
+    <link rel="stylesheet" type="text/css" href="images/default.css" media="screen" />
+</head>
+<body>
+    <div id="wrapper">
+        <div id="top_nav">
+            <ul>
+                <li><a href="http://www.meusesoft.com">Home</a></li>
+                <li><a href="http://about.meusesoft.com">About</a></li>
+                <li><a href="http://copyingmachine.meusesoft.com">Copying Machine</a></li>
+                <li><a href="http://31forwindows.meusesoft.com">31 for Windows</a></li>
+                <li><a href="http://janitor.meusesoft.com">Janitor</a></li>
+            </ul>
+        </div>
+        <div id="header">
+            <div id="logo">
+                Copying Machine<span class="color"> 3.0</span>
+            </div>
+        </div>
+        <div id="breadcrumb">
+            <a href="http://www.meusesoft.com">Home</a> > <a href="http://copyingmachine.meusesoft.com">
+                Copying Machine</a> > <a href="index.html">Help</a> > <a>Troubleshooting</a>
+        </div>
+        <div id="content">
+            <div id="r_col">
+                <h1>
+                    Troubleshooting</h1>
+                <h2>
+                    My scanner is not detected...
+                </h2>
+                <p>
+                    Make sure your scanner is a TWAIN or WIA-compatible scanner and the driver is installed
+                    on your computer. Also make sure that you are using the 32-bit version and that
+                    the TWAIN_32.DLL is in your Windows or system-directory.
+                </p>
+                <h2>
+                    Colours from scanned images are not as they should be...
+                </h2>
+                <p>
+                    Some scanners need to be calibrated before the first scan. Since this isn’t a standard
+                    TWAIN-command, Copying Machine perform this operation. In order to get the correct
+                    colours use the Acquire-command in the Scanner-menu. This command shows the user
+                    interface of your scanner which will be able to do the required calibration. Sometimes
+                    you need to make a pre-scan first.
+                </p>
+                <h2>
+                    Copying Machine gives an error before scanning...
+                </h2>
+                <p>
+                    Some scanner have problems when an image is scanned without using its user-interface.
+                    You can try scanning with the scanner its user-interface by using the ‘acquire’-command
+                    in the ‘scanner’-menu. If this works you can enable the user-interface for all scanning
+                    operations in the General Settings dialog. Another possibility is that your scanner
+                    doesn’t support a particular TWAIN-capability. You can set which capabilities Copying
+                    Machine uses in the TWAIN-tab in the ‘Properties’-dialog from the ‘File’-menu.
+                </p>
+                <h2>
+                    Copying Machine always shows my scanner’s user interface...
+                </h2>
+                <p>
+                    Hiding a user interface is not a feature supported by all scanners.
+                </p>
+                <h2>
+                    The first time I try to make a copy I get errors from the scanner...
+                </h2>
+                <p>
+                    Some scanners have a warm up period. So it could happen the TWAIN-driver times out
+                    before your scanner is ready to begin scanning.
+                </p>
+                <h2>
+                    I want to save my image as a PCX-image, but I can’t select it in the save-dialog...
+                </h2>
+                <p>
+                    Copying Machine supports four different graphic-types; PCX, JPG, TIFF, PNG and BMP.
+                    All of these three types have different characteristics, which makes them more appropriate
+                    for different kind of images. JPEG is at its best with grayscale and full colour
+                    images, PCX with black and white images, and BMP can be used for all types of images.
+                    The disadvantage of BMP is that images aren’t encoded and that resolution information
+                    is lost. Finally TIFF, can be used with document with multiple pages (images).
+                </p>
+                <h2>
+                    Scanning a black and white page results in an inverted image...
+                </h2>
+                <p>
+                    There are scanners which have problems scanning black and white images and return
+                    an inverted image. The white parts of the scanned page are black and the black parts
+                    are white. This cannot be compensated by Copying Machine but you can enable the
+                    option ‘Scan inverted’, see File | Settings | General Settings | Scan inverted.
+                </p>
+                <h2>
+                    My printer does not print the entire image...
+                </h2>
+                <p>
+                    Check whether you haven’t accidentally made a selection.
+                </p>
+                <h2>
+                    The acquire-button is disabled...
+                </h2>
+                <p>
+                    See ‘My scanner is not detected...’
+                </p>
+            </div>
+            <div id="l_col">
+            </div>
+        </div>
+        <div id="footer">
+            <div id="footer_xhtml">
+                <a href="http://validator.w3.org/check?uri=referer">
+                    <img src="http://www.w3.org/Icons/valid-xhtml10-blue" alt="Valid XHTML 1.0 Strict"
+                        height="31" width="88" /></a> <a href="http://jigsaw.w3.org/css-validator/">
+                            <img src="http://jigsaw.w3.org/css-validator/images/vcss-blue" alt="Valide CSS!"
+                                height="31" width="88" /></a>
+            </div>
+            &copy; 2009 Meusesoft</div>
+    </div>
+</body>
+</html>
