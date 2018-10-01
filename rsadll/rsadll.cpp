@@ -14,7 +14,7 @@ extern int GenerateKey(char* KeyFile, char* KeyInput, unsigned int KeyInputLen)
 	
     ZeroMemory(&privateKey, sizeof(privateKey));
 
-    FILE* fileHandle = fopen("D:\\Projects\\CopyingMachine3\\debug\\copyingmachineprivate.key", "rb");
+    FILE* fileHandle = fopen("D:\\Projects\\Copying Machine 3\\CopyingMachineRegistration\\Originele keys\\copyingmachineprivate.key", "rb");
 
     if (fileHandle!=NULL) {
        
