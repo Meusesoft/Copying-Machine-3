@@ -18,17 +18,15 @@
 // Dutch (Netherlands) resources
 
 #if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_NLD)
-#ifdef _WIN32
 LANGUAGE LANG_DUTCH, SUBLANG_DUTCH
 #pragma code_page(1252)
-#endif //_WIN32
 
 /////////////////////////////////////////////////////////////////////////////
 //
 // Menu
 //
 
-IDC_COPYINGMACHINE3 MENU 
+IDC_COPYINGMACHINE3 MENU
 BEGIN
     POPUP "&File"
     BEGIN
@@ -160,7 +158,7 @@ END
 // Accelerator
 //
 
-IDC_COPYINGMACHINE3 ACCELERATORS 
+IDC_COPYINGMACHINE3 ACCELERATORS
 BEGIN
     "A",            ID_EDIT_CLEARSELECTION, VIRTKEY, SHIFT, CONTROL, NOINVERT
     "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
@@ -179,7 +177,7 @@ BEGIN
     "M",            ID_MACRO_EDITANDEXECUTE, VIRTKEY, CONTROL, NOINVERT
 END
 
-IDR_SCRIPTEDITOR ACCELERATORS 
+IDR_SCRIPTEDITOR ACCELERATORS
 BEGIN
     VK_SPACE,       IDC_AUTOCOMPLETE,       VIRTKEY, CONTROL, NOINVERT
 END
@@ -196,7 +194,7 @@ CAPTION "*"
 FONT 8, "MS Shell Dlg", 0, 0, 0x0
 BEGIN
     CONTROL         "",IDC_CAPTIONBACKGROUND,"Static",SS_WHITERECT,1,0,267,42
-    ICON            217,IDC_COPYINGMACHINEICON,14,11,20,20,0,WS_EX_TRANSPARENT
+    ICON            IDI_ICONCOPYINGMACHINE,IDC_COPYINGMACHINEICON,14,11,20,20,0,WS_EX_TRANSPARENT
     LTEXT           "Copying Machine",IDC_ABOUTCAPTION,49,10,188,16
     LTEXT           "Static",IDC_UNREGISTEREDLABEL,50,26,187,8
     CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDFRAME,0,42,267,1
@@ -309,7 +307,7 @@ BEGIN
     CONTROL         "*",IDC_RADIOPORTRAIT,"Button",BS_AUTORADIOBUTTON,12,84,107,10
     CONTROL         "*",IDC_RADIOLANDSCAPE,"Button",BS_AUTORADIOBUTTON,12,102,87,10
     COMBOBOX        IDC_PAGESIZE,36,24,112,30,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
-    CONTROL         178,IDC_IMAGE,"Static",SS_BITMAP | SS_CENTERIMAGE,129,79,46,36
+    CONTROL         IDB_IMAGEPORTRAIT,IDC_IMAGE,"Static",SS_BITMAP | SS_CENTERIMAGE,129,79,46,36
 END
 
 IDD_PREFERENCESPRINTERALIGNMENT DIALOGEX 0, 0, 288, 192
@@ -317,14 +315,14 @@ STYLE DS_SETFONT | DS_FIXEDSYS | DS_CONTROL | WS_CHILD | WS_SYSMENU
 FONT 8, "MS Shell Dlg", 400, 0, 0x1
 BEGIN
     GROUPBOX        "*",IDC_TOPIC1,0,0,252,84
-    CONTROL         212,IDC_IMAGECOPIES,"Static",SS_BITMAP,30,24,32,36
+    CONTROL         IDB_IMAGENORMAL,IDC_IMAGECOPIES,"Static",SS_BITMAP,30,24,32,36
     LTEXT           "*",IDC_TXTCOPIES,78,18,72,8
     EDITTEXT        IDC_COPIESNUMBER,154,15,22,14,ES_RIGHT | ES_AUTOHSCROLL | ES_NUMBER
     CONTROL         "",IDC_COPIESSPIN,"msctls_updown32",UDS_SETBUDDYINT | UDS_AUTOBUDDY | UDS_ARROWKEYS | UDS_NOTHOUSANDS | UDS_HOTTRACK,176,15,11,14
     CONTROL         "*",IDC_CHKMULTIPLECOPIESONPAGE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,78,36,162,10
     CONTROL         "*",IDC_CHKMULTIPLEPAGESONPAGE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,78,54,162,10
     GROUPBOX        "*",IDC_TOPIC2,0,90,288,90
-    CONTROL         205,IDC_IMAGEALIGNMENT,"Static",SS_BITMAP,30,114,32,36
+    CONTROL         IDB_IMAGEALIGNNW,IDC_IMAGEALIGNMENT,"Static",SS_BITMAP,30,114,32,36
     GROUPBOX        "*",IDC_TOPICVERTICAL,96,96,84,78
     CONTROL         "*",IDC_RADIOTOP,"Button",BS_AUTORADIOBUTTON | WS_GROUP,108,114,66,10
     CONTROL         "*",IDC_RADIOVCENTER,"Button",BS_AUTORADIOBUTTON,108,132,66,10
@@ -434,16 +432,16 @@ STYLE DS_SETFONT | DS_FIXEDSYS | DS_CONTROL | WS_CHILD | WS_SYSMENU
 FONT 8, "MS Shell Dlg", 400, 0, 0x1
 BEGIN
     GROUPBOX        "*",IDC_TOPIC1,0,0,186,72
-    CONTROL         212,IDC_IMAGEMAGNIFICATION,"Static",SS_BITMAP,12,18,32,36
+    CONTROL         IDB_IMAGENORMAL,IDC_IMAGEMAGNIFICATION,"Static",SS_BITMAP,12,18,32,36
     LTEXT           "*",IDC_MAGNIFYBY,54,33,72,8
     EDITTEXT        IDC_MAGNIFICATION,132,30,22,14,ES_RIGHT | ES_AUTOHSCROLL | ES_NUMBER
     CONTROL         "",IDC_MAGNIFICATIONSPIN,"msctls_updown32",UDS_SETBUDDYINT | UDS_AUTOBUDDY | UDS_ARROWKEYS | UDS_NOTHOUSANDS | UDS_HOTTRACK,154,30,11,14
     LTEXT           "%",IDC_STATIC,168,32,8,8
     GROUPBOX        "*",IDC_TOPIC2,0,78,138,66
-    CONTROL         213,IDC_IMAGESTRETCH,"Static",SS_BITMAP,12,96,32,36
+    CONTROL         IDB_IMAGESMALL,IDC_IMAGESTRETCH,"Static",SS_BITMAP,12,96,32,36
     CONTROL         "*",IDC_CHKSTRETCHTOFIT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,54,108,78,10
     GROUPBOX        "*",IDC_TOPIC3,144,78,138,66
-    CONTROL         210,IDC_IMAGESHRINK,"Static",SS_BITMAP,156,96,32,36
+    CONTROL         IDB_IMAGEHUGE,IDC_IMAGESHRINK,"Static",SS_BITMAP,156,96,32,36
     CONTROL         "*",IDC_RADIOSHRINK,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,198,100,78,10
     CONTROL         "*",IDC_RADIOCLIP,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,198,116,78,10
 END
@@ -633,6 +631,21 @@ BEGIN
     ICON            "",IDC_ICONQUESTIONMARK,20,10,21,20
 END
 
+IDD_ABOUTBOXUWP DIALOGEX 22, 17, 269, 132
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_CAPTION | WS_SYSMENU
+CAPTION "*"
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    CONTROL         "",IDC_CAPTIONBACKGROUND,"Static",SS_WHITERECT,0,0,267,42
+    ICON            IDI_COPYINGMACHINE3_32,IDC_COPYINGMACHINEICON,14,11,21,20,0,WS_EX_TRANSPARENT
+    LTEXT           "*",IDC_ABOUTCAPTION,49,12,188,19
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDFRAME,0,42,267,1
+    LTEXT           "*",IDC_VERSION,18,66,216,8
+    LTEXT           "*",IDC_COPYRIGHT,18,84,216,8
+    GROUPBOX        "*",IDC_TOPIC1,6,48,252,54
+    PUSHBUTTON      "Ok",IDOK,109,111,50,14
+END
+
 
 #ifdef APSTUDIO_INVOKED
 /////////////////////////////////////////////////////////////////////////////
@@ -668,8 +681,8 @@ END
 //
 
 VS_VERSION_INFO VERSIONINFO
- FILEVERSION 1,0,0,96
- PRODUCTVERSION 3,0,0,96
+ FILEVERSION 1,0,0,97
+ PRODUCTVERSION 3,0,0,97
  FILEFLAGSMASK 0x17L
 #ifdef _DEBUG
  FILEFLAGS 0x1L
@@ -686,12 +699,12 @@ BEGIN
         BEGIN
             VALUE "CompanyName", "Meusesoft"
             VALUE "FileDescription", "Copying Machine 3 Beta"
-            VALUE "FileVersion", "1, 0, 0, 96"
+            VALUE "FileVersion", "1.0.0.97"
             VALUE "InternalName", "CopyingMachine3"
-            VALUE "LegalCopyright", "Copyright (C) 1997 - 2015 Meusesoft"
+            VALUE "LegalCopyright", "Copyright (C) 1997 - 2018 Meusesoft"
             VALUE "OriginalFilename", "CopyingMachine3.rc"
             VALUE "ProductName", " Copying Machine 3 Beta"
-            VALUE "ProductVersion", "3, 0, 0, 96"
+            VALUE "ProductVersion", "3.0.0.97"
         END
     END
     BLOCK "VarFileInfo"
@@ -707,23 +720,41 @@ END
 //
 
 IDB_IMAGEPAGE           BITMAP                  "imagePage.bmp"
+
 IDB_IMAGEPORTRAIT       BITMAP                  "imagePortrait.bmp"
+
 IDB_IMAGELANDSCAPE      BITMAP                  "imageLandscape.bmp"
+
 IDB_IMAGETEST           BITMAP                  "imageTest.bmp"
+
 IDB_IMAGEALIGNCC        BITMAP                  "imageAlignCC.bmp"
+
 IDB_IMAGEALIGNCE        BITMAP                  "imageAlignCE.bmp"
+
 IDB_IMAGEALIGNCW        BITMAP                  "imageAlignCW.bmp"
+
 IDB_IMAGEALIGNNE        BITMAP                  "imageAlignNE.bmp"
+
 IDB_IMAGEALIGNNW        BITMAP                  "imageAlignNW.bmp"
+
 IDB_IMAGEALIGNSC        BITMAP                  "imageAlignSC.bmp"
+
 IDB_IMAGEALIGNSE        BITMAP                  "imageAlignSE.bmp"
+
 IDB_IMAGEALIGNSW        BITMAP                  "imageAlignSW.bmp"
+
 IDB_IMAGECOPIESONPAGE   BITMAP                  "imageCopiesOnPage.bmp"
+
 IDB_IMAGEHUGE           BITMAP                  "imageHuge.bmp"
+
 IDB_IMAGEIMAGESONPAGE   BITMAP                  "imageImagesOnPage.bmp"
+
 IDB_IMAGENORMAL         BITMAP                  "imageNormal.bmp"
+
 IDB_IMAGESMALL          BITMAP                  "imageSmall.bmp"
+
 IDB_IMAGEALIGNNC        BITMAP                  "imageAlignNC.bmp"
+
 
 /////////////////////////////////////////////////////////////////////////////
 //
@@ -731,7 +762,7 @@ IDB_IMAGEALIGNNC        BITMAP                  "imageAlignNC.bmp"
 //
 
 #ifdef APSTUDIO_INVOKED
-GUIDELINES DESIGNINFO 
+GUIDELINES DESIGNINFO
 BEGIN
     IDD_INITTRACE, DIALOG
     BEGIN
@@ -836,6 +867,12 @@ BEGIN
         TOPMARGIN, 7
         BOTTOMMARGIN, 54
     END
+
+    IDD_ABOUTBOXUWP, DIALOG
+    BEGIN
+        RIGHTMARGIN, 268
+        BOTTOMMARGIN, 131
+    END
 END
 #endif    // APSTUDIO_INVOKED
 
@@ -847,6 +884,7 @@ END
 
 IDC_CURSORDRAGDROP      CURSOR                  "cursor_dragdrop.cur"
 
+
 /////////////////////////////////////////////////////////////////////////////
 //
 // Icon
@@ -855,8 +893,11 @@ IDC_CURSORDRAGDROP      CURSOR                  "cursor_dragdrop.cur"
 // Icon with lowest ID value placed first to ensure application icon
 // remains consistent on all systems.
 IDI_COPYINGMACHINE3_32  ICON                    "icoCopyingMachine3_32x32.ico"
+
 IDI_COPYINGMACHINE3     ICON                    "icoCopyingMachine3_48x48.ico"
+
 IDI_COPYINGMACHINE_16   ICON                    "icoCopyingMachine3_16x16.ico"
+
 
 /////////////////////////////////////////////////////////////////////////////
 //
@@ -864,76 +905,147 @@ IDI_COPYINGMACHINE_16   ICON                    "icoCopyingMachine3_16x16.ico"
 //
 
 PNG_TOOLUNDO            PNG                     "tool_undo.png"
+
 PNG_TOOLNEW             PNG                     "tool_new.png"
+
 PNG_TOOLPREVIEW         PNG                     "tool_preview.png"
+
 PNG_TOOLPRINT           PNG                     "tool_print.png"
+
 PNG_TOOLPREFERENCES     PNG                     "tool_property.png"
+
 PNG_TOOLREDO            PNG                     "tool_redo.png"
+
 PNG_TOOLPANECOPY        PNG                     "tool_panecopy.png"
+
 PNG_TOOLPANEIMAGE       PNG                     "tool_paneimage.png"
+
 PNG_TOOLPANEINFO        PNG                     "tool_paneinformation.png"
+
 PNG_TOOLSWITCH          PNG                     "tool_switch.png"
+
 PNG_TOOLOPEN            PNG                     "tool_open.png"
+
 PNG_TOOLCROP            PNG                     "tool_crop.png"
+
 PNG_TOOLFLIPHORIZONTAL  PNG                     "tool_fliphorizontal.png"
+
 PNG_TOOLFLIPVERTICAL    PNG                     "tool_flipvertical.png"
+
 PNG_TOOLPAINT           PNG                     "tool_paint.png"
+
 PNG_TOOLROTATE270       PNG                     "tool_rotateanticlockwise.png"
+
 PNG_TOOLROTATE90        PNG                     "tool_rotateclockwise.png"
+
 PNG_TOOLCONVERTBLACKWHITE PNG                     "tool_convertblackwhite.png"
+
 PNG_TOOLCONVERTGRAYSCALE PNG                     "tool_convertgrayscale.png"
+
 PNG_TOOLCOPY            PNG                     "tool_copy.png"
+
 PNG_FLAGDE              PNG                     "flag_de.png"
+
 PNG_FLAGEN              PNG                     "flag_en.png"
+
 PNG_FLAGFR              PNG                     "flag_fr.png"
+
 PNG_FLAGIT              PNG                     "flag_it.png"
+
 PNG_FLAGNL              PNG                     "flag_nl.png"
+
 PNG_TOOLCOPYPAGE        PNG                     "tool_copypage.png"
+
 PNG_TOOLCUT             PNG                     "tool_cut.png"
+
 PNG_TOOLPASTE           PNG                     "tool_paste.png"
+
 PNG_TOOLZOOM            PNG                     "tool_zoom.png"
+
 PNG_TOOLBOOK            PNG                     "tool_book.png"
+
 PNG_TOOLBOOKEDIT        PNG                     "tool_bookedit.png"
+
 PNG_TOOLBOOKOPEN        PNG                     "tool_bookopen.png"
+
 PNG_TOOLBOOKADD         PNG                     "tool_bookadd.png"
+
 PNG_TOOLBULLETBLUE      PNG                     "tool_bulletblue.png"
+
 PNG_TOOLSCANNER         PNG                     "tool_scanner.png"
+
 PNG_TOOLEMAIL           PNG                     "tool_email.png"
+
 PNG_TOOLEMAILOPEN       PNG                     "tool_emailopen.png"
+
 PNG_TOOLFILE            PNG                     "tool_file.png"
+
 PNG_TOOLSCANNERTWAIN    PNG                     "tool_scannertwain.png"
+
 PNG_TOOLCOPY24          PNG                     "tool_copy24.png"
+
 PNG_TOOLCOPY32          PNG                     "tool_copy32.png"
+
 PNG_TOOLBOOKOPENEDIT    PNG                     "tool_bookopenedit.png"
+
 PNG_INFORMATION         PNG                     "tool_information.png"
+
 PNG_TOOLSAVE            PNG                     "tool_save2.png"
+
 PNG_TOOLROTATE180       PNG                     "tool_rotate180.png"
+
 PNG_TOOLZOOMIN          PNG                     "tool_zoomin.png"
+
 PNG_TOOLDELETE          PNG                     "tool_delete.png"
+
 PNG_TOOLOCR             PNG                     "tool_ocr.png"
+
 PNG_TOOLPAGE            PNG                     "tool_page.png"
+
 PNG_TOOLPAGEADD         PNG                     "tool_pageadd.png"
+
 PNG_TOOLCOLORDROPPER    PNG                     "tool_colordropper.png"
+
 PNG_TOOLDESELECT        PNG                     "tool_deselect.png"
+
 PNG_TOOLSELECT          PNG                     "tool_selection.png"
+
 PNG_TOOLZOOMTOSELECTION PNG                     "tool_zoomtoselection.png"
+
 PNG_TOOLZOOMTOWINDOW    PNG                     "tool_zoomtowindow.png"
+
 PNG_GRIPNW              PNG                     "grip_nw.png"
+
 PNG_GRIPE               PNG                     "grip_e.png"
+
 PNG_GRIPN               PNG                     "grip_n.png"
+
 PNG_GRIPNE              PNG                     "grip_ne.png"
+
 PNG_GRIPS               PNG                     "grip_s.png"
+
 PNG_GRIPSE              PNG                     "grip_se.png"
+
 PNG_GRIPSW              PNG                     "grip_sw.png"
+
 PNG_GRIPW               PNG                     "grip_w.png"
+
 PNG_TOOLHELP            PNG                     "tool_help.png"
+
 PNG_TOOLSPLIT           PNG                     "tool_split.png"
+
 PNG_TOOLARROWDOWN       PNG                     "tool_arrowdown.png"
+
 PNG_TOOLARROWUP         PNG                     "tool_arrowup.png"
+
 PNG_TOOLFOLDER          PNG                     "tool_folder.png"
+
 PNG_TOOLFOLDERGO        PNG                     "tool_foldergo.png"
+
 PNG_TOOLFOLDEREXPLORE   PNG                     "tool_folderexplore.png"
+
 PNG_TOOLWCCLOSE         PNG                     "tool_wcclose.png"
+
 
 /////////////////////////////////////////////////////////////////////////////
 //
@@ -942,12 +1054,13 @@ PNG_TOOLWCCLOSE         PNG                     "tool_wcclose.png"
 
 ICC_RGB                 RCDATA                  "sRGB.icc"
 
+
 /////////////////////////////////////////////////////////////////////////////
 //
 // String Table
 //
 
-STRINGTABLE 
+STRINGTABLE
 BEGIN
     IDS_APP_TITLE           "Copying Machine"
     IDS_TWRESOLUTION        "Error setting resolution"

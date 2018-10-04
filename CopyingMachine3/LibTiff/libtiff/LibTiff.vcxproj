@@ -70,7 +70,7 @@
     <_ProjectFileVersion>14.0.25123.0</_ProjectFileVersion>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <OutDir>$(SolutionDir)\CopyingMachine3\$(Configuration)\</OutDir>
+    <OutDir>$(SolutionDir)\$(Configuration)\</OutDir>
     <IntDir>$(SolutionDir)\Intermediate files\$(ProjectName)\$(Configuration)\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -88,7 +88,7 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <Optimization>Disabled</Optimization>
-      <AdditionalIncludeDirectories>D:\Projects\CopyingMachine3\CopyingMachine3\ZLib\ZLib;D:\Projects\CopyingMachine3\CopyingMachine3\LibJpeg\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\Projects\CopyingMachine3\CopyingMachine3\ZLib\ZLib;D:\Projects\CopyingMachine3\CopyingMachine3\LibJpeg\include;D:\Projects\Copying Machine 3\CopyingMachine3\LibJpeg7;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <MinimalRebuild>true</MinimalRebuild>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
@@ -106,7 +106,7 @@
     </Midl>
     <ClCompile>
       <Optimization>Disabled</Optimization>
-      <AdditionalIncludeDirectories>D:\Projects\CopyingMachine3\CopyingMachine3\ZLib\ZLib;D:\Projects\CopyingMachine3\CopyingMachine3\LibJpeg\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\..\CopyingMachine3\ZLib\ZLib;..\..\..\CopyingMachine3\LibJpeg\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <MinimalRebuild>true</MinimalRebuild>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>

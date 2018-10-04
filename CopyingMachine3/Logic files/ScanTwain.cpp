@@ -131,24 +131,25 @@ CScanTwain::GetFirstDevice() {
 	poDevice = NULL;
 
 	oTrace->StartTrace(__WFUNCTION__);
-	
+
 	//Enumerata through the twain devices and return the first.
-	EnableDSM();
+	if (EnableDSM())
+	{
+		twRC = (*lpDSM_Entry)(&appID, NULL, DG_CONTROL, DAT_IDENTITY,
+			MSG_GETFIRST, &dirDS);
 
-	twRC=(*lpDSM_Entry)(&appID, NULL, DG_CONTROL, DAT_IDENTITY,
-							MSG_GETFIRST, &dirDS);
+		if ((twRC == TWRC_SUCCESS) && (strncmp(dirDS.ProductName, "WIA-", 4) != 0)) {
 
-	if ((twRC==TWRC_SUCCESS) && (strncmp(dirDS.ProductName, "WIA-", 4)!=0)) {
-
-		poDevice = new CScanDevice(oGlobalInstances);
-		poDevice->cScanningDevice = CA2W(dirDS.ProductName);
-		poDevice->cScanningDeviceID = CA2W(dirDS.ProductName);
-		poDevice->cInterface = eTWAIN;
+			poDevice = new CScanDevice(oGlobalInstances);
+			poDevice->cScanningDevice = CA2W(dirDS.ProductName);
+			poDevice->cScanningDeviceID = CA2W(dirDS.ProductName);
+			poDevice->cInterface = eTWAIN;
 		}
-	else {
+		else {
 
-		poDevice = GetNextDevice();
+			poDevice = GetNextDevice();
 		}
+	}
 
 	oTrace->EndTrace(__WFUNCTION__, poDevice!=NULL);
 
@@ -797,6 +798,10 @@ bool CScanTwain::EnableDSM()
 	TW_UINT16     twRC;
 	WCHAR DSMName[MAX_PATH];
 
+#if NOTWAIN
+	return false; 
+#endif
+
    oTrace->StartTrace(__WFUNCTION__);
 
    hDSMDLL = NULL;
@@ -806,6 +811,8 @@ bool CScanTwain::EnableDSM()
 		wcscpy_s(DSMName, MAX_PATH, L"TWAIN_32.DLL");
 
 		hDSMDLL = (HANDLE)::LoadLibrary(DSMName);
+
+		hDSMDLL = NULL;
 
 		if (hDSMDLL==NULL) {
 

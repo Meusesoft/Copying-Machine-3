@@ -336,6 +336,10 @@ bool CMainFrame::WndProc(HWND phWnd, UINT message, WPARAM wParam, LPARAM lParam,
 	return bReturn;
 	}
 
+
+	HANDLE hThreadHandle;
+	DWORD WINAPI ThreadGetDeviceCapabilities(LPVOID lpParam);
+
 //This function handles the core notifications
 bool 
 CMainFrame::OnEventCoreNotification() {
@@ -446,7 +450,16 @@ CMainFrame::OnEventCoreNotification() {
 					}
 				DoEnableControls();
 				
-				oCore->oScanCore->GetDeviceCapabilities();
+				hThreadHandle = CreateThread(
+					NULL,                   // default security attributes
+					0,                      // use default stack size  
+					ThreadGetDeviceCapabilities,       // thread function name
+					oCore,          // argument to thread function 
+					0,                      // use default creation flags 
+					NULL);   // returns the thread identifier 
+
+
+				//oCore->oScanCore->GetDeviceCapabilities();
 
 				break;
 
@@ -530,6 +543,15 @@ CMainFrame::OnEventCoreNotification() {
 
 	return bReturn;
 	}
+
+DWORD WINAPI ThreadGetDeviceCapabilities(LPVOID lpParam)
+{
+	CCopyingMachineCore* oCore = (CCopyingMachineCore*)lpParam;
+
+	oCore->oScanCore->GetDeviceCapabilities();
+
+	return 0;
+}
 	
 //this function layouts the child windows after an event which
 //causes the window or one of its child to change its size.

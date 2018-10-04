@@ -48,3 +48,16 @@
 /release/cm_english.dll
 /release/cm_dutch.dll
 /x64/Debug
+/CopyingMachine3/Debug
+/CopyingMachine3/LibJpeg7/LibJpeg7/Debug
+/CopyingMachine3/LibJpeg7/LibJpeg7/x64/Debug
+/CopyingMachine3/LibTiff/libtiff/x64/Debug
+/CopyingMachine3/Resource files/CopyingMachine3_Dutch/x64/Debug
+/CopyingMachine3/ZLib/ZLib/x64/Debug
+/Debug
+/Intermediate files/cm_tesseract/Debug
+/Intermediate files/CopyingMachine3/Debug/CopyingMachine3.tlog
+/Intermediate files/CopyingMachine3/Debug
+/Intermediate files/CopyingMachine3_Dutch/Debug
+/Intermediate files
+/Win32/Debug

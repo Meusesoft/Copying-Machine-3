@@ -63,7 +63,7 @@
 #ifdef _WIN64
 #import "msxml6.dll"
 #else
-//#import "msxml6.dll"
+#import "msxml6.dll"
 #endif
 
 //using namespace MSXML2;

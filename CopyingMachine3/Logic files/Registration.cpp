@@ -41,6 +41,11 @@ CRegistration::Reminder(HWND phWnd) {
 bool 
 CRegistration::CheckRegistration() {
 
+#ifdef UWP
+	return true;
+#endif // UWP
+
+
    char* xmlstr;
    bool bReturn;
 	int iChecksum;

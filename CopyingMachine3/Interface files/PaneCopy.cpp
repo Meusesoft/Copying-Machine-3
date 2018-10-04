@@ -11,6 +11,10 @@ CPaneCopy::CPaneCopy(sGlobalInstances poGlobalInstances, int piMenuCommand) :
 	cType = ePaneCopy;
 	sImage = L"PNG_TOOLPANECOPY";
 	iTitle = IDS_COPY;
+
+	bEndThread = !InitializeCriticalSectionAndSpinCount(&ControlsUpdateCriticalSection, 0x80000400);
+	hControlsUpdateThread = NULL;
+
 	}
 
 CPaneCopy::~CPaneCopy(void) {
@@ -38,6 +42,19 @@ void
 CPaneCopy::Destroy() {
 
 	CPaneBase::oTrace->StartTrace(__WFUNCTION__);
+
+	bEndThread = true;
+
+	//Clean up the thread
+	if (hControlsUpdateThread != NULL) {
+
+		//Wait for the thread to finish.
+		WaitForSingleObject(hControlsUpdateThread, INFINITE);
+
+		CloseHandle(hControlsUpdateThread);
+
+		DeleteCriticalSection(&ControlsUpdateCriticalSection);
+	}
 
 	CPaneBase::oCore->oNotifications->UnsubscribeAll(hWnd);
 
@@ -196,8 +213,9 @@ CPaneCopy::Initialize() {
 	SendMessage(hShowInterfaceCheckBox, WM_SETFONT, (WPARAM)hFont, 0);
 
 	//Fill and enable the controls
-	DoFillControls();
-	DoEnableControls();
+	//DoFillControls();
+	//DoEnableControls();
+	//FillAndEnableControls();
 
 	//Localize the labels
 	Localize(CPaneBase::oGlobalInstances.hLanguage);
@@ -213,6 +231,42 @@ CPaneCopy::Initialize() {
 
 	CPaneBase::oTrace->EndTrace(__WFUNCTION__);
 	}
+
+void
+CPaneCopy::FillAndEnableControls()
+{
+	if (!bEndThread) {
+
+		hControlsUpdateThread = CreateThread(
+			NULL,				// default security attributes
+			0,					// use default stack size  
+			&ThreadFillAndEnable,        // thread function 
+			this,				// argument to thread function 
+			0,					// use default creation flags 
+			NULL);				// returns the thread identifier 
+	}
+}
+
+//This is the main function of the fill and enable thread.
+DWORD
+WINAPI ThreadFillAndEnable(LPVOID lpParameter) {
+
+	CPaneCopy *oPaneCopy;
+
+	oPaneCopy = (CPaneCopy*)lpParameter;
+
+	oPaneCopy->bEndThread = true;
+
+	EnterCriticalSection(&oPaneCopy->ControlsUpdateCriticalSection);
+
+	oPaneCopy->UpdateControls();
+
+	LeaveCriticalSection(&oPaneCopy->ControlsUpdateCriticalSection);
+
+	oPaneCopy->bEndThread = false;
+
+	return 0;
+}
 
 void 
 CPaneCopy::Localize(HINSTANCE phLanguage) {
