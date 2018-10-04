@@ -3,7 +3,13 @@
 #include "CopyingMachineCore.h"
 
 CDlgAbout::CDlgAbout(HINSTANCE phInstance, HWND phParent, sGlobalInstances poGlobalInstances) :
-				  CDialogTemplate(phInstance, phParent, IDD_ABOUTBOX, poGlobalInstances) {
+				  CDialogTemplate(phInstance, phParent, 
+#ifdef UWP
+					  IDD_ABOUTBOXUWP,
+					  #else		   
+					  IDD_ABOUTBOX,
+#endif
+					  poGlobalInstances) {
 
 	
 	}

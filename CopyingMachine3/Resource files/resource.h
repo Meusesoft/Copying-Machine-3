@@ -102,6 +102,8 @@
 #define IDR_RCDATA1                     338
 #define IDR_RCDATA2                     340
 #define IDD_SAVEDIRTYDOCUMENT           341
+#define IDD_ABOUTBOX1                   342
+#define IDD_ABOUTBOXUWP                 342
 #define ID_MFCLOC_MANIFEST              1000
 #define AFX_IDC_FONTPROP                1000
 #define IDC_TRACELEVEL                  1000
