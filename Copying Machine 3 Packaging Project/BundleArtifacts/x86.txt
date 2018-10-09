@@ -1,0 +1,5 @@
+MainPackage=D:\Projects\Copying Machine 3\Copying Machine 3 Packaging Project\bin\x86\Release\Copying Machine 3 Packaging Project_3.0.16.0_x86.appx
+ResourcePack=D:\Projects\Copying Machine 3\Copying Machine 3 Packaging Project\bin\x86\Release\Copying Machine 3 Packaging Project_3.0.16.0_scale-100.appx
+ResourcePack=D:\Projects\Copying Machine 3\Copying Machine 3 Packaging Project\bin\x86\Release\Copying Machine 3 Packaging Project_3.0.16.0_scale-125.appx
+ResourcePack=D:\Projects\Copying Machine 3\Copying Machine 3 Packaging Project\bin\x86\Release\Copying Machine 3 Packaging Project_3.0.16.0_scale-150.appx
+ResourcePack=D:\Projects\Copying Machine 3\Copying Machine 3 Packaging Project\bin\x86\Release\Copying Machine 3 Packaging Project_3.0.16.0_scale-400.appx

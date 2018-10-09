@@ -120,7 +120,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
-      <AdditionalIncludeDirectories>D:\Projects\CopyingMachine3\CopyingMachine3\ZLib\ZLib;D:\Projects\CopyingMachine3\CopyingMachine3\LibJpeg\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\Projects\CopyingMachine3\CopyingMachine3\ZLib\ZLib;D:\Projects\CopyingMachine3\CopyingMachine3\LibJpeg\include;D:\Projects\Copying Machine 3\CopyingMachine3\LibJpeg\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <WarningLevel>Level3</WarningLevel>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>

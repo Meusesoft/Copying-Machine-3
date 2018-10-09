@@ -94,7 +94,7 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <Optimization>Disabled</Optimization>
-      <AdditionalIncludeDirectories>.\Scintilla\include;.\LibTesseract\classify;.\LibTesseract\ccstruct;.\LibTesseract\ccmain;.\LibTesseract\ccutil;.\LibTesseract;.\LibRsa;.\Resource files\CopyingMachine3_English;.\LibTiff\libtiff;.\ZLib;.\Dialog files;.;.\Logic files;.\Resource files;.\Interface files;.\Application files;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>.\Scintilla\include;.\LibTesseract\classify;.\LibTesseract\ccstruct;.\LibTesseract\ccmain;.\LibTesseract\ccutil;.\LibTesseract;.\LibRsa;.\Resource files\CopyingMachine3_English;.\LibTiff\libtiff;.\ZLib;.\Dialog files;.;.\Logic files;.\Resource files;.\Interface files;.\Application files;D:\Projects\Copying Machine 3\CopyingMachine3\Resource files;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions);NOTWAIN;UWP</PreprocessorDefinitions>
       <MinimalRebuild>true</MinimalRebuild>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
@@ -140,7 +140,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
-      <AdditionalIncludeDirectories>D:\Projects\CopyingMachine3\CopyingMachine3\Scintilla\include;D:\Projects\CopyingMachine3\CopyingMachine3\LibTesseract\classify;D:\Projects\CopyingMachine3\CopyingMachine3\LibTesseract\ccstruct;D:\Projects\CopyingMachine3\CopyingMachine3\LibTesseract\ccmain;D:\Projects\CopyingMachine3\CopyingMachine3\LibTesseract\ccutil;D:\Projects\CopyingMachine3\CopyingMachine3\LibTesseract;D:\Projects\CopyingMachine3\CopyingMachine3\LibRsa;D:\Projects\CopyingMachine3\CopyingMachine3\Resource files\CopyingMachine3_English;D:\Projects\CopyingMachine3\CopyingMachine3\LibTiff\libtiff;D:\Projects\CopyingMachine3\CopyingMachine3\ZLib;C:\Program Files\Microsoft SDKs\Windows\v6.0\Lib;C:\Program Files\Microsoft SDKs\Windows\v6.0\Include;D:\Projects\CopyingMachine3\CopyingMachine3\Dialog files;D:\Projects\CopyingMachine3\CopyingMachine3;D:\Projects\CopyingMachine3\CopyingMachine3\Logic files;D:\Projects\CopyingMachine3\CopyingMachine3\Resource files;D:\Projects\CopyingMachine3\CopyingMachine3\Interface files;D:\Projects\CopyingMachine3\CopyingMachine3\Application files;C:\Program Files\Microsoft Platform SDK\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>.\Scintilla\include;.\LibTesseract\classify;.\LibTesseract\ccstruct;.\LibTesseract\ccmain;.\LibTesseract\ccutil;.\LibTesseract;.\LibRsa;.\Resource files\CopyingMachine3_English;.\LibTiff\libtiff;.\ZLib;.\Dialog files;.;.\Logic files;.\Resource files;.\Interface files;.\Application files;D:\Projects\Copying Machine 3\CopyingMachine3\Resource files;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions);NOTWAIN;UWP</PreprocessorDefinitions>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <PrecompiledHeader>Use</PrecompiledHeader>
@@ -149,7 +149,7 @@
     </ClCompile>
     <Link>
       <AdditionalDependencies>comctl32.lib;gdiplus.lib;version.lib;wiaguid.lib;libtiff.lib;zlib.lib;librsa.lib;advapi32.lib;tessdll.lib;sti.lib;scilexer.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>C:\Program Files\Microsoft SDKs\Windows\v6.0\Lib;D:\Projects\CopyingMachine3\release;C:\Program Files\Microsoft Platform SDK\Lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>C:\Program Files\Microsoft SDKs\Windows\v6.0\Lib;D:\Projects\CopyingMachine3\release;C:\Program Files\Microsoft Platform SDK\Lib;D:\Projects\Copying Machine 3\Release;D:\Projects\Copying Machine 3\CopyingMachine3\Scintilla\bin;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <ManifestFile>$(SolutionDir)$(Configuration)$(TargetFileName).manifest</ManifestFile>
       <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
       <GenerateDebugInformation>false</GenerateDebugInformation>

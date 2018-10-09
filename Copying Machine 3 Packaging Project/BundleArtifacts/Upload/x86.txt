@@ -1,0 +1,1 @@
+MainPackage=D:\Projects\Copying Machine 3\Copying Machine 3 Packaging Project\bin\x86\Release\Upload\Copying Machine 3 Packaging Project_3.0.1.0_x86.appx

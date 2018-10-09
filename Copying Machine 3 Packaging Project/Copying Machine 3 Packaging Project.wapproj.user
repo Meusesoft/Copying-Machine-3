@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x86'">
+    <DebuggerFlavor>AppHostLocalDebugger</DebuggerFlavor>
+    <RemoteDebugEnabled>False</RemoteDebugEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x86'">
+    <DebuggerFlavor>AppHostLocalDebugger</DebuggerFlavor>
+    <RemoteDebugEnabled>False</RemoteDebugEnabled>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AppxPackageIsForStore>False</AppxPackageIsForStore>
+    <AppxShowAllApps>False</AppxShowAllApps>
+    <AppxBuildConfigurationSelection>x86</AppxBuildConfigurationSelection>
+    <PackageOptionalProjectsInIdeBuilds>False</PackageOptionalProjectsInIdeBuilds>
+    <Source>D:\Projects\Copying Machine 3\CopyingMachine3\Resource files\icon_600.png</Source>
+    <SmallTileSource>D:\Projects\Copying Machine 3\CopyingMachine3\Resource files\icon_600.png</SmallTileSource>
+    <MediumTileSource>D:\Projects\Copying Machine 3\CopyingMachine3\Resource files\icon_600.png</MediumTileSource>
+    <WideTileSource>D:\Projects\Copying Machine 3\CopyingMachine3\Resource files\icon_600.png</WideTileSource>
+    <LargeTileSource>D:\Projects\Copying Machine 3\CopyingMachine3\Resource files\icon_600.png</LargeTileSource>
+    <AppIconSource>D:\Projects\Copying Machine 3\CopyingMachine3\Resource files\icon_600.png</AppIconSource>
+    <SplashScreenSource>D:\Projects\Copying Machine 3\CopyingMachine3\Resource files\icon_600.png</SplashScreenSource>
+    <PackageLogoSource>D:\Projects\Copying Machine 3\CopyingMachine3\Resource files\icon_600.png</PackageLogoSource>
+    <BadgeLogoSource>D:\Projects\Copying Machine 3\CopyingMachine3\Resource files\icon_600.png</BadgeLogoSource>
+  </PropertyGroup>
+</Project>
