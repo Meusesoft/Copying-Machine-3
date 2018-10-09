@@ -949,6 +949,7 @@ CCopyingMachineCore::LoadLanguage() {
 	GetModuleFileName(NULL, cDll, MAX_PATH); 
 	PathRemoveFileSpec(cDll);
 
+
 	//Get the user language of the user
 	cUserLanguage = oRegistry->ReadInt(L"General", L"Language", 0);
 	if (cUserLanguage==0) cUserLanguage = PRIMARYLANGID(GetUserDefaultLangID());
@@ -1033,7 +1034,7 @@ CCopyingMachineCore::LoadLanguage() {
 	if (hResult == NULL) {
 
 		MessageBox(NULL, L"Couldn't open the language module", L"Error Copying Machine", MB_OK|MB_ICONERROR);
-		}
+	}
 
 	return hResult;
 	}
@@ -1252,7 +1253,7 @@ CCopyingMachineCore::OpenHelp(HWND phWnd) {
 
 	if (!bSucces) {
 
-		ShellExecute(phWnd, L"open", L"http://copyingmachinehelp.meusesoft.com", NULL, NULL, SW_SHOWNORMAL);
+		ShellExecute(phWnd, L"open", L"http://copyingmachine.meusesoft.com/help/english/index.html", NULL, NULL, SW_SHOWNORMAL);
 		}
 
 	oTrace->EndTrace(__WFUNCTION__);
