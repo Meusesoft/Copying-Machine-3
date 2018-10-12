@@ -151,6 +151,32 @@ CSharedPreferencesSelection::DoFillShowInterfaceCheckbox() {
 		}
 	}
 
+void
+CSharedPreferencesSelection::DoInitialiseResolution() {
+
+	wchar_t cText[100];
+	CScanDevice* oScanDevice;
+
+	//Clear resolution box
+	SendMessage(hResolutionBox, CB_RESETCONTENT, 0, 0);
+
+	//Fill dpi combobox
+	SendMessage(hResolutionBox, CB_ADDSTRING, 0, (LPARAM)L"75");
+	SendMessage(hResolutionBox, CB_ADDSTRING, 0, (LPARAM)L"100");
+	SendMessage(hResolutionBox, CB_ADDSTRING, 0, (LPARAM)L"150");
+	SendMessage(hResolutionBox, CB_ADDSTRING, 0, (LPARAM)L"200");
+	SendMessage(hResolutionBox, CB_ADDSTRING, 0, (LPARAM)L"300");
+	SendMessage(hResolutionBox, CB_ADDSTRING, 0, (LPARAM)L"400");
+	SendMessage(hResolutionBox, CB_ADDSTRING, 0, (LPARAM)L"600");
+	SendMessage(hResolutionBox, CB_ADDSTRING, 0, (LPARAM)L"1200");
+
+	//set the resolution. If an error occurs the first resolution will be selected
+	int iResolution = oCore->oScanSettings->GetInt(eResolutionValue);
+	swprintf_s(cText, 100, L"%d", iResolution);
+	if (SendMessage(hResolutionBox, CB_SELECTSTRING, 0, (LPARAM)cText) == CB_ERR) {
+		SendMessage(hResolutionBox, CB_SETCURSEL, (WPARAM)0, 0);
+	}
+}
 void 
 CSharedPreferencesSelection::DoFillResolution() {
 
@@ -181,7 +207,47 @@ CSharedPreferencesSelection::DoFillResolution() {
 		}
 }
 
-void 
+void
+CSharedPreferencesSelection::DoInitialiseColorDepth() {
+
+	wchar_t cText[100];
+
+	//Clear color and resolution box
+	SendMessage(hColorBox, CB_RESETCONTENT, 0, 0);
+
+	//Fill type box
+	int iColorDepth = oCore->oScanSettings->GetInt(eColorDepthValue);
+	int iSelIndex = 0;
+	int iItemIndex = 0;
+
+	//Fill color type box
+	LoadString(oGlobalInstances.hLanguage, IDS_BLACKWHITE, cText, 100);
+	iItemIndex = (int)SendMessage(hColorBox, CB_ADDSTRING, 0, (LPARAM)cText);
+	if (iItemIndex != CB_ERR) {
+		SendMessage(hColorBox, CB_SETITEMDATA, (WPARAM)iItemIndex, (LPARAM)0); //BW
+		if (iColorDepth == 0) iSelIndex = iItemIndex;
+	}
+
+	LoadString(oGlobalInstances.hLanguage, IDS_GRAY, cText, 100);
+	iItemIndex = (int)SendMessage(hColorBox, CB_ADDSTRING, 0, (LPARAM)cText);
+	if (iItemIndex != CB_ERR) {
+		SendMessage(hColorBox, CB_SETITEMDATA, (WPARAM)iItemIndex, (LPARAM)1); //Gray
+		if (iColorDepth == 1) iSelIndex = iItemIndex;
+	}
+
+	LoadString(oGlobalInstances.hLanguage, IDS_COLOR, cText, 100);
+	iItemIndex = (int)SendMessage(hColorBox, CB_ADDSTRING, 0, (LPARAM)cText);
+	if (iItemIndex != CB_ERR) {
+		SendMessage(hColorBox, CB_SETITEMDATA, (WPARAM)iItemIndex, (LPARAM)2); //Color
+		if (iColorDepth == 2) iSelIndex = iItemIndex;
+	}
+
+	if (SendMessage(hColorBox, CB_SETCURSEL, (WPARAM)iSelIndex, 0) == CB_ERR) {
+		SendMessage(hColorBox, CB_SETCURSEL, (WPARAM)0, 0);
+	}
+}
+
+void
 CSharedPreferencesSelection::DoFillColorDepth() {
 
 	wchar_t cText[100];

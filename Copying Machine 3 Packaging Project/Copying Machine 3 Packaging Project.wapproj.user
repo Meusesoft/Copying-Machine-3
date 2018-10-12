@@ -9,7 +9,7 @@
     <RemoteDebugEnabled>False</RemoteDebugEnabled>
   </PropertyGroup>
   <PropertyGroup>
-    <AppxPackageIsForStore>False</AppxPackageIsForStore>
+    <AppxPackageIsForStore>True</AppxPackageIsForStore>
     <AppxShowAllApps>False</AppxShowAllApps>
     <AppxBuildConfigurationSelection>x86</AppxBuildConfigurationSelection>
     <PackageOptionalProjectsInIdeBuilds>False</PackageOptionalProjectsInIdeBuilds>

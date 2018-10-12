@@ -214,8 +214,10 @@ CPaneCopy::Initialize() {
 
 	//Fill and enable the controls
 	//DoFillControls();
-	//DoEnableControls();
-	//FillAndEnableControls();
+	DoInitialiseResolution();
+	DoInitialiseColorDepth();
+	DoEnableControls();
+	FillAndEnableControls();
 
 	//Localize the labels
 	Localize(CPaneBase::oGlobalInstances.hLanguage);
@@ -383,9 +385,13 @@ CPaneCopy::UpdateControls() {
 
 	CPaneBase::oTrace->StartTrace(__WFUNCTION__, eAll);
 
+	CoInitialize(NULL);
+
 	DoFillControls();
 
 	DoEnableControls();
+
+	CoUninitialize();
 
 	CPaneBase::oTrace->EndTrace(__WFUNCTION__, eAll);
 }
@@ -659,6 +665,15 @@ CPaneCopy::DoEnableControls() {
 		bEnable = oScanDevice->bFeederPresent;
 		EnableWindow(hUseDocumentFeeder, bEnable);
 		}
+	else
+	{
+		bEnable = false;
+
+		EnableWindow(hColorBox, bEnable);
+		EnableWindow(hResolutionBox, bEnable);
+		EnableWindow(hUseDocumentFeeder, bEnable);
+	}
+
 	
 	CPaneBase::oTrace->EndTrace(__WFUNCTION__, eAll);
 }
