@@ -20,7 +20,9 @@ CScanInterfaceBase(pcGlobalInstances, poSettings)
 void 
 CScanWia::GetDeviceManager() {
 
-   //Create WIA Device Manager
+	if (oWiaDeviceManager != NULL) return;
+	
+	//Create WIA Device Manager
 	HRESULT hr;
 	
 	hr = CoCreateInstance(CLSID_WiaDevMgr, NULL, CLSCTX_LOCAL_SERVER,
@@ -80,6 +82,8 @@ CScanWia::~CScanWia(void)
 // Public Functions
 //-----------------------------------------------------------------------------
 
+bool GetDeviceCapabilitiesInProgress = false;
+
 bool
 CScanWia::GetDeviceCapabilities(CScanSettings* poSettings) {
 
@@ -91,9 +95,10 @@ CScanWia::GetDeviceCapabilities(CScanSettings* poSettings) {
 
 	 oScanDevice = poSettings->GetScanner();
 
-	 if (oScanDevice!=NULL) {
+	 if (oScanDevice!=NULL && !GetDeviceCapabilitiesInProgress) {
 
 		 retval = true; 
+		 GetDeviceCapabilitiesInProgress = true;
 	 
 		 if (!oScanDevice->bCapabilitiesRetrieved) {
 
@@ -289,6 +294,8 @@ CScanWia::GetDeviceCapabilities(CScanSettings* poSettings) {
 				}
 
 			oScanDevice->bCapabilitiesRetrieved = retval;
+
+			GetDeviceCapabilitiesInProgress = false;
 
 			ReleaseDeviceManager();
 			}

@@ -38,6 +38,8 @@ public:
 	CScanSettings* GetDefaultScanSettings();
 	CScanSettings* GetLastScanSettings();
 
+	CScanTwain*		oScanTwain;
+	CScanWia*		oScanWia; 
 private:
 
 	sGlobalInstances oGlobalInstances;
@@ -45,8 +47,8 @@ private:
 	CCoreNotifications* oNotifications;
 	CScanSettings*	oDefaultScanSettings;
 	CScanSettings*	oLastScanSettings;
-	CScanWia*		oScanWia;
-	CScanTwain*		oScanTwain;
+
+
 	CScanLoadFile*	oScanLoadFile;
 
 	long lCurrentDevice;

@@ -17,7 +17,9 @@ protected:
 
 	void DoFillControls();
 	void DoFillResolution();
+	void DoInitialiseResolution();
 	void DoFillColorDepth();
+	void DoInitialiseColorDepth();
 	void DoFillShowInterfaceCheckbox();
 	void DoFillUseDocumentFeederCheckbox();
 
