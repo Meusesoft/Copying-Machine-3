@@ -79,6 +79,12 @@ CDlgPreferencesGeneral::DoFillControls() {
 	EnableControl(IDC_FILEBMP, cWindowsVersion == eWindowsXP);
 	EnableControl(IDC_FILEPNG, cWindowsVersion == eWindowsXP);
 
+	#ifdef UWP
+
+	EnableControl(IDC_STILLIMAGEUNREGISTER, false);
+	EnableControl(IDC_STILLIMAGEREGISTER, false);
+
+	#else
 	EnableControl(IDC_STILLIMAGEUNREGISTER, oGlobalInstances.oRegistry->ReadIntLocalMachine(L"General", L"StillImage", 0) != 0);
 	EnableControl(IDC_STILLIMAGEREGISTER,   oGlobalInstances.oRegistry->ReadIntLocalMachine(L"General", L"StillImage", 0) != 1);
 
@@ -91,6 +97,7 @@ CDlgPreferencesGeneral::DoFillControls() {
 		hButtonWnd = GetDlgItem(hDlg, IDC_STILLIMAGEREGISTER);
 		Button_SetElevationRequiredState(hButtonWnd, true);
 		}
+	#endif
 
 	//Fill the language box
 	DoFillLanguageControl();

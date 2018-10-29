@@ -78,11 +78,13 @@ CDlgPreferences::OnInitDialog() {
 		oPreferencesScannerAdvanced->Create();
 		oPreferencePages.push_back(oPreferencesScannerAdvanced);
 		}
+#ifndef UWP
 	if (cPreferences==eAllPreferences || cPreferences==eTrace) {
 		oPreferencesTrace = new CDlgPreferencesTrace(oGlobalInstances.hInstance, hDlg, IDD_PREFERENCESTRACE, oGlobalInstances);				  
 		oPreferencesTrace->Create();
 		oPreferencePages.push_back(oPreferencesTrace);
 		}
+#endif
 	if (cPreferences==eAllPreferences || cPreferences==ePrinter || cPreferences==ePrinterCopiesAlignment) {
 		oPreferencesPrinterCopiesAlignment = new CDlgPreferencesPrinterCopiesAlignment(oGlobalInstances.hInstance, hDlg, IDD_PREFERENCESPRINTERALIGNMENT, oGlobalInstances);				  
 		oPreferencesPrinterCopiesAlignment->Create();
@@ -260,7 +262,9 @@ CDlgPreferences::ShowPreferences(ePreferences pePage) {
 		case eScannerPage: hVisiblePage = oPreferencesScannerPage->hDlg; break;
 		case eScannerDevice: hVisiblePage = oPreferencesScannerDevice->hDlg; break;
 		case eScannerAdvanced: hVisiblePage = oPreferencesScannerAdvanced->hDlg; break;
+#ifndef UWP
 		case eTrace: hVisiblePage = oPreferencesTrace->hDlg; break;
+#endif
 		case ePrinter:
 		case ePrinterCopiesAlignment: hVisiblePage=oPreferencesPrinterCopiesAlignment->hDlg; break;
 		case ePrinterMagnificationClipStretch: hVisiblePage=oPreferencesPrinterImageSize->hDlg; break;
@@ -374,8 +378,9 @@ CDlgPreferences::FillTreeView() {
 		TreeView_Expand(hTreeView, hParentItem, TVE_EXPAND);
 		}
 
+#ifndef UWP
 	if (cPreferences==eAllPreferences) hParentItem = AddTreeItem(NULL, 6, IDS_TRACING, eTrace);
-
+#endif
 	oTrace->EndTrace(__WFUNCTION__);
 	}	
 
